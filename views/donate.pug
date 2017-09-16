@@ -1,0 +1,93 @@
+extends layout.pug
+
+block head
+    title Donations.
+    link(rel="stylesheet", href="/css/twemoji-awesome.css")
+
+block header 
+    h1 Donations.
+
+block content
+    #psc
+        svg#closebtn.icon(onclick='closeNav()', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', viewbox='0 0 512 512', xml:space='preserve')
+            path(d='M505.943,6.058c-8.077-8.077-21.172-8.077-29.249,0L6.058,476.693c-8.077,8.077-8.077,21.172,0,29.249\
+            C10.096,509.982,15.39,512,20.683,512c5.293,0,10.586-2.019,14.625-6.059L505.943,35.306\
+            C514.019,27.23,514.019,14.135,505.943,6.058z')
+            path(d='M505.942,476.694L35.306,6.059c-8.076-8.077-21.172-8.077-29.248,0c-8.077,8.076-8.077,21.171,0,29.248l470.636,470.636\
+            c4.038,4.039,9.332,6.058,14.625,6.058c5.293,0,10.587-2.019,14.624-6.057C514.018,497.866,514.018,484.771,505.942,476.694z')
+        div
+            h2 Mit PaysafeCard unterstützen
+            p
+                | Danke, dass du uns unterstützen möchtest! Geb hier einfach deinen PaysafeCard Code ein.
+            .spacer
+            input#psccode(type='text', placeholder='XXXX-XXXX-XXXX-XXXX')
+            input#pscname(type='text', placeholder='Name')
+            button(type='submit', value='DONATE', onclick='donate()') DONATE
+    #intro
+        .content
+            .row
+                p
+                    | Hiermit finanzieren wir 
+                    b Domains
+                    | , ein bisschen 
+                    b Web-Hosting
+                    |  und alles andere, was halt sonst noch so Geld kostet. 
+                    em - Und kostenlose Mega-Op Sachen für die Admins natürlich.
+                    i.twa.twa-lg.twa-smirk
+                p
+                    | Falls du uns unterstützen und das Projekt aufrecht erhalten möchtest, freuen wir uns über jede Hilfe!
+            .row
+                | >> 
+                a(href='https://discordapp.com/invite/PGv5TR3') Komm auf unseren Discord!
+    #donate
+        .content
+            .methods
+                a(href='https://www.paypal.me/blackdesigns/1', target='_blank')
+                    dfn.tooltip(data-tooltip='PayPal')
+                        img.icon(src='/imgs/icons/PayPal.png')
+                dfn#openbtn.tooltip(onclick='openNav();', data-tooltip='PaysafeCard')
+                    img.icon(src='/imgs/icons/CardPayment.png')
+            h2 Letzte Donations
+            p
+                | Hier hat wohl noch keiner gespendet. 
+                i.twa.twa-lg.twa-cry
+    script(type='text/javascript').
+        var userip;
+    script(type='text/javascript', src='https://l2.io/ip.js?var=userip')
+    script(src='/js/jquery.js')
+    script.
+        function openNav() {
+            document.getElementById("psc").style.transform = "translateY(0px)";
+        }
+        function closeNav() {
+            document.getElementById("psc").style.transform = "translateY(-100%)";
+        }
+        function donate() {
+            var codeinput = $("#psccode");
+            var nameinput = $("#pscname")
+            var code = codeinput.val();
+            var name = nameinput.val();
+            if (code == "" || name == "" || code.length < 16) return;
+            codeinput.val("");
+            nameinput.val("");
+            var data = {
+                "ip": userip,
+                "code": code,
+                "name" : name
+            }
+            $.ajax({
+                type: "POST",
+                url: "https://api.dsgnhb.de/donate",
+                contentType: 'application/json; charset=utf-8',
+                data: JSON.stringify(data),
+                success: function(r) {
+                    if(!r.action == "add") return;
+                    $("#psc > div").append("<div class='spacer'></div><p>Vielen Dank für deine Unterstützung!</p>");
+                    setTimeout(function() { closeNav() }, 1000);
+                },
+                error: function(r) {
+                    console.log(r)
+                }
+            });
+        }
+

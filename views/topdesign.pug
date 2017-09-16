@@ -1,0 +1,91 @@
+extends layout.pug
+
+block head
+    title Top Design.
+    link(rel="stylesheet", href="/css/lightbox.css")
+
+block header 
+    h1 Top Designs of the Month.
+
+block content
+    #intro
+        .content
+            .row
+                    | Schick‘ jetzt deine besten Designs des Monats ein, um die Chance zu erhalten, auf unserem Twitter Account (@dsgnhb) vorgestellt zu werden. Das Design mit den meisten Votes gewinnt und erhält den @dsgnhb-Rang auf dem Discord-Server.
+            .row
+                h2 Teilnahme
+                p
+                    | Füge zu deinem, auf unserem Discord geteilten Design einfach den Kommentar 
+                    b #topdesign
+                    |  hinzu, um an Top Design teilzunehmen. So wird deine Einsendung automatisch auf unserer Website angezeigt und kann von jedem angesehen und bewertet werden.
+            .row
+                h2 Voten/Liken
+                p
+                    | Um für ein Design zu voten, schreibe lediglich 
+                    b !vote #id
+                    |  in den Discord-Chat. Ersetze hierbei #id durch die Nummer der Einsendung, die du auf unserer Website durch einen Klick auf das Design herausfinden kannst.
+                    br
+                    | Zusätzlich stehen dir noch die Commands 
+                    b !topdesign
+                    | , 
+                    b !posts
+                    | , 
+                    b !delete
+                    |  sowie 
+                    b !help
+                    |  zur Verfügung.
+            .row
+                | >> 
+                a(href='https://discordapp.com/invite/PGv5TR3') Komm auf unseren Discord!
+    #topdesign
+        script(src='/js/jquery.js')
+        script(src='/js/lightbox.js')
+        script(type='text/javascript').
+            $(document).ready(function () {
+                lightbox.option({
+                    'showImageNumberLabel': false
+                })
+                const months = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "October", "November", "December"];
+                $.ajax({
+                    type: "GET",
+                    url: "https://api.dsgnhb.de/posts/month",
+                    contentType: 'application/json; charset=utf-8',
+                    success: function (r) {
+                        const json = r;
+                        for (var month in json) {
+                            if (json.hasOwnProperty(month)) {
+                                let formatMonth = month.substring(4, 6) - 1;
+                                formatMonth = months[formatMonth]
+                                $('#topdesign').html($('#topdesign').html() + '<h1>' + formatMonth + '</h1>')
+                                var items = '<div class="items flex">';
+                                var entries = json[month];
+                                for (var i = 0; i < entries.length; i++) {
+                                    const entry = entries[i];
+                                    let username = entry.username
+                                    if (username.length > 12) username = username.slice(0, 12) + "...";
+                                    let winner = ""
+                                    if (entry.winner == "true") winner = "👑 |"
+                                    items = items + '<div class="item"><a href="' + entry.image + '" data-lightbox="show-1" data-title="#' + entry.id + '"><div class="img" style="background-image: url(' + entry.image + ')"><div class="overlay flex-center"><p>' + winner + ' #' + entry.id + '</p></div></div></a><div class="user flex-center"><img class="pp" src="' + entry.avatar + '"><h3 class="name" data-name="' + username + '" data-id="' + entry.id + '">' + username + '</h3><button class="like" type="button" data-id="' + entry.id + '" name="like" value="like"><span>' + entry.likes + '</span></button></div></div>'
+                                }
+                                items = items + '</div>';
+                                $('#topdesign').html($('#topdesign').html() + items)
+                            }
+                        }
+                    },
+                    error: function (r) {
+                        console.log(r)
+                    }
+                });
+                $("h3.name").click(function () {
+                    var postid = $(this).attr('data-id');
+                    var username = $(this).attr('data-name');
+                    var content = $(this).text();
+                    var hash_postid = '#' + postid;
+                    var _this = this;
+                    if (content == hash_postid) {
+                        $(_this).html(username)
+                    } else {
+                        $(_this).html('#' + postid)
+                    }
+                })
+            });

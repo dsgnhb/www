@@ -1,0 +1,27 @@
+{
+  "name": "designhub-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/floooooooooo/designhub-website.git"
+  },
+  "author": "flo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/floooooooooo/designhub-website/issues"
+  },
+  "homepage": "https://github.com/floooooooooo/designhub-website#readme",
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "express": "^4.15.4",
+    "path": "^0.12.7",
+    "pug": "^2.0.0-rc.4",
+    "serve-favicon": "^2.4.4"
+  }
+}

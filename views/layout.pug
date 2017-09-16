@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(charset='utf-8')
+    block head
+    link(rel='shortcut icon', href='/imgs/favicon.ico', type='image/x-icon')
+    link(rel='icon', href='/imgs/favicon.ico', type='image/x-icon')
+    link(rel='stylesheet', href='/css/style.css')
+    link(href='https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Open+Sans:400,600,700', rel='stylesheet')
+body
+  header
+    .content
+      a(href='../')
+        img.logo(src='/imgs/logo.png')
+      block header
+      ul.menu
+        each item in [  { title: "Home", route: "/" }, { title: "Top Design", route: "/topdesign" },{ title: "Levels", route: "/levels"}, { title: "Donations", route: "/donate" }]
+          li
+            a(href=item.route)= item.title
+  block content

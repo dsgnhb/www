@@ -54,12 +54,9 @@ block content
                     var username = entry.username;
                     if (username.length > 12) username = username.slice(0, 12) + "...";
                     var level = xpToLevel(entry.xp);
-                    var totalXP = entry.xp;
-                    var remaining_xp = 0;
-                    var x = 0
+                    var remaining_xp = entry.xp;
                     for (l = 0; l < level; l++) {
-                        x += xpForLevel(l)
-                        remaining_xp = totalXP - x;
+                        remaining_xp -= xpForLevel(l);
                     }
                     var level_xp = xpForLevel(level);
                     var procent = ((remaining_xp / level_xp) * 100).toFixed(0);

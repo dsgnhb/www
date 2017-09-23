@@ -159,6 +159,62 @@ input[type=text]:focus {
     color: #777;
 }
 
+/*
+--------------
+POPUPs
+-------------
+*/
+.popupfull {
+    border-radius: 3px;
+    height: 100vh;
+    transform: translateY(-100%);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: #f2f2f2;
+    overflow-x: hidden;
+    transition: 0.5s;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.popupfull .icon path {
+    fill: #000;
+}
+
+.popupfull>div {
+    max-width: 600px;
+}
+
+.closebtn {
+    position: absolute;
+    top: 50px;
+    right: 70px;
+    height: 30px;
+    width: 30px;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.openbtn {
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+/*
+--------------
+CLASSES
+-------------
+*/
+
+.pointer {
+    cursor: pointer;
+}
 
 /*
 --------------
@@ -235,90 +291,27 @@ DONATE
     margin-right: 20px;
     cursor: pointer;
 }
-
-#donate [data-tooltip] {
-    position: relative;
-    cursor: pointer;
+#donate .methods {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 0px 30px 0;
 }
-
-#donate [data-tooltip]::after {
-    content: attr(data-tooltip);
-    pointer-events: none;
-    opacity: 1;
-    transition: opacity 0.5s;
-    display: block;
-    position: absolute;
-    z-index: 10;
-    color: #000;
-    top: 20px;
-    right: 25px;
+#donate .methods div {
     text-align: center;
+    margin-right: 20px;
+}
+#donate .methods div span {
+    transition: all 0.5s;
+    color: #000;
     font-style: normal;
     font-weight: 600;
     text-transform: uppercase;
     font-size: 0.8em;
-    width: 50px;
 }
-
-#donate [data-tooltip]:hover::after {
-    opacity: 1;
-    transition: opacity 0.5s;
+#donate .methods div:hover span {
+    transition: all 0.5s;
     color: #444;
-}
-
-#donate dfn {
-    text-decoration: none;
-}
-
-#donate div.methods {
-    padding-bottom: 45px;
-}
-
-
-/*
- -----------------------
- PSC
- -----------------------
- */
-
-#psc {
-    height: 100vh;
-    transform: translateY(-100%);
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 100;
-    background-color: #f2f2f2;
-    overflow-x: hidden;
-    transition: 0.5s;
-    color: #000;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    border-radius: 3px;
-}
-
-#psc .icon path {
-    fill: #000;
-}
-
-#psc>div {
-    max-width: 600px;
-}
-
-#closebtn {
-    position: absolute;
-    top: 50px;
-    right: 50px;
-    height: 30px;
-    width: 30px;
-    transition: 0.7s;
-    cursor: pointer;
-}
-
-#openbtn {
-    transition: 0.7s;
 }
 
 

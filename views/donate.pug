@@ -8,21 +8,60 @@ block header
     h1 Donations.
 
 block content
-    #psc
-        svg#closebtn.icon(onclick='closeNav()', version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', viewbox='0 0 512 512', xml:space='preserve')
+    #psc.popupfull
+        svg.closebtn(onclick="closeNav('psc')", version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', viewbox='0 0 512 512', xml:space='preserve')
             path(d='M505.943,6.058c-8.077-8.077-21.172-8.077-29.249,0L6.058,476.693c-8.077,8.077-8.077,21.172,0,29.249\
             C10.096,509.982,15.39,512,20.683,512c5.293,0,10.586-2.019,14.625-6.059L505.943,35.306\
             C514.019,27.23,514.019,14.135,505.943,6.058z')
             path(d='M505.942,476.694L35.306,6.059c-8.076-8.077-21.172-8.077-29.248,0c-8.077,8.076-8.077,21.171,0,29.248l470.636,470.636\
             c4.038,4.039,9.332,6.058,14.625,6.058c5.293,0,10.587-2.019,14.624-6.057C514.018,497.866,514.018,484.771,505.942,476.694z')
         div
-            h2 Mit PaysafeCard unterstützen
+            h2 Vielen Dank für deine Unterstützung mit PaysafeCard!
             p
-                | Danke, dass du uns unterstützen möchtest! Geb hier einfach deinen PaysafeCard Code ein.
+            | Da wir für deine Spenden lieber auf ein komplexes Zahlungsystem mit hohen Gebühren/Abgaben verzichten, kontaktiere einfach 
+            b Flo (flo#3087)
+            |  auf unserem Discord per Direktnachricht.
+            br
+            | >> 
+            a(href='https://discordapp.com/invite/PGv5TR3') Komm auf unseren Discord!
+    #mine.popupfull
+        svg.closebtn(onclick="closeNav('mine')", version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', viewbox='0 0 512 512', xml:space='preserve')
+            path(d='M505.943,6.058c-8.077-8.077-21.172-8.077-29.249,0L6.058,476.693c-8.077,8.077-8.077,21.172,0,29.249\
+            C10.096,509.982,15.39,512,20.683,512c5.293,0,10.586-2.019,14.625-6.059L505.943,35.306\
+            C514.019,27.23,514.019,14.135,505.943,6.058z')
+            path(d='M505.942,476.694L35.306,6.059c-8.076-8.077-21.172-8.077-29.248,0c-8.077,8.076-8.077,21.171,0,29.248l470.636,470.636\
+            c4.038,4.039,9.332,6.058,14.625,6.058c5.293,0,10.587-2.019,14.624-6.057C514.018,497.866,514.018,484.771,505.942,476.694z')
+        div
+            h2 Vielen Dank für deine Unterstützung!
+            p
+            | Wir nutzen ein 
+            b bisschen deiner CPU-Power um  Money (XMR)
+            |  zu machen. 
+            i.twa.twa-lg.twa-dollar
+            |  Dies kann die Leistung deines Computers temporär beeinflussen. 
+            b Ist das ok?
+            br
+            | >> 
+            a#startmining.pointer Jo klar, Los geht's!
             .spacer
-            input#psccode(type='text', placeholder='XXXX-XXXX-XXXX-XXXX')
-            input#pscname(type='text', placeholder='Name')
-            button(type='submit', value='DONATE', onclick='donate()') DONATE
+            #hashinformation(style='display: none')
+                b
+                    span#hashespersecond #
+                |  hashes/second, 
+                b
+                    span#totalhashes #
+                |  total hashes
+                br
+                |  threads: 
+                b
+                    span#threadcount #
+                |    
+                b
+                    a#increasethreads.pointer +
+                b
+                    a#decreasethreads.pointer -
+                .spacer
+                a#stopmining.pointer HALT STOP!
     #intro
         .content
             .row
@@ -42,52 +81,76 @@ block content
     #donate
         .content
             .methods
-                a(href='https://www.paypal.me/blackdesigns/1', target='_blank')
-                    dfn.tooltip(data-tooltip='PayPal')
-                        img.icon(src='/imgs/icons/PayPal.png')
-                dfn#openbtn.tooltip(onclick='openNav();', data-tooltip='PaysafeCard')
-                    img.icon(src='/imgs/icons/CardPayment.png')
+                div
+                    a(href='https://www.paypal.me/juttawalter/1', target='_blank')
+                        img.icon(src='imgs/icons/PayPal.png')
+                        br
+                        span PayPal
+                div
+                    a.pointer(onclick="openNav('psc')")
+                        img.icon(src='imgs/icons/CardPayment.png')
+                        br
+                        span PaysafeCard
+                div
+                    a.pointer(onclick="openNav('mine')")
+                        img.icon(src='imgs/icons/Processor.png')
+                        br
+                        span CPU-Power
             h2 Letzte Donations
             p
                 | Hier hat wohl noch keiner gespendet. 
                 i.twa.twa-lg.twa-cry
-    script(type='text/javascript').
-        var userip;
-    script(type='text/javascript', src='https://l2.io/ip.js?var=userip')
     script(src='/js/jquery.js')
+    script(src='js/coinhive.min.js')
     script.
-        function openNav() {
-            document.getElementById("psc").style.transform = "translateY(0px)";
-        }
-        function closeNav() {
-            document.getElementById("psc").style.transform = "translateY(-100%)";
-        }
-        function donate() {
-            var codeinput = $("#psccode");
-            var nameinput = $("#pscname")
-            var code = codeinput.val();
-            var name = nameinput.val();
-            if (code == "" || name == "" || code.length < 16) return;
-            codeinput.val("");
-            nameinput.val("");
-            var data = {
-                "ip": userip,
-                "code": code,
-                "name" : name
-            }
-            $.ajax({
-                type: "POST",
-                url: "https://api.dsgnhb.de/donate",
-                contentType: 'application/json; charset=utf-8',
-                data: JSON.stringify(data),
-                success: function(r) {
-                    if(!r.action == "add") return;
-                    $("#psc > div").append("<div class='spacer'></div><p>Vielen Dank für deine Unterstützung!</p>");
-                    setTimeout(function() { closeNav() }, 1000);
-                },
-                error: function(r) {
-                    console.log(r)
-                }
-            });
+        function openNav(item) {
+            document.getElementById(item).style.transform = "translateY(0px)";
+
         }
 
+        function closeNav(item) {
+            document.getElementById(item).style.transform = "translateY(-100%)";
+        }
+
+        var miner = new CoinHive.Anonymous("C7qzfsbzbO4fOSSn0RPR2TahkRVhOIYg");
+        miner.setNumThreads(2);
+        var hashinformation = document.getElementById("hashinformation");
+        hashinformation.style.display = "none";
+        var update_interval = null;
+
+        function start_mining() {
+            miner.start();
+            hashinformation.style.display = "";
+            update_threadcount();
+            update_interval = setInterval(function () {
+                var hashesPerSecond = miner.getHashesPerSecond();
+                var totalHashes = miner.getTotalHashes();
+                document.getElementById("hashespersecond").innerHTML = Math.round(hashesPerSecond);
+                document.getElementById("totalhashes").innerHTML = totalHashes;
+            }, 1000);
+        }
+
+        function stop_mining() {
+            miner.stop();
+            hashinformation.style.display = "none";
+            clearInterval(update_interval);
+        }
+
+        function update_threadcount() {
+            document.getElementById("threadcount").innerHTML = miner.getNumThreads();
+        }
+        document.getElementById("increasethreads").addEventListener("click", function () {
+            miner.setNumThreads(miner.getNumThreads() + 1);
+            update_threadcount();
+        });
+        document.getElementById("decreasethreads").addEventListener("click", function () {
+            miner.setNumThreads(miner.getNumThreads() - 1);
+            update_threadcount();
+        });
+        document.getElementById("stopmining").addEventListener("click", function () {
+            stop_mining();
+        });
+        document.getElementById("startmining").addEventListener("click", function () {
+            start_mining();
+        });
+        

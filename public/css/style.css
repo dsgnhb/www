@@ -330,7 +330,11 @@ DONATE
     ;
     margin: 20px 0;
 }
-
+#topdesign .items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 #topdesign .items .item {
     width: 300px;
     height: 300px;
@@ -346,7 +350,7 @@ DONATE
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.items .item .img {
+#topdesign .items .item .img {
     width: 300px;
     height: 225px;
     background: #222;
@@ -407,6 +411,13 @@ DONATE
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    border: none;
+    height: 40px;
+    width: 40px;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    cursor: default;
 }
 
 #topdesign .items .item a.submit {

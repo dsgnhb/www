@@ -83,17 +83,17 @@ block content
             .methods
                 div
                     a(href='https://www.paypal.me/juttawalter/1', target='_blank')
-                        img.icon(src='imgs/icons/PayPal.png')
+                        img.icon(src='/imgs/icons/PayPal.png')
                         br
                         span PayPal
                 div
                     a.pointer(onclick="openNav('psc')")
-                        img.icon(src='imgs/icons/CardPayment.png')
+                        img.icon(src='/imgs/icons/CardPayment.png')
                         br
                         span PaysafeCard
                 div
                     a.pointer(onclick="openNav('mine')")
-                        img.icon(src='imgs/icons/Processor.png')
+                        img.icon(src='/imgs/icons/Processor.png')
                         br
                         span CPU-Power
             h2 Letzte Donations
@@ -101,7 +101,7 @@ block content
                 | Hier hat wohl noch keiner gespendet. 
                 i.twa.twa-lg.twa-cry
     script(src='/js/jquery.js')
-    script(src='js/coinhive.min.js')
+    script(src='/js/coinhive.min.js')
     script.
         function openNav(item) {
             document.getElementById(item).style.transform = "translateY(0px)";

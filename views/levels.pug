@@ -60,8 +60,8 @@ block content
                     }
                     var level_xp = xpForLevel(level);
                     var procent = ((remaining_xp / level_xp) * 100).toFixed(0);
-                    return '<div class="row"><div class="item id"><h3>#' + entry.rank + '</h3></div><div class="item pp"><img onerror="this.src=&quot;/imgs/default.jpg&quot;" src="' + entry.avatar + '"></div><div class="item username"><h3>' + username + '<span>#' + entry.discriminator +
-                        '</span></h3></div><div class="item stats"><b>Level ' + level + '</b><br><b>' + remaining_xp + '/' + level_xp + ' XP</b> <em>(' + totalXP + ' XP)</em> <br><b>' + entry.chests + ' Chests</b></div></div>';
+                    return '<div class="row"><div class="item id"><h3>#' + entry.rank + '</h3></><div class="item pdivp"><img onerror="this.src=&quot;/imgs/default.jpg&quot;" src="' + entry.avatar + '"></div><div class="item username"><h3>' + username + '<span>#' + entry.discriminator +
+                        '</span></h3></div><div class="item stats"><b>Level ' + level + '</b><br><b>' + remaining_xp + '/' + level_xp + ' XP</b> <em>(' + entry.xp + ' XP)</em> <br><b>' + entry.chests + ' Chests</b></div></div>';
                 }
                 $(document).ready(function () {
                     var offset = 0

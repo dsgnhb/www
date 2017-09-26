@@ -51,7 +51,8 @@ block content
             return '<div class="item"><a href="' + entry.image + '" data-lightbox="show-1" data-title="#' + entry.id + '"><div class="img" style="background-image: url(' + entry.image + ')"><div class="overlay flex-center"><p>' + winner + ' #' + entry.id + '</p></div></div></a><div class="user flex-center"><img class="pp" src="' + entry.avatar + '"><h3 class="name" data-name="' + username + '" data-id="' + entry.id + '">' + username + '</h3><button class="like" type="button" data-id="' + entry.id + '" name="like" value="like"><span>' + entry.likes + '</span></button></div></div>'
         }
         $(document).ready(function () {
-            var offset = 0
+            var configOffset = 7;
+            var offset = 0;
             $.ajax({
                 type: "GET",
                 url: "https://api.dsgnhb.de/topdesign/posts/currentmonth",
@@ -59,7 +60,7 @@ block content
                 success: function (r) {
                     var items = ""
                     const json = r
-                    for (var i = offset; i < 10 + offset; i++) {
+                    for (var i = offset; i < offset + configOffset; i++) {
                         var entry = json[i];
                         var item = buildItem(entry);
                         if (item !== "false") {
@@ -67,12 +68,13 @@ block content
                         }
                     }
                     $('#topdesign .items').append(items);
-                    offset += 6
                     var w = $(window)
+                    offset += configOffset;
                     w.scroll(function () {
                         if ($(document).height() - w.height() == w.scrollTop()) {
+                            
                             var items = "";
-                            for (var i = offset; i < 10 + offset; i++) {
+                            for (var i = offset; i < offset + configOffset; i++) {
                                 var entry = json[i];
                                 var item = buildItem(entry);
                                 if (item !== "false") {
@@ -80,7 +82,8 @@ block content
                                 }
                             }
                             $('#topdesign .items').append(items);
-                            offset += 10
+                            offset += configOffset;
+                            
                         }
                     });
                 },

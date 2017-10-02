@@ -1,5 +1,5 @@
 import React from 'react';
-import LevelEntries from './levels/LevelEntries';
+import LevelEntries from './levels/Entries';
 import Text from '../general/misc/Text';
 import DiscordLink from '../general/misc/DiscordLink';
 

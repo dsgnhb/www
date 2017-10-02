@@ -1,5 +1,5 @@
 import React from 'react';
-import LevelEntry from './LevelEntry';
+import LevelEntry from './Entry';
 import Text from '../../general/misc/Text';
 
 export default class LevelEntries extends React.Component {
@@ -16,11 +16,6 @@ export default class LevelEntries extends React.Component {
             .then(function (response) {
                 return response.json();
             }).then(function (json) {
-                if (!json) {
-                    self.state.error = 'Cannot contact API...';
-                    return;
-                }
-
                 return self.setState({
                     entries:
                         json.map((item) => {
@@ -32,17 +27,8 @@ export default class LevelEntries extends React.Component {
     }
 
     render() {
-        let error = "";
-
-        if (this.state.error !== null) {
-            error = (
-                <Text>{this.state.error}</Text>
-            );
-        }
-
         return (
             <div>
-                {error}
                 <div id="levels">
                     <div className="content table">
                         {

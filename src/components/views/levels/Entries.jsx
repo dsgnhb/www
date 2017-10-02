@@ -1,6 +1,5 @@
 import React from 'react';
 import LevelEntry from './Entry';
-import Text from '../../general/misc/Text';
 
 export default class LevelEntries extends React.Component {
     constructor(props) {

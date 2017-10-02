@@ -22,7 +22,7 @@ export default function TopDesignEntry(props) {
                 </div>
             </a>
             <div className="user flex-center">
-                <img className="pp" src={props.avatar} />
+                <img className="pp" src={props.avatar} alt={`Avatar from ${props.username}`} />
                 <h3 className="name">
                     {username}
                 </h3>

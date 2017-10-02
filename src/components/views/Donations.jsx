@@ -57,15 +57,15 @@ export default class Donations extends React.Component {
                     <div className="content">
                         <div className="methods">
                             <div>
-                                <a href="https://www.paypal.me/juttawalter/1" target="_blank">
-                                    <img className="icon" src={paypal} />
+                                <a href="https://www.paypal.me/juttawalter/1" target="_blank" rel="noopener noreferrer">
+                                    <img className="icon" src={paypal} alt="PayPal Icon" />
                                     <br />
                                     <span>PayPal</span>
                                 </a>
                             </div>
                             <div>
-                                <a className="pointer" onClick={this.openPSC} href="#">
-                                    <img className="icon" src={psc} />
+                                <a className="pointer" onClick={this.openPSC} href="">
+                                    <img className="icon" src={psc} alt="PaysafeCard Icon" />
                                     <br />
                                     <span>PaySafeCard</span>
                                 </a>

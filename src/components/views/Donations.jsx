@@ -65,11 +65,11 @@ export default class Donations extends React.Component {
                                 </a>
                             </div>
                             <div>
-                                <a className="pointer" onClick={this.openPSC} href="javascript:void(0);">
+                                <div className="pointer" onClick={this.openPSC}>
                                     <img className="icon" src={psc} alt="PaysafeCard Icon" />
                                     <br />
                                     <span>PaySafeCard</span>
-                                </a>
+                                </div>
                             </div>
                         </div>
                         <Text title="Letzte Donations">

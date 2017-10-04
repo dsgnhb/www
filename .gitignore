@@ -58,3 +58,9 @@ typings/
 # dotenv environment variables file
 .env
 
+# IntelliJ
+*.iml
+.idea/*
+
+# npm
+build/*

@@ -1,7 +1,7 @@
-import React from 'react'
-import LevelEntries from './levels/Entries'
-import Text from '../general/misc/Text'
-import DiscordLink from '../general/misc/DiscordLink'
+import React from 'react';
+import LevelEntries from './levels/Entries';
+import Text from '../general/misc/Text';
+import DiscordLink from '../general/misc/DiscordLink';
 
 export default function Levels() {
   return (
@@ -27,5 +27,5 @@ export default function Levels() {
       </div>
       <LevelEntries />
     </div>
-  )
+  );
 }

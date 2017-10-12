@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Menu() {
   return (
@@ -9,7 +9,7 @@ export default function Menu() {
       <MenuLink link="/levels">Levels</MenuLink>
       <MenuLink link="/donate">Donations</MenuLink>
     </ul>
-  )
+  );
 }
 
 function MenuLink(props) {
@@ -17,5 +17,5 @@ function MenuLink(props) {
     <li>
       <Link to={props.link}>{props.children}</Link>
     </li>
-  )
+  );
 }

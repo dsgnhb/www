@@ -1,6 +1,6 @@
-import React from 'react'
-import Text from '../general/misc/Text'
-import DiscordLink from '../general/misc/DiscordLink'
+import React from 'react';
+import Text from '../general/misc/Text';
+import DiscordLink from '../general/misc/DiscordLink';
 
 export default function Home() {
   return (
@@ -14,5 +14,5 @@ export default function Home() {
         <DiscordLink />
       </div>
     </div>
-  )
+  );
 }

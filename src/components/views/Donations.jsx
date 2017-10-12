@@ -1,21 +1,21 @@
-import React from 'react'
-import Text from '../general/misc/Text'
-import DiscordLink from '../general/misc/DiscordLink'
-import PopUp from '../general/misc/PopUp'
-import '../../files/css/twemoji.css'
-import paypal from '../../files/img/PayPal.png'
-import psc from '../../files/img/CardPayment.png'
+import React from 'react';
+import Text from '../general/misc/Text';
+import DiscordLink from '../general/misc/DiscordLink';
+import PopUp from '../general/misc/PopUp';
+import '../../files/css/twemoji.css';
+import paypal from '../../files/img/PayPal.png';
+import psc from '../../files/img/CardPayment.png';
 
 export default class Donations extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
 
-    this.openPSC = this.openPSC.bind(this)
+    this.openPSC = this.openPSC.bind(this);
   }
 
   openPSC(e) {
-    e.preventDefault()
-    this.child.openNav()
+    e.preventDefault();
+    this.child.openNav();
   }
 
   render() {
@@ -23,7 +23,7 @@ export default class Donations extends React.Component {
       <div>
         <PopUp
           ref={instance => {
-            this.child = instance
+            this.child = instance;
           }}
           id="psc"
           title="Vielen Dank für deine Unterstützung mit PaysafeCard!"
@@ -70,6 +70,6 @@ export default class Donations extends React.Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }

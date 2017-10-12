@@ -1,19 +1,19 @@
-import React from 'react'
-import Text from './Text'
-import DiscordLink from './DiscordLink'
+import React from 'react';
+import Text from './Text';
+import DiscordLink from './DiscordLink';
 
 export default class PopUp extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
 
     this.state = {
       style: {
         transform: 'translateY(-100%)'
       }
-    }
+    };
 
-    this.openNav = this.openNav.bind(this)
-    this.closeNav = this.closeNav.bind(this)
+    this.openNav = this.openNav.bind(this);
+    this.closeNav = this.closeNav.bind(this);
   }
 
   openNav() {
@@ -21,7 +21,7 @@ export default class PopUp extends React.Component {
       style: {
         transform: 'translateY(0)'
       }
-    })
+    });
   }
 
   closeNav() {
@@ -29,7 +29,7 @@ export default class PopUp extends React.Component {
       style: {
         transform: 'translateY(-100%)'
       }
-    })
+    });
   }
 
   render() {
@@ -44,6 +44,6 @@ export default class PopUp extends React.Component {
           <DiscordLink />
         </div>
       </div>
-    )
+    );
   }
 }

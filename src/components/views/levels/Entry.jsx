@@ -1,33 +1,33 @@
-import React from 'react'
-import defaultAvatar from '../../../files/img/defaultAvatar.jpg'
+import React from 'react';
+import defaultAvatar from '../../../files/img/defaultAvatar.jpg';
 
 export default class LevelEntry extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       avatar: this.props.avatar
-    }
+    };
 
-    this.handleError = this.handleError.bind(this)
+    this.handleError = this.handleError.bind(this);
   }
 
   handleError() {
     this.setState({
       avatar: defaultAvatar
-    })
+    });
   }
 
   render() {
-    let username = this.props.username
+    let username = this.props.username;
     if (username.length > 14) {
-      username = username.slice(0, 12) + '...'
+      username = username.slice(0, 12) + '...';
     }
-    username += ' '
+    username += ' ';
 
-    let level = xpToLevel(this.props.xp)
-    let xpProgress = this.props.xp
+    let level = xpToLevel(this.props.xp);
+    let xpProgress = this.props.xp;
     for (let lvl = 0; lvl < level; lvl++) {
-      xpProgress -= xpForLevel(lvl)
+      xpProgress -= xpForLevel(lvl);
     }
 
     return (
@@ -57,21 +57,21 @@ export default class LevelEntry extends React.Component {
           </p>
         </div>
       </div>
-    )
+    );
   }
 }
 
 function xpForLevel(level) {
-  return 5 * (level ^ 2) + 50 * level + 100
+  return 5 * (level ^ 2) + 50 * level + 100;
 }
 
 function xpToLevel(xp) {
-  let level = 0
+  let level = 0;
 
   for (let levelXP = xpForLevel(0); xp > levelXP; levelXP = xpForLevel(level)) {
-    xp -= levelXP
-    level++
+    xp -= levelXP;
+    level++;
   }
 
-  return level
+  return level;
 }

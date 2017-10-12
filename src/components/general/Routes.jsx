@@ -1,9 +1,9 @@
-import React from 'react'
-import { Route } from 'react-router-dom'
-import Donations from '../views/Donations'
-import Home from '../views/Home'
-import Levels from '../views/Levels'
-import TopDesign from '../views/TopDesign'
+import React from 'react';
+import { Route } from 'react-router-dom';
+import Donations from '../views/Donations';
+import Home from '../views/Home';
+import Levels from '../views/Levels';
+import TopDesign from '../views/TopDesign';
 
 export default function Routes() {
   const redirects = [
@@ -27,7 +27,7 @@ export default function Routes() {
       name: 'yt',
       url: 'https://www.youtube.com/channel/UC5xEZufXUwoxdixe0QVDrtA'
     }
-  ]
+  ];
 
   return (
     <div>
@@ -40,10 +40,10 @@ export default function Routes() {
         <Route
           path={'/' + item.name}
           render={() => {
-            window.location = item.url
+            window.location = item.url;
           }}
         />
       ))}
     </div>
-  )
+  );
 }

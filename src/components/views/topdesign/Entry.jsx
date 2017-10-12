@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 export default function TopDesignEntry(props) {
-  let username = props.username
+  let username = props.username;
   if (username.length > 14) {
-    username = username.slice(0, 12) + '...'
+    username = username.slice(0, 12) + '...';
   }
-  username += ' '
+  username += ' ';
 
   return (
     <div className="item">
@@ -29,5 +29,5 @@ export default function TopDesignEntry(props) {
         </button>
       </div>
     </div>
-  )
+  );
 }

@@ -1,7 +1,7 @@
-import React from 'react'
-import Text from '../general/misc/Text'
-import DiscordLink from '../general/misc/DiscordLink'
-import TopDesignEntries from './topdesign/Entries'
+import React from 'react';
+import Text from '../general/misc/Text';
+import DiscordLink from '../general/misc/DiscordLink';
+import TopDesignEntries from './topdesign/Entries';
 
 export default function TopDesign() {
   return (
@@ -30,5 +30,5 @@ export default function TopDesign() {
         <TopDesignEntries />
       </div>
     </div>
-  )
+  );
 }

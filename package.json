@@ -39,7 +39,7 @@
   },
   "prettier": {
     "printWidth": 200,
-    "semi": false,
+    "semi": true,
     "singleQuote": true
   }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import Menu from './Menu';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import logo from '../../files/img/logo.png';
 
 export default function Header() {

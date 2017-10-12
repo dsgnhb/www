@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import {Route} from 'react-router-dom';
 import Donations from '../views/Donations';
 import Home from '../views/Home';
 import Levels from '../views/Levels';

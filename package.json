@@ -3,6 +3,19 @@
   "version": "0.1.0",
   "homepage": "https://dsgnhb.de/",
   "private": true,
+  "author": "flo",
+  "contributors": [
+    {
+      "name": "Luk von Strom",
+      "email": "lukvonstrom@web.de",
+      "url": "https://lukvonstrom.de"
+    },
+    {
+      "name": "Fin Reinhhard",
+      "email": "fin.reinhard@icloud.com",
+      "url": "http://Angu.li"
+    }
+  ],
   "dependencies": {
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
@@ -11,15 +24,22 @@
     "react-scripts": "1.0.14",
     "whatwg-fetch": "^2.0.3"
   },
+  "devDependencies": {
+    "gh-pages": "^1.0.0",
+    "prettier": "^1.7.4"
+  },
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "react-scripts start && npm run prettier",
+    "build": "react-scripts build  && npm run prettier",
+    "test": "react-scripts test --env=jsdom  && npm run prettier",
+    "eject": "react-scripts eject",
+    "prettier": "prettier --write 'src/**/*.{js,json,jsx}'"
   },
-  "devDependencies": {
-    "gh-pages": "^1.0.0"
+  "prettier": {
+    "printWidth": 200,
+    "semi": false,
+    "singleQuote": true
   }
 }

@@ -1,5 +1,4 @@
 .vscode/
-package-lock.json
 # Logs
 logs
 *.log
@@ -65,3 +64,4 @@ typings/
 
 # npm
 build/*
+package-lock.json

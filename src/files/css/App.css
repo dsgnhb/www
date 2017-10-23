@@ -288,11 +288,11 @@ a.prefix::before {
 }
 
 .logo.light {
-    background: url(../img/logos/light.png);
+    background-image: url(../img/logos/light.png);
 }
 
 .logo.dark {
-    background: url(../img/logos/dark.png);
+    background-image: url(../img/logos/dark.png);
 }
 
 /*

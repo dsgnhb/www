@@ -17,7 +17,7 @@ export default class Donations extends React.Component {
 
     openPSC(e) {
         e.preventDefault();
-        this.child.openNav();
+        this.child.toggleNav();
     }
 
     render() {

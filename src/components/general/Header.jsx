@@ -1,18 +1,67 @@
 import React from 'react';
-import Menu from './Menu';
 import {Link} from 'react-router-dom';
-import logo from '../../files/img/logo.png';
 
-export default function Header() {
-    return (
-        <header>
-            <div className="content">
-                <Link to="/">
-                    <img className="logo" src={logo} alt="Logo" />
-                </Link>
-                <h1>designhub.</h1>
-                <Menu />
+export default class Header extends React.Component {
+
+    constructor(props) {
+        super(props);
+
+        this.state =
+            {
+                navState: false
+            };
+        this.navStyle = {
+            closed: {
+                "transform": "translateY(-100%)"
+            },
+            open: {
+                "transform": "translateY(0)"
+            }
+        };
+
+        this.toggleNav = this.toggleNav.bind(this);
+    }
+
+    toggleNav() {
+        this.setState(
+            {
+                navState: !this.state.navState
+            }
+        );
+    }
+
+    render() {
+        return (
+            <div>
+                <nav>
+                    <div className="bar flex">
+                        <Link to="/">
+                            <div className="logo dark" />
+                        </Link>
+                        <button onClick={this.toggleNav}>menu</button>
+                    </div>
+                    <div
+                        id="nav"
+                        className="overlay"
+                        style={this.state.navState ? this.navStyle.open : this.navStyle.closed}
+                    >
+                        <ul>
+                            <li>
+                                <Link to="/home">Home</Link>
+                            </li>
+                            <li>
+                                <Link to="/about">Über uns</Link>
+                            </li>
+                            <li>
+                                <Link to="/youtube">YouTube</Link>
+                            </li>
+                            <li>
+                                <Link to="/github">GitHub</Link>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-        </header>
-    );
+        );
+    }
 }

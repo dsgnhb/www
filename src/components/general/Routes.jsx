@@ -1,6 +1,7 @@
 import React from 'react';
 import {Route} from 'react-router-dom';
 import Home from '../views/home/View';
+import About from '../views/about/View';
 
 export default function Routes() {
 
@@ -34,10 +35,12 @@ export default function Routes() {
     return (
         <div>
             <Route path="/" component={Home} exact />
+            <Route path="/about" component={About} />
 
             {
                 redirects.map((item) => (
                     <Route
+                        key={item.name}
                         path={'/' + item.name}
                         render={() => {
                             window.location = item.url;

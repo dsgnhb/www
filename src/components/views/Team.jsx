@@ -1,4 +1,5 @@
 import React from 'react';
+import {SectionTitle} from '../general/misc/Titles';
 
 export default function Team() {
     return (
@@ -68,18 +69,6 @@ function TeamMember(props) {
         <div className="item">
             <h3>{props.name}</h3>
             <h4>{props.activity}</h4>
-            <p>
-                {props.children}
-            </p>
-        </div>
-    );
-}
-
-export function SectionTitle(props) {
-    return (
-        <div>
-            <h3>{props.id}</h3>
-            <h2>{props.header}</h2>
             <p>
                 {props.children}
             </p>

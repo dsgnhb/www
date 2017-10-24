@@ -1,5 +1,5 @@
 import React from 'react';
-import {Headline} from '../Misc';
+import {Headline} from '../../../general/misc/Titles';
 
 export default function Header() {
     return (

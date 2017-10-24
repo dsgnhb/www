@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import DiscordLink from './misc/DiscordLink';
 
 export default function Footer() {
 
@@ -78,18 +79,21 @@ export default function Footer() {
     ];
 
     return (
-        <footer>
-            <div className="container">
-                <div className="flex-list">
-                    {
-                        columns.map(item => (
-                            <Column {...item} />
-                        ))
-                    }
+        <div>
+            <Join />
+            <footer>
+                <div className="container">
+                    <div className="flex-list">
+                        {
+                            columns.map(item => (
+                                <Column {...item} />
+                            ))
+                        }
+                    </div>
+                    <Link to="/">&copy; 2016-2017 - designhub&trade;</Link>
                 </div>
-                <Link to="/">&copy; 2016-2017 - designhub&trade;</Link>
-            </div>
-        </footer>
+            </footer>
+        </div>
     );
 }
 
@@ -113,5 +117,15 @@ function Column(props) {
                 }
             </ul>
         </div>
+    );
+}
+
+function Join() {
+    return (
+        <section id="join" className="flex-center-center">
+            <div className="icon" />
+            <h3>Bereit, die Höhle zu entdecken?</h3>
+            <DiscordLink />
+        </section>
     );
 }

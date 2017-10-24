@@ -1,16 +1,14 @@
 import React from 'react';
-import Header from './sections/Header';
 import Intro from './sections/Intro';
-import Features from './sections/Features';
+import Stats from './sections/Stats';
 import Team from '../Team';
 
-export default function Home() {
+export default function About() {
     return (
         <div>
-            <Header />
             <Intro />
-            <Features />
             <div className="space" />
+            <Stats />
             <Team />
         </div>
     );

@@ -253,7 +253,7 @@ a:hover {
     color: var(--darkgray);
 }
 
-header > section:first-child {
+body section:first-child {
     padding-top: 70px;
 }
 
@@ -613,7 +613,7 @@ section#team .flex-list h3.part {
 LEVELS
 -----------------------
 */
-section .flex-list .item.color h3 {
+section .flex-list .item h3.color {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -658,14 +658,14 @@ section#stats .flex-list .item h3.fact {
     }
 }
 
-section#stats .flex-list .item h3.one {
+section#stats .flex-list .item h3.color.one {
     background-image: -webkit-gradient(linear, left bottom, left top, from(#59e4da), to(#478cbe));
     background-image: -webkit-linear-gradient(bottom, #59e4da, #478cbe);
     background-image: -moz-linear-gradient(bottom, #59e4da, #478cbe);
     background-image: linear-gradient(to top, #59e4da, #478cbe);
 }
 
-section#stats .flex-list .item h3.two {
+section#stats .flex-list .item h3.color.two {
     background-color: #ef5f52;
     background-image: -webkit-gradient(linear, left top, right top, from(#ecd95b), to(#ef5f52));
     background-image: -webkit-linear-gradient(left, #ecd95b, #ef5f52);
@@ -673,7 +673,7 @@ section#stats .flex-list .item h3.two {
     background-image: linear-gradient(to right, #ecd95b, #ef5f52);
 }
 
-section#stats .flex-list .item h3.three {
+section#stats .flex-list .item h3.color.three {
     background-image: -webkit-gradient(linear, left bottom, left top, from(#bcf265), to(#75dfa1));
     background-image: -webkit-linear-gradient(bottom, #bcf265, #75dfa1);
     background-image: -moz-linear-gradient(bottom, #bcf265, #75dfa1);

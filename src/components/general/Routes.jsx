@@ -3,6 +3,7 @@ import {Route} from 'react-router-dom';
 import Home from '../views/home/View';
 import About from '../views/about/View';
 import Branding from "../views/branding/View";
+import Contact from "../views/Contact";
 
 export default function Routes() {
 
@@ -38,6 +39,7 @@ export default function Routes() {
             <Route path="/" component={Home} exact />
             <Route path="/about" component={About} />
             <Route path="/brand" component={Branding} />
+            <Route path="/contact" component={Contact} />
 
             {
                 redirects.map((item) => (

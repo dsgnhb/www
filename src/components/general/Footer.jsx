@@ -80,6 +80,7 @@ export default function Footer() {
 
     return (
         <div>
+            <div className="spacer" />
             <Join />
             <footer>
                 <div className="container">

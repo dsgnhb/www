@@ -53,7 +53,7 @@ export default class Header extends React.Component {
                                 <Link to="/about">Über uns</Link>
                             </li>
                             <li>
-                                <Link to="/youtube">YouTube</Link>
+                                <Link to="/yt">YouTube</Link>
                             </li>
                             <li>
                                 <Link to="/github">GitHub</Link>

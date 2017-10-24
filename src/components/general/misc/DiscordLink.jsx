@@ -1,11 +1,10 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 export default function DiscordLink() {
     return (
-        <div className="row">
-            <a href="https://discordapp.com/invite/PGv5TR3">
-                &gt;&gt; Komm auf unseren Discord!
-            </a>
-        </div>
+        <Link to="/discord" className="main prefix">
+            Komm auf unseren Discord!
+        </Link>
     );
 }

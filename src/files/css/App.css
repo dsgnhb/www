@@ -565,15 +565,15 @@ section#features .item .icon {
 }
 
 section#features .item .icon.topdesign {
-    background: url(../img/icons/light/winner.png);
+    background-image: url(../img/icons/light/winner.png);
 }
 
 section#features .item .icon.levels {
-    background: url(../img/icons/light/chest.png);
+    background-image: url(../img/icons/light/chest.png);
 }
 
 section#features .item .icon.night {
-    background: url(../img/icons/light/night.png);
+    background-image: url(../img/icons/light/night.png);
 }
 
 /*
@@ -613,12 +613,12 @@ section#team .flex-list h3.part {
 LEVELS
 -----------------------
 */
-section .flex-list .item h3 {
+section .flex-list .item.color h3 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-section#leaderboard .flex-list .item.one h3 {
+section#leaderboard .flex-list .item.color.one h3 {
     background-color: #ecd95b;
     background-image: -webkit-gradient(linear, left top, right top, from(#ecd95b), to(#ef5f52));
     background-image: -webkit-linear-gradient(left, #ecd95b, #ef5f52);
@@ -626,7 +626,7 @@ section#leaderboard .flex-list .item.one h3 {
     background-image: linear-gradient(to right, #ecd95b, #ef5f52);
 }
 
-section#leaderboard .flex-list .item.two h3 {
+section#leaderboard .flex-list .item.color.two h3 {
     background-color: #ef5f52;
     background-image: -webkit-gradient(linear, left top, right top, from(#ef5f52), to(#ecd95b));
     background-image: -webkit-linear-gradient(left, #ef5f52, #ecd95b);
@@ -634,7 +634,7 @@ section#leaderboard .flex-list .item.two h3 {
     background-image: linear-gradient(to right, #ef5f52, #ecd95b);
 }
 
-section#leaderboard .flex-list .item.three h3 {
+section#leaderboard .flex-list .item.color.three h3 {
     background-color: #999;
     background-image: -webkit-gradient(linear, left top, right top, from(#999), to(#000));
     background-image: -webkit-linear-gradient(left, #999, #000);

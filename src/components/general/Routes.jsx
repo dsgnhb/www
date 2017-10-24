@@ -1,6 +1,6 @@
 import React from 'react';
 import {Route} from 'react-router-dom';
-import Home from '../views/Home';
+import Home from '../views/home/View';
 
 export default function Routes() {
 
@@ -24,6 +24,10 @@ export default function Routes() {
         {
             name: "yt",
             url: "https://www.youtube.com/channel/UC5xEZufXUwoxdixe0QVDrtA"
+        },
+        {
+            name: "github",
+            url: "https://github.com/dsgnhb"
         },
     ];
 

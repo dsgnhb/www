@@ -1,11 +1,12 @@
 import React from 'react';
-import DiscordLink from "./DiscordLink";
 
 export default function Intro(props) {
-    let discord = "";
+    let extra = "";
+    let text = props.children;
 
-    if (props.discord) {
-        discord = <DiscordLink />
+    if (props.text) {
+        extra = props.children;
+        text = props.text;
     }
 
     return (
@@ -14,9 +15,9 @@ export default function Intro(props) {
                 <h3>{props.title}</h3>
                 <h1>{props.subtitle}</h1>
                 <p>
-                    {props.children}
+                    {text}
                 </p>
-                {discord}
+                {extra}
             </div>
         </section>
     );

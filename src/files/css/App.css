@@ -361,7 +361,8 @@ FLEX-LIST POSTS
     max-width: 300px;
     flex-basis: 300px;
     margin: 20px;
-    background: url(../img/design.jpg) center no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 

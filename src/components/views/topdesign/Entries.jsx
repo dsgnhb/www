@@ -27,21 +27,23 @@ export default class TopDesignEntries extends React.Component {
 
     render() {
         return (
-            <div className="items">
-                {
-                    /**
-                     * @typedef {Object} item
-                     * @property {number} id
-                     * @property {string} username
-                     * @property {string} avatar
-                     * @property {string} userid
-                     * @property {string} image
-                     * @property {number} likes
-                     */
-                    this.state.entries.map((item) => (
-                        <TopDesignEntry key={item.id} {...item} />
-                    ))
-                }
+            <div className="content">
+                <div className="flex-list posts">
+                    {
+                        /**
+                         * @typedef {Object} item
+                         * @property {number} id
+                         * @property {string} username
+                         * @property {string} avatar
+                         * @property {string} userid
+                         * @property {string} image
+                         * @property {number} likes
+                         */
+                        this.state.entries.map((item) => (
+                            <TopDesignEntry key={item.id} {...item} />
+                        ))
+                    }
+                </div>
             </div>
         );
     }

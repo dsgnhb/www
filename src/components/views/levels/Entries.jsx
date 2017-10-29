@@ -27,25 +27,23 @@ export default class LevelEntries extends React.Component {
 
     render() {
         return (
-            <div>
-                <div id="levels">
-                    <div className="content table">
-                        {
-                            /**
-                             * @typedef {Object} item
-                             * @property {string} userid
-                             * @property {string} username
-                             * @property {number} discriminator
-                             * @property {string} avatar
-                             * @property {number} xp
-                             * @property {number} chests
-                             * @property {number} rank
-                             */
-                            this.state.entries.map((item) => (
-                                <LevelEntry key={item.rank} {...item} />
-                            ))
-                        }
-                    </div>
+            <div className="content">
+                <div className="flex-list member">
+                    {
+                        /**
+                         * @typedef {Object} item
+                         * @property {string} userid
+                         * @property {string} username
+                         * @property {number} discriminator
+                         * @property {string} avatar
+                         * @property {number} xp
+                         * @property {number} chests
+                         * @property {number} rank
+                         */
+                        this.state.entries.map((item) => (
+                            <LevelEntry key={item.rank} {...item} />
+                        ))
+                    }
                 </div>
             </div>
         );

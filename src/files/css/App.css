@@ -613,7 +613,7 @@ section#team .flex-list h3.part {
 LEVELS
 -----------------------
 */
-section .flex-list .item h3.color {
+section .flex-list .item.color h3, section .flex-list .item h3.color {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

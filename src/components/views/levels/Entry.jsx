@@ -1,5 +1,4 @@
 import React from 'react';
-import defaultAvatar from '../../../files/img/defaultAvatar.jpg';
 
 export default class LevelEntry extends React.Component {
 
@@ -8,14 +7,6 @@ export default class LevelEntry extends React.Component {
         this.state = {
             avatar: this.props.avatar
         };
-
-        this.handleError = this.handleError.bind(this);
-    }
-
-    handleError() {
-        this.setState({
-            avatar: defaultAvatar
-        });
     }
 
     render() {
@@ -31,34 +22,33 @@ export default class LevelEntry extends React.Component {
             xpProgress -= xpForLevel(lvl);
         }
 
+        let place;
+
+        switch (this.props.rank) {
+            case 1:
+                place = "color one";
+                break;
+            case 2:
+                place = "color two";
+                break;
+            case 3:
+                place = "color three";
+                break;
+            default:
+                place = "";
+        }
+
         return (
-            <div className="row">
-                <div className="item id">
-                    <h3>{this.props.rank}</h3>
-                </div>
-                <div className="item pp">
-                    <img
-                        src={this.state.avatar}
-                        alt={`Avatar from ${this.props.username}`}
-                        onError={this.handleError}
-                    />
-                </div>
-                <div className="item username">
-                    <h3>
-                        {username}
-                        <span>
-                        {this.props.discriminator}
-                    </span>
-                    </h3>
-                </div>
-                <div className="item stats">
-                    <p>
-                        <b>Level {level}</b><br />
-                        <b>{xpProgress}/{xpForLevel(level)} XP</b>
-                        <em>({this.props.xp} XP)</em><br />
-                        <b>{this.props.chests} Chests</b>
-                    </p>
-                </div>
+            <div className={`item ${place}`}>
+                <h3>#{this.props.rank} {username}</h3>
+                <p>
+                    <b>Level {level}</b>
+                    <br />
+                    <b>{xpProgress}/{xpForLevel(level)} XP</b>
+                    {this.props.xp}
+                    <br />
+                    <b>{this.props.chests} Chests</b>
+                </p>
             </div>
         );
     }

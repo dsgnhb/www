@@ -5,6 +5,7 @@ import About from '../views/about/View';
 import Branding from '../views/branding/View';
 import Contact from '../views/Contact';
 import Donations from '../views/donations/View';
+import Levels from '../views/levels/View';
 
 export default function Routes() {
 
@@ -42,6 +43,7 @@ export default function Routes() {
             <Route path="/brand" component={Branding} />
             <Route path="/contact" component={Contact} />
             <Route path="/donate" component={Donations} />
+            <Route path="/levels" component={Levels} />
 
             {
                 redirects.map((item) => (

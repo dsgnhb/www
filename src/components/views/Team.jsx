@@ -53,8 +53,8 @@ export default function Team() {
             <TeamMember name="Tobi" activity="Professioneller Texteüberleger und Nichtfreiwillig-Arbeiter">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
             </TeamMember>
-            <TeamMember name="Teax" activity="Web Developer">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+            <TeamMember name="Teax" activity="Developer, (Web)Designer">
+              Meine Mama hat mich lieb.
             </TeamMember>
           </Role>
         </div>

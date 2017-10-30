@@ -42,8 +42,9 @@ export default function Team() {
             <TeamMember name="Fin" activity="Web Developer">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
             </TeamMember>
-            <TeamMember name="LukvonStrom" activity="Web Developer">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+            <TeamMember name="LukvonStrom" activity="Web Backend Developer">
+              <p>Ich refactore das kurz mal... ups jetzt isses kaputt.</p>
+              <p>Es ist ein Standard, das muss so!!!</p>
             </TeamMember>
             <TeamMember name="CreepPlays" activity="Web Developer">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr.

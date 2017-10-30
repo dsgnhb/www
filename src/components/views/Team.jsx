@@ -22,8 +22,8 @@ export default function Team() {
             <TeamMember name="bubblespuggy" activity="Web Developer">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
             </TeamMember>
-            <TeamMember name="Flo" activity="Web Developer">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+            <TeamMember name="Brian" activity="Fotograf, Mediengestalter">
+              Call me when you need me.
             </TeamMember>
             <TeamMember name="Flo" activity="Web Developer">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
@@ -43,8 +43,7 @@ export default function Team() {
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
             </TeamMember>
             <TeamMember name="LukvonStrom" activity="Web Backend Developer">
-              <p>Ich refactore das kurz mal... ups jetzt isses kaputt.</p>
-              <p>Es ist ein Standard, das muss so!!!</p>
+              Ich refactore das kurz mal... ups jetzt isses kaputt. Es ist ein Standard, das muss so!!!
             </TeamMember>
             <TeamMember name="CreepPlays" activity="Web Developer">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr.

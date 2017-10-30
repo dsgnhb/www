@@ -17,9 +17,17 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prettier": "prettier --write 'src/**/*.{js,json,jsx}'"
   },
   "devDependencies": {
-    "gh-pages": "^1.0.0"
+    "gh-pages": "^1.0.0",
+    "prettier": "^1.7.4"
+  },
+  "prettier": {
+    "printWidth": 200,
+    "semi": true,
+    "singleQuote": true,
+    "bracketSpacing": false
   }
 }

@@ -7,8 +7,8 @@ export default function Contact() {
     <section id="contact">
       <div className="container">
         <MainTitle subtitle="Kontakt" title="Schreib mir doch mal ;) äh oke">
-          Du hast noch Fragen? Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
-          et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.
+          Du hast noch Fragen? Erreiche uns schnell direkt über Discord oder 'zwitscher' uns was via Twitter! Wir freuen uns über jede Nachricht und jedes neue, glückliche Mitglied auf unserem Server.
+          Gerne auch auf YouTube abonnieren (für 'ne Custom URL).
         </MainTitle>
         <Link to="/twitter-support" className="main">
           Twitter -{' '}

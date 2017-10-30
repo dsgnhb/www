@@ -19,8 +19,7 @@ export default function Partner() {
         Rund um Redaktionelle Inhalte steht uns das Team von ShortTech zur Verfügung.
       </PartnerInfo>
       <PartnerInfo name="smashFM" task="Musik" link="https://www.smashfm.de/?ref=designhub">
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-        dolores et ea rebum. Stet clita kasd gubergren.
+        Smash! Egal wann, egal wo! Dort hörst du nicht nur die aktuellsten Lieder, sondern auch Klassiker aus vergangenen Zeiten. Von Charts über Dance bis hin zu Chillout ist bei denen alles dabei.
       </PartnerInfo>
     </div>
   );

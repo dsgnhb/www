@@ -6,44 +6,55 @@ export default function Team() {
     <section id="team">
       <div className="container">
         <SectionTitle subtitle="Team" title="Irgendwas mit designhub Team">
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
-          duo dolores et ea rebum. Stet clita kasd gubergren.
+          Das ist unser Team. Zusammen arbeiten wir arbeiten ständig an neuen Ideen und Konzepten, um unsere Community durch z.B. Wettbewerbe und andere Aktivitäten noch stärker zu vereinen und zu
+          unterstützen. Du kannst gespannt bleiben!
         </SectionTitle>
         <div className="content">
           <Role name="Owner">
             <TeamMember name="Flo" activity="alles">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy erat
+              Tschüss, gerne auch auf Youtube abonnieren und 'n Like da lassen.
             </TeamMember>
             <TeamMember name="Lukas" activity="alles was keinen Spaß macht">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy erat
+              Bei mir ist nichts billig sondern alles MEGA OP
             </TeamMember>
           </Role>
           <Role name="Design">
-            <TeamMember name="Flo" activity="Web Developer">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy erat
+            <TeamMember name="bubblespuggy" activity="Web Developer">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
             </TeamMember>
             <TeamMember name="Flo" activity="Web Developer">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy erat
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
             </TeamMember>
             <TeamMember name="Flo" activity="Web Developer">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy erat
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
             </TeamMember>
             <TeamMember name="Flo" activity="Web Developer">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy erat
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
             </TeamMember>
             <TeamMember name="Flo" activity="Web Developer">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy erat
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
             </TeamMember>
             <TeamMember name="Flo" activity="Web Developer">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy erat
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
             </TeamMember>
           </Role>
           <Role name="Dev">
             <TeamMember name="Fin" activity="Web Developer">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy erat
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
             </TeamMember>
             <TeamMember name="LukvonStrom" activity="Web Developer">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy erat
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+            </TeamMember>
+            <TeamMember name="CreepPlays" activity="Web Developer">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+            </TeamMember>
+          </Role>
+          <Role name="Content">
+            <TeamMember name="Tobi" activity="Professioneller Texteüberleger und Nichtfreiwillig-Arbeiter">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
+            </TeamMember>
+            <TeamMember name="Teax" activity="Web Developer">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr.
             </TeamMember>
           </Role>
         </div>

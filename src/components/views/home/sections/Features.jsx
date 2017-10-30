@@ -9,11 +9,10 @@ export default function Features() {
           Stelle in unserem monatlichen Wettbewerb deine Design Skills unter Beweis und staube tolle Preise ab!
         </Category>
         <Category id="levels" name="Leaderboard" link="/levels">
-          Für jede Nachricht, die du auf unserem Discord schreibst, kriegst du XP. Durch diese kannst du in unserem Levelsystem aufsteigen und dir einen guten Platz im Ranking ergattern.
+          Für jede deiner Nachrichten kriegst du XP. So kannst du im Leaderboard aufsteigen und einen Platz im Ranking ergattern. (und cool sein)
         </Category>
-        <Category id="night" name="Spam, @everyone und Memes">
-          Wir haben eine sehr aktive und kontaktfreudige (tolles Wort oder) Community, mit der man auch mal einfach so Zeit verbringen kann. Ob Tag oder Nacht, auf unserem Discord ist fast immer
-          jemand anzufinden.
+        <Category id="night" name="Spam, @everyone und Memes" link="/discord">
+          Spam Tag und Nacht - So musst du nie alleine sein. Auf unserem Discord ist immer was los!
         </Category>
       </div>
     </section>
@@ -21,19 +20,23 @@ export default function Features() {
 }
 
 export function Category(props) {
-  let name = <h3>{props.name}</h3>;
   if (props.link) {
-    name = (
+    return (
       <Link to={props.link}>
-        <h3>{props.name}</h3>
+        <div className="item">
+          <div className={`icon ${props.id}`} />
+          <h3>{props.name}</h3>
+          <p>{props.children}</p>
+        </div>
       </Link>
     );
+  } else {
+    return (
+      <div className="item">
+        <div className={`icon ${props.id}`} />
+        <h3>{props.name}</h3>
+        <p>{props.children}</p>
+      </div>
+    );
   }
-  return (
-    <div className="item">
-      <div className={`icon ${props.id}`} />
-      {name}
-      <p>{props.children}</p>
-    </div>
-  );
 }

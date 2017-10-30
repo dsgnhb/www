@@ -9,8 +9,8 @@ export default function Donations() {
       <section id="donations-intro">
         <div className="container">
           <MainTitle subtitle="Danke." title="Donations">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
-            duo dolores et ea rebum. Stet clita kasd gubergren.
+            <b>Werd’ doch ein Patreon!</b> Wenn du designhub™ magst und uns unterstützen möchtest, um das Projekt aktiv zuhalten, freuen wir uns über deine Hilfe! Als Dankeschön erhälst du coole
+            Belohnungen. Außerdem erwähnen wir dich auf unserer Website und bieten dir 'nen extra Rang auf unserem Discord an.
           </MainTitle>
           <Link to="/patreon" className="main">
             Patreon - {' '}

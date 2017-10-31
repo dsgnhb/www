@@ -4,11 +4,11 @@ import Intro from './sections/Intro';
 import Features from './sections/Features';
 
 export default function Home() {
-  return (
-    <div>
-      <Header />
-      <Intro />
-      <Features />
-    </div>
-  );
+    return (
+        <div>
+            <Header />
+            <Intro />
+            <Features />
+        </div>
+    );
 }

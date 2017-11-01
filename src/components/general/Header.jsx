@@ -19,11 +19,18 @@ export default class Header extends React.Component {
         };
 
         this.toggleNav = this.toggleNav.bind(this);
+        this.closeNav = this.closeNav.bind(this);
     }
 
     toggleNav() {
         this.setState({
             navState: !this.state.navState
+        });
+    }
+
+    closeNav() {
+        this.setState({
+            navState: false
         });
     }
 
@@ -44,19 +51,19 @@ export default class Header extends React.Component {
                     >
                         <ul>
                             <li>
-                                <Link to="/home">Home</Link>
+                                <Link to="/" onClick={this.closeNav}>Home</Link>
                             </li>
                             <li>
-                                <Link to="/about">Über uns</Link>
+                                <Link to="/about" onClick={this.closeNav}>Über uns</Link>
                             </li>
                             <li>
-                                <Link to="/topdesign">Top Design</Link>
+                                <Link to="/topdesign" onClick={this.closeNav}>Top Design</Link>
                             </li>
                             <li>
-                                <Link to="/levels">Leaderboard</Link>
+                                <Link to="/levels" onClick={this.closeNav}>Leaderboard</Link>
                             </li>
                             <li>
-                                <Link to="/donate">Donations</Link>
+                                <Link to="/donate" onClick={this.closeNav}>Donations</Link>
                             </li>
                         </ul>
                     </div>

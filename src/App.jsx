@@ -7,16 +7,16 @@ import Footer from './components/general/Footer';
 import './files/css/App.css';
 
 function App() {
-  return (
-    <Router>
-      <div>
-        <Typekit kitId="vtp0hqt" />
-        <Header />
-        <Routes />
-        <Footer />
-      </div>
-    </Router>
-  );
+    return (
+        <Router>
+            <div>
+                <Typekit kitId="vtp0hqt" />
+                <Header />
+                <Routes />
+                <Footer />
+            </div>
+        </Router>
+    );
 }
 
 export default App;

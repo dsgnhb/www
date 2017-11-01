@@ -86,7 +86,7 @@ export default function Footer() {
                     <div className="flex-list">
                         {
                             columns.map(item =>
-                                <Column {...item} />
+                                <Column key={columns.indexOf(item)} {...item} />
                             )
                         }
                     </div>
@@ -106,11 +106,13 @@ function Column(props) {
         <div className="item">
             {title}
             <ul>
-                {props.links.map(item => (
-                    <li>
-                        <Link to={item.href}>{item.name}</Link>
-                    </li>
-                ))}
+                {
+                    props.links.map(item => (
+                        <li key={props.links.indexOf(item)}>
+                            <Link to={item.href}>{item.name}</Link>
+                        </li>
+                    ))
+                }
             </ul>
         </div>
     );

@@ -211,7 +211,7 @@ h4 {
     line-height: 1.1em;
 }
 
-p {
+p, .text {
     font-size: 1em;
     color: var(--darkgray);
     font-weight: 400;
@@ -220,7 +220,7 @@ p {
     margin: 10px 0;
 }
 
-p b {
+p b, .text b {
     font-size: 1em;
     color: var(--black);
     font-weight: 600;

@@ -16,7 +16,7 @@ export default function Logo() {
                     <div className="logo dark" />
                     <div>
                         <h3>Master Logo</h3>
-                        <Link to="/presskit" class="main prefix">
+                        <Link to="/presskit" className="main prefix">
                             Download Press Kit
                         </Link>
                     </div>

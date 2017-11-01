@@ -12,8 +12,10 @@ export default function Logo() {
                 </SectionTitle>
                 <div className="content">
                     <div className="flex-list member">
-                        <Rule allowed="designhub, designhub™"
-                              forbidden="DesignHub, Design Hub, Design hub, DeSiGnHuB" />
+                        <Rule
+                            allowed="designhub, designhub™"
+                            forbidden="DesignHub, Design Hub, Design hub, DeSiGnHuB"
+                        />
                         <Rule allowed="Member" forbidden="Mitglied, User" />
                         <Rule allowed="Discord" forbidden="Guild, Discord Server, Server" />
                     </div>
@@ -26,12 +28,14 @@ export default function Logo() {
 function Rule(props) {
     return (
         <div className="item">
+
+            <h4>Richtig</h4>
             <p>
-                <h4>Richtig</h4>
                 {props.allowed}
             </p>
+
+            <h4>Falsch</h4>
             <p>
-                <h4>Falsch</h4>
                 {props.forbidden}
             </p>
         </div>

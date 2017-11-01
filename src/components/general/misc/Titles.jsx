@@ -11,7 +11,7 @@ export function MainTitle(props) {
         <div>
             <h3>{props.subtitle}</h3>
             <h1>{props.title}</h1>
-            <p>{props.children}</p>
+            <div className="text">{props.children}</div>
             {link}
         </div>
     );

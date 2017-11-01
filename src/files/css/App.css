@@ -513,7 +513,7 @@ div#hero h1 {
     font-weight: 700;
 }
 
-div#hero p {
+div#hero .text {
     color: var(--lightgray);
     max-width: 600px;
 }

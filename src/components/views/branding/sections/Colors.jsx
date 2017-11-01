@@ -16,10 +16,10 @@ export default function Colors() {
             <Color id="two" hex="#eeeeee" name="Hellgrau">
               Für Texte auf dunklem Hintergrund.
             </Color>
-            <Color id="three" hex="#ffffff" name="Dunkelgrau">
-              Für Titel auf hellem Hintergrund.
+            <Color id="three" hex="#444444" name="Dunkelgrau">
+              Für Texte auf hellem Hintergrund.
             </Color>
-            <Color id="four" hex="#ffffff" name="Dunkelgrau">
+            <Color id="four" hex="#222222" name="Dunkelgrau">
               Für Titel auf hellem Hintergrund.
             </Color>
           </div>

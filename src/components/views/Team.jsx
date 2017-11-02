@@ -36,8 +36,8 @@ export default function Team() {
             <TeamMember name="Fin" activity="Developer">
               Wenn was nicht funktioniert, schreite ich zur Tat.
             </TeamMember>
-            <TeamMember name="LukvonStrom" activity="Web Backend Developer">
-              Ich refactore das kurz mal... ups jetzt isses kaputt. Es ist ein Standard, das muss so!!!
+            <TeamMember name="LukvonStrom" activity="Developer">
+              Mache so Dinge im Interwebs. Es ist ein Standard, das muss so! Folgt mir auf Twitter.
             </TeamMember>
             <TeamMember name="CreepPlays" activity="Developer">
               $ su -hack && rm -rf / --no-preserve-root

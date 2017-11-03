@@ -10,3 +10,5 @@ cache:
 script:
   - npm run build
   - npm test
+notifications:
+  webhooks: https://flooo.me/travis/designhub-dev.php

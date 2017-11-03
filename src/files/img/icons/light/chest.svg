@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="664px" height="528px" viewBox="0 0 664 528" version="1.1"
+     xmlns="http://www.w3.org/2000/svg">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>White Chest</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="23.5630656%" y1="8.11670709%" x2="90.1222974%" y2="95.470039%" id="linearGradient-1">
+            <stop stop-color="#000000" stop-opacity="0.02" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.15" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="89.5316124%" y1="0%" x2="89.5316124%" y2="78.7233617%" id="linearGradient-2">
+            <stop stop-color="#785944" offset="0%"></stop>
+            <stop stop-color="#49392E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="47.8996643%" y1="0%" x2="53.9574788%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#8D6951" offset="0%"></stop>
+            <stop stop-color="#5D4739" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="19.1080729%" y1="0%" x2="76.7936198%" y2="107.919922%" id="linearGradient-4">
+            <stop stop-color="#B9CCDD" offset="0%"></stop>
+            <stop stop-color="#249BA5" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="19.4750775%" y1="0%" x2="51.9524793%" y2="134.487582%" id="linearGradient-5">
+            <stop stop-color="#A57A5E" offset="0%"></stop>
+            <stop stop-color="#664B39" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-6" x="1.13686838e-12" y="2.27373675e-13" width="557" height="229" rx="10"></rect>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-8">
+            <stop stop-color="#FBE861" offset="0%"></stop>
+            <stop stop-color="#FBB061" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="89.5316124%" y1="0%" x2="89.5316124%" y2="100%" id="linearGradient-9">
+            <stop stop-color="#785944" offset="0%"></stop>
+            <stop stop-color="#49392E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="47.8996643%" y1="0%" x2="47.8996634%" y2="100%" id="linearGradient-10">
+            <stop stop-color="#8D6951" offset="0%"></stop>
+            <stop stop-color="#654A37" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="0%" x2="98.9890695%" y2="99.3480962%" id="linearGradient-11">
+            <stop stop-color="#FBDA61" offset="0%"></stop>
+            <stop stop-color="#FBB761" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-12">
+            <stop stop-color="#E8DFCA" offset="0%"></stop>
+            <stop stop-color="#DCCA9A" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-1133.000000, -248.000000)">
+            <g id="White-Chest"
+               transform="translate(1454.290688, 508.269294) rotate(-1.000000) translate(-1454.290688, -508.269294) translate(1074.290688, 175.269294)">
+                <path d="M120.965035,348.818928 C124.694034,363.775127 85.677094,375.675598 69.2059621,449.9943 C52.7348302,524.313002 97.6984285,598.283094 254.896497,598.283094 C412.094566,598.283094 735.773073,593.712893 705.824352,337.526669 C675.875632,81.3404442 565.901817,215.462181 514.645439,171.64669 C463.389062,127.8312 441.411507,67.2496579 380.066872,67.2496579 C318.722237,67.2496579 274.13209,144.983106 233.886194,163.165824 C193.640298,181.348542 63.6306098,157.615284 52.553058,249.754779 C41.4755062,341.894275 117.236036,333.862729 120.965035,348.818928 Z"
+                      id="Path-2" fill="url(#linearGradient-1)"
+                      transform="translate(379.607992, 332.766376) scale(-1, 1) rotate(13.000000) translate(-379.607992, -332.766376) "></path>
+                <rect id="Rectangle-6" fill="url(#linearGradient-2)" x="134" y="168" width="509" height="233"
+                      rx="30"></rect>
+                <rect id="Rectangle-6" fill="url(#linearGradient-3)" x="167.93019" y="202.892419" width="437.818867"
+                      height="168" rx="8"></rect>
+                <g id="XP2"
+                   transform="translate(296.700819, 288.717815) rotate(60.000000) translate(-296.700819, -288.717815) translate(274.200819, 266.217815)"
+                   fill="url(#linearGradient-4)">
+                    <circle id="Oval-3" cx="22.2137452" cy="22.2442065" r="22.1311475"></circle>
+                </g>
+                <g id="XP2"
+                   transform="translate(349.758451, 274.758451) rotate(-21.000000) translate(-349.758451, -274.758451) translate(319.758451, 244.758451)"
+                   fill="url(#linearGradient-4)">
+                    <circle id="Oval-3" cx="29.6183269" cy="29.658942" r="29.5081967"></circle>
+                </g>
+                <g id="XP2"
+                   transform="translate(471.520567, 275.468057) rotate(-67.000000) translate(-471.520567, -275.468057) translate(449.020567, 252.968057)"
+                   fill="url(#linearGradient-4)">
+                    <circle id="Oval-3" cx="22.2137452" cy="22.2442065" r="22.1311475"></circle>
+                </g>
+                <g id="XP2"
+                   transform="translate(406.502810, 284.502810) rotate(-67.000000) translate(-406.502810, -284.502810) translate(384.002810, 262.002810)"
+                   fill="url(#linearGradient-4)">
+                    <circle id="Oval-3" cx="22.2137452" cy="22.2442065" r="22.1311475"></circle>
+                </g>
+                <g id="XP2"
+                   transform="translate(571.059373, 320.258403) rotate(75.000000) translate(-571.059373, -320.258403) translate(541.059373, 290.258403)"
+                   fill="url(#linearGradient-4)">
+                    <circle id="Oval-3" cx="29.6183269" cy="29.658942" r="29.5081967"></circle>
+                </g>
+                <g id="XP2"
+                   transform="translate(494.740999, 314.794656) rotate(-21.000000) translate(-494.740999, -314.794656) translate(464.740999, 284.794656)"
+                   fill="url(#linearGradient-4)">
+                    <circle id="Oval-3" cx="29.6183269" cy="29.658942" r="29.5081967"></circle>
+                </g>
+                <g id="XP2"
+                   transform="translate(438.158933, 319.798179) rotate(-13.000000) translate(-438.158933, -319.798179) translate(408.158933, 289.798179)"
+                   fill="url(#linearGradient-4)">
+                    <circle id="Oval-3" cx="29.6183269" cy="29.658942" r="29.5081967"></circle>
+                </g>
+                <g id="XP2"
+                   transform="translate(386.552662, 328.520892) rotate(-67.000000) translate(-386.552662, -328.520892) translate(356.552662, 298.520892)"
+                   fill="url(#linearGradient-4)">
+                    <circle id="Oval-3" cx="29.6183269" cy="29.658942" r="29.5081967"></circle>
+                </g>
+                <g id="XP2"
+                   transform="translate(326.000000, 319.798179) rotate(16.000000) translate(-326.000000, -319.798179) translate(296.000000, 289.798179)"
+                   fill="url(#linearGradient-4)">
+                    <circle id="Oval-3" cx="29.6183269" cy="29.658942" r="29.5081967"></circle>
+                </g>
+                <g id="XP2" transform="translate(231.069810, 289.000609)" fill="url(#linearGradient-4)">
+                    <circle id="Oval-3" cx="29.6183269" cy="29.658942" r="29.5081967"></circle>
+                </g>
+                <g id="XP2"
+                   transform="translate(198.502810, 328.502810) rotate(67.000000) translate(-198.502810, -328.502810) translate(176.002810, 306.002810)"
+                   fill="url(#linearGradient-4)">
+                    <circle id="Oval-3" cx="22.2137452" cy="22.2442065" r="22.1311475"></circle>
+                </g>
+                <g id="XP2"
+                   transform="translate(524.495536, 329.147504) rotate(-39.000000) translate(-524.495536, -329.147504) translate(506.995536, 311.647504)"
+                   fill="url(#linearGradient-4)">
+                    <circle id="Oval-3" cx="17.2773574" cy="17.3010495" r="17.2131148"></circle>
+                </g>
+                <g id="Rectangle-7" transform="translate(106.000000, 329.000000)">
+                    <mask id="mask-7" fill="white">
+                        <use xlink:href="#path-6"></use>
+                    </mask>
+                    <use id="Mask" fill="url(#linearGradient-5)" xlink:href="#path-6"></use>
+                    <rect fill="url(#linearGradient-8)" mask="url(#mask-7)" x="522" y="194" width="70" height="70"
+                          rx="20"></rect>
+                    <rect fill="url(#linearGradient-8)" mask="url(#mask-7)" x="-35" y="194" width="70" height="70"
+                          rx="20"></rect>
+                    <rect fill="url(#linearGradient-8)" mask="url(#mask-7)" x="-35" y="-35" width="70" height="70"
+                          rx="20"></rect>
+                    <rect fill="url(#linearGradient-8)" mask="url(#mask-7)" x="522" y="-35" width="70" height="70"
+                          rx="20"></rect>
+                </g>
+                <rect id="Rectangle-7" fill="url(#linearGradient-9)" x="508.157072" y="324.001371" width="45"
+                      height="239" rx="5"></rect>
+                <rect id="Rectangle-7" fill="url(#linearGradient-10)" x="207.9827" y="322.982395" width="45"
+                      height="239" rx="5"></rect>
+                <rect id="Rectangle-7" fill="url(#linearGradient-11)" x="356" y="150" width="57" height="27"
+                      rx="10"></rect>
+                <rect id="Rectangle-7" fill="url(#linearGradient-11)" x="361" y="320" width="45" height="55"
+                      rx="10"></rect>
+                <g id="Group-7"
+                   transform="translate(227.794960, 442.464943) rotate(4.000000) translate(-227.794960, -442.464943) translate(185.794960, 388.464943)">
+                    <rect id="Rectangle-13" fill="url(#linearGradient-12)" x="0" y="0" width="83.363278"
+                          height="107.181357" rx="5"></rect>
+                    <rect id="Rectangle-14" fill="#978B6C" x="13.0999437" y="28.5816953" width="53.5906787"
+                          height="7.14542382" rx="3.57271191"></rect>
+                    <rect id="Rectangle-14" fill="#978B6C" x="13.0999437" y="44.0634469" width="46.4452549"
+                          height="7.14542382" rx="3.57271191"></rect>
+                    <rect id="Rectangle-14" fill="#978B6C" x="13.0999437" y="59.5451985" width="48.8270628"
+                          height="7.14542382" rx="3.57271191"></rect>
+                </g>
+                <g id="XP2"
+                   transform="translate(605.926799, 557.617861) rotate(-39.000000) translate(-605.926799, -557.617861) translate(588.426799, 540.117861)"
+                   fill="url(#linearGradient-4)">
+                    <circle id="Oval-3" cx="17.2773574" cy="17.3010495" r="17.2131148"></circle>
+                </g>
+                <g id="XP2"
+                   transform="translate(566.000132, 548.466279) rotate(-13.000000) translate(-566.000132, -548.466279) translate(536.000132, 518.466279)"
+                   fill="url(#linearGradient-4)">
+                    <circle id="Oval-3" cx="29.6183269" cy="29.658942" r="29.5081967"></circle>
+                </g>
+                <g id="XP2"
+                   transform="translate(518.242231, 555.780113) rotate(-67.000000) translate(-518.242231, -555.780113) translate(495.742231, 533.280113)"
+                   fill="url(#linearGradient-4)">
+                    <circle id="Oval-3" cx="22.2137452" cy="22.2442065" r="22.1311475"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -955,3 +955,21 @@ footer a:hover {
     font-size: 0.7em;
     letter-spacing: 0.008em;
 }
+
+footer ul.legal {
+    padding-top: 15px;
+    list-style: none;
+}
+
+footer ul.legal li {
+    display: inline-block;
+}
+
+footer ul.legal li:after {
+    content: "-";
+    padding: 0 6px;
+}
+
+footer ul.legal li:last-child:after {
+    content: "";
+}

@@ -90,7 +90,17 @@ export default function Footer() {
                             )
                         }
                     </div>
-                    <Link to="/imprint">&copy; 2016-2017 - designhub&trade;</Link>
+                    <ul className="legal">
+                        <li>
+                            <Link to="/">2016-2017 &copy; designhub&trade;</Link>
+                        </li>
+                        <li>
+                            <Link to="/imprint">Impressum</Link>
+                        </li>
+                        <li>
+                            <Link to="/privacypolicy">Datenschutz</Link>
+                        </li>
+                    </ul>
                 </div>
             </footer>
         </div>

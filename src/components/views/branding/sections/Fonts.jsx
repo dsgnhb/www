@@ -6,7 +6,7 @@ export default function Fonts() {
         <section id="fonts">
             <div className="container">
                 <SectionTitle subtitle="Fonts" title="AaBbCcDd">
-                    Die Schriftart "Proxima Nova" wurde für die Verwendung sorgfällig ausgewählt, um ein durchgängiges
+                    Die Schriftart "Proxima Nova" wurde für die Verwendung sorgfältig ausgewählt, um ein durchgängiges
                     Erscheinungsbild in allen Online- und Printanwendungen zu gewährleisten.
                 </SectionTitle>
                 <div className="content">

@@ -45,7 +45,7 @@ export default class LevelEntry extends React.Component {
                     <b>Level {level}</b>
                     <br />
                     <b>{xpProgress}/{xpForLevel(level)} XP</b>
-                    {this.props.xp}
+                    {' '}({this.props.xp}XP)
                     <br />
                     <b>{this.props.chests} Chests</b>
                 </p>

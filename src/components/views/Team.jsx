@@ -20,8 +20,8 @@ export default function Team() {
                         </TeamMember>
                     </Role>
                     <Role name="Design">
-                        <TeamMember name="bubblespuggy" activity="Grafik Designer">
-                            :gomme:
+                        <TeamMember name="bubblespuggy" activity="Designer / App-Developer">
+                            Guckt vielleicht ein bisschen zu viel Netflix.
                         </TeamMember>
                         <TeamMember name="Brian" activity="Fotograf, Mediengestalter">
                             16, Herford, Deutschland
@@ -35,7 +35,7 @@ export default function Team() {
                     </Role>
                     <Role name="Dev">
                         <TeamMember name="Fin" activity="Developer">
-                            Wenn was nicht funktioniert, schreite ich zur Tat.
+                            Kümmere mich hier um die ganzen Rechtschreibfehler... Ist ein 24/7 Job.
                         </TeamMember>
                         <TeamMember name="LukvonStrom" activity="Developer">
                             Mache so Dinge im Interwebs. Es ist ein Standard, das muss so! Folgt mir auf Twitter.
@@ -46,7 +46,7 @@ export default function Team() {
                     </Role>
                     <Role name="Content">
                         <TeamMember name="Tobi" activity="Professioneller Texteüberleger und Nichtfreiwillig-Arbeiter">
-                            Was den hier los?!
+                            Was denn hier los?!
                         </TeamMember>
                         <TeamMember name="Teax" activity="Developer, (Web)Designer">
                             Meine Mama hat mich lieb.

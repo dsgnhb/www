@@ -1,7 +1,6 @@
 import React from 'react';
 
 export default class LevelEntry extends React.Component {
-
     constructor(props) {
         super(props);
         this.state = {
@@ -12,9 +11,9 @@ export default class LevelEntry extends React.Component {
     render() {
         let username = this.props.username;
         if (username.length > 14) {
-            username = username.slice(0, 12) + "...";
+            username = username.slice(0, 12) + '...';
         }
-        username += " ";
+        username += ' ';
 
         let level = xpToLevel(this.props.xp);
         let xpProgress = this.props.xp;
@@ -26,26 +25,30 @@ export default class LevelEntry extends React.Component {
 
         switch (this.props.rank) {
             case 1:
-                place = "color one";
+                place = 'color one';
                 break;
             case 2:
-                place = "color two";
+                place = 'color two';
                 break;
             case 3:
-                place = "color three";
+                place = 'color three';
                 break;
             default:
-                place = "";
+                place = '';
         }
 
         return (
             <div className={`item ${place}`}>
-                <h3>#{this.props.rank} {username}</h3>
+                <h3>
+                    #{this.props.rank} {username}
+                </h3>
                 <p>
                     <b>Level {level}</b>
                     <br />
-                    <b>{xpProgress}/{xpForLevel(level)} XP</b>
-                    {' '}({this.props.xp}XP)
+                    <b>
+                        {xpProgress}/{xpForLevel(level)} XP
+                    </b>{' '}
+                    ({this.props.xp}XP)
                     <br />
                     <b>{this.props.chests} Chests</b>
                 </p>

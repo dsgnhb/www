@@ -12,10 +12,10 @@ export default class TopDesignEntries extends React.Component {
         const self = this;
 
         fetch('https://api.dsgnhb.de/topdesign/posts/currentmonth')
-            .then(function (response) {
+            .then(response => {
                 return response.json();
             })
-            .then(function (json) {
+            .then(json => {
                 return self.setState({
                     entries: json.map(item => {
                         return item;
@@ -37,7 +37,7 @@ export default class TopDesignEntries extends React.Component {
                      * @property {string} image
                      * @property {number} likes
                      */
-                        this.state.entries.map(item => <TopDesignEntry key={item.id} {...item} />)}
+                    this.state.entries.map(item => <TopDesignEntry key={item.id} {...item} />)}
                 </div>
             </div>
         );

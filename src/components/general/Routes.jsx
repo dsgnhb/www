@@ -12,7 +12,6 @@ import Imprint from '../views/Imprint';
 import PrivacyPolicy from '../views/PrivacyPolicy';
 
 export default class Routes extends React.Component {
-
     componentDidUpdate() {
         window.scrollTo(0, 0);
     }
@@ -90,17 +89,15 @@ export default class Routes extends React.Component {
                 <Route path="/imprint" component={Imprint} />
                 <Route path="/privacypolicy" component={PrivacyPolicy} />
 
-                {
-                    redirects.map(item => (
-                        <Route
-                            key={item.name}
-                            path={'/' + item.name}
-                            render={() => {
-                                window.location = item.url;
-                            }}
-                        />
-                    ))
-                }
+                {redirects.map(item => (
+                    <Route
+                        key={item.name}
+                        path={'/' + item.name}
+                        render={() => {
+                            window.location = item.url;
+                        }}
+                    />
+                ))}
             </div>
         );
     }

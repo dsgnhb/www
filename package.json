@@ -39,7 +39,8 @@
     "prettier": "prettier --write 'src/**/*.{js,json,jsx}'"
   },
   "prettier": {
-    "printWidth": 200,
+    "tabWidth": 4,
+    "printWidth": 120,
     "semi": true,
     "singleQuote": true,
     "bracketSpacing": false

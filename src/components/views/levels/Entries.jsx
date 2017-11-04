@@ -12,10 +12,10 @@ export default class LevelEntries extends React.Component {
         const self = this;
 
         fetch('https://api.dsgnhb.de/levels')
-            .then(function (response) {
+            .then(response => {
                 return response.json();
             })
-            .then(function (json) {
+            .then(json => {
                 return self.setState({
                     entries: json.map(item => {
                         return item;
@@ -28,21 +28,17 @@ export default class LevelEntries extends React.Component {
         return (
             <div className="content">
                 <div className="flex-list member">
-                    {
-                        /**
-                         * @typedef {Object} item
-                         * @property {string} userid
-                         * @property {string} username
-                         * @property {number} discriminator
-                         * @property {string} avatar
-                         * @property {number} xp
-                         * @property {number} chests
-                         * @property {number} rank
-                         */
-                        this.state.entries.map((item) => (
-                            <LevelEntry key={item.rank} {...item} />
-                        ))
-                    }
+                    {/**
+                     * @typedef {Object} item
+                     * @property {string} userid
+                     * @property {string} username
+                     * @property {number} discriminator
+                     * @property {string} avatar
+                     * @property {number} xp
+                     * @property {number} chests
+                     * @property {number} rank
+                     */
+                    this.state.entries.map(item => <LevelEntry key={item.rank} {...item} />)}
                 </div>
             </div>
         );

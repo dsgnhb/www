@@ -84,11 +84,7 @@ export default function Footer() {
             <footer>
                 <div className="container">
                     <div className="flex-list">
-                        {
-                            columns.map(item =>
-                                <Column key={columns.indexOf(item)} {...item} />
-                            )
-                        }
+                        {columns.map(item => <Column key={columns.indexOf(item)} {...item} />)}
                     </div>
                     <ul className="legal">
                         <li>

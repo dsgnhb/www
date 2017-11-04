@@ -15,10 +15,9 @@ export default function Branding() {
                     <MainTitle subtitle="Branding" title="Design Sachen">
                         Mit der Einhaltung dieser Richtlinien hilfst du uns sicherzustellen, dass unsere
                         Markenressourcen einheitlich und im selben Stil genutzt werden. Denke daran, dass designhub™
-                        kontinuierlich
-                        wächst und sich weiterentwickelt. So kann es ohne Weiteres passieren, dass wir diese Richtlinien
-                        von Zeit zu Zeit ändern. Falls du noch mehr suchst, kannst du dir{' '}
-                        <Link to="/presskit">hier</Link> unser Press Kit mit Icons, Banner, Videos und mehr
+                        kontinuierlich wächst und sich weiterentwickelt. So kann es ohne Weiteres passieren, dass wir
+                        diese Richtlinien von Zeit zu Zeit ändern. Falls du noch mehr suchst, kannst du dir
+                        <Link to="/presskit"> hier</Link> unser Press Kit mit Icons, Banner, Videos und mehr
                         herunterladen.
                     </MainTitle>
                 </div>

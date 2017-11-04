@@ -43,8 +43,12 @@ function PartnerInfo(props) {
     return (
         <section id={props.name.toLowerCase()}>
             <div className="container">
-                <SectionTitle subtitle={props.task} title={props.name} link={props.link}
-                              linktitle="Hier geht's zur Website">
+                <SectionTitle
+                    subtitle={props.task}
+                    title={props.name}
+                    link={props.link}
+                    linktitle="Hier geht's zur Website"
+                >
                     {props.children}
                 </SectionTitle>
             </div>

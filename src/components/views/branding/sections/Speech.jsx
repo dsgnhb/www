@@ -7,8 +7,8 @@ export default function Logo() {
             <div className="container">
                 <SectionTitle subtitle="Sprache" title="1 perfect Speech from Nicigkeit her.">
                     Unsere Sprache ist vertrauenswürdig, humorvoll und verspielt - nicht selbstgerecht oder arrogant.
-                    Wir nehmen uns selbst nicht zu ernst. Unser Ziel ist es, Coolness, Glaubwürdigkeit und Humor
-                    in einer Sprache zu vereinen.
+                    Wir nehmen uns selbst nicht zu ernst. Unser Ziel ist es, Coolness, Glaubwürdigkeit und Humor in
+                    einer Sprache zu vereinen.
                 </SectionTitle>
                 <div className="content">
                     <div className="flex-list member">

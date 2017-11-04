@@ -12,8 +12,8 @@ export default function Header() {
                     linktitle="Komm auf unseren Discord"
                 >
                     Designhub bringt talentierte Designer und Developer zu einer großen Community zusammen. Komm jetzt
-                    auf unseren Discord, um deine kreative Arbeit zu präsentieren, Neues zu entdecken oder halt
-                    einfach nur um mit deinen nicht vorhandenen Freunden zu reden (und natürlich auch um zu spamen).
+                    auf unseren Discord, um deine kreative Arbeit zu präsentieren, Neues zu entdecken oder halt einfach
+                    nur um mit deinen nicht vorhandenen Freunden zu reden (und natürlich auch um zu spamen).
                 </MainTitle>
             </div>
         </section>

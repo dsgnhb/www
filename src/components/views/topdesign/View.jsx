@@ -1,6 +1,7 @@
 import React from 'react';
 import {MainTitle} from '../../general/misc/Titles';
 import TopDesignEntries from './Entries';
+import {Link} from 'react-router-dom';
 
 export default function TopDesign() {
     return (
@@ -14,8 +15,8 @@ export default function TopDesign() {
                         linktitle="Komm auf unseren Discord"
                     >
                         Stelle in unserem monatlichen Wettbewerb deine Design Skills unter Beweis und staube tolle
-                        Preise ab! Das Design mit den meisten Vots aus unserer Community erhält die Chance zu, auf
-                        unserem Twitter Account (@dsgnhb) vorgestellt zu werden und wird mit tollen Preisen belohnt.
+                        Preise ab! Wer tolle Preise und eine Vorstellung auf unserem <Link to="/twitter">Twitter
+                        Account</Link> gewinnt, entscheidet die Community durch Votes.
                         <br />
                         <br />
                         <h3>Teilnahme</h3>
@@ -28,7 +29,7 @@ export default function TopDesign() {
                         Ersetze hierbei #id durch die Nummer der Einsendung, die du auf unserer Website durch einen
                         Hover
                         auf das Design herausfinden kannst. Zusätzlich stehen dir noch die Commands <b>!topdesign</b>,
-                        <b>!posts</b>, <b>!delete</b> sowie <b>!help</b> zur Verfügung.
+                        {' '}<b>!posts</b>, <b>!delete</b> sowie <b>!help</b> zur Verfügung.
                     </MainTitle>
                 </div>
                 <TopDesignEntries />

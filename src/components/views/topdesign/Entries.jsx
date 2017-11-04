@@ -18,7 +18,6 @@ export default class TopDesignEntries extends React.Component {
                 return response.json();
             })
             .then(json => {
-                console.log(json);
                 if (json.map === undefined) {
                     return;
                 }

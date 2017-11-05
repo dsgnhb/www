@@ -51,6 +51,8 @@ export default class LevelEntry extends React.Component {
                     ({this.props.xp}XP)
                     <br />
                     <b>{this.props.chests} Chests</b>
+                    <br />
+                    <b>{this.props.coins} Coins</b>
                 </p>
             </div>
         );

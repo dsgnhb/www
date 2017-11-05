@@ -43,6 +43,7 @@ export default class LevelEntries extends React.Component {
                  * @property {number} xp
                  * @property {number} chests
                  * @property {number} rank
+                 * @property {number} coins
                  */
                 this.state.entries.map(item => <LevelEntry key={item.rank} {...item} />);
         }

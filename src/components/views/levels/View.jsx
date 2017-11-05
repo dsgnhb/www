@@ -14,10 +14,13 @@ export default function Levels() {
                         deinen aktuellen Platz im Ranking sowie dein Level erfahren.
                         <br />
                         <br />
-                        <h3>Chest-System</h3>
-                        Jedes mal, wenn ihr eine gerade Levelanzahl erreicht, bekommst du automatisch eine neue Chest,
-                        die du mit !chest öffnen kannsst. Darin erwarten dich <b>*hust*</b> TOLLE <b>*hust*</b>{' '}
-                        Überraschungen, wie zb Gutschein-Codes auf den Kauf dein nächstes Design!
+                        <h3>Coins</h3>
+                        Jedes mal, wenn ihr eine gerade Levelanzahl erreicht, bekommst du automatisch 100 und zweimal
+                        dein aktuelles Level als Coins. Mit Coins kannst du sinnlose Commands wie !report nutzen sowie
+                        dir z.B. für 50 Coins eine Überraschungskiste kaufen. Darin erwarten dich <b>
+                            *hust*
+                        </b> TOLLE <b>*hust*</b> Überraschungen, wie z.B. Gutschein-Codes auf den Kauf dein nächstes
+                        Design!
                     </MainTitle>
                     <LevelEntries />
                 </div>

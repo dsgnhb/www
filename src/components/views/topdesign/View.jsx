@@ -24,7 +24,7 @@ export default function TopDesign() {
                         Design teilzunehmen. So wird deine Einsendung automatisch auf unserer Website angezeigt und kann
                         von allen angesehen und bewertet werden.<br />
                         <br />
-                        <h3>Voten/Liken</h3>
+                        <h3>Anschauen. Verlieben. Voten.</h3>
                         Um für deinen Favoriten zu voten, schreibe lediglich <b>!vote #id</b> in den Discord-Chat.
                         Ersetze hierbei #id durch die Nummer der Einsendung, die du auf unserer Website durch einen
                         Hover auf das Design herausfinden kannst. Zusätzlich stehen dir noch die Commands

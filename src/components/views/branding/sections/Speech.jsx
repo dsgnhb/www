@@ -12,11 +12,8 @@ export default function Logo() {
                 </SectionTitle>
                 <div className="content">
                     <div className="flex-list member">
-                        <Rule
-                            allowed="designhub, designhub™"
-                            forbidden="DesignHub, Design Hub, Design hub, DeSiGnHuB"
-                        />
-                        <Rule allowed="Member" forbidden="Mitglied, User" />
+                        <Rule allowed="designhub" forbidden="dsgnhb, DesignHub, Design Hub, Design hub, DeSiGnHuB" />
+                        <Rule allowed="Member" forbidden="Mitglied, User, Benutzer" />
                         <Rule allowed="Discord" forbidden="Guild, Discord Server, Server" />
                     </div>
                 </div>

@@ -11,7 +11,7 @@ export default function LastDonations() {
                         <Donation name="Teax" url="https://www.gommehd.net/">
                             GommeHD.net
                         </Donation>
-                        <Donation name="Bukki" url="https://twitter.com/pensivecauselov">
+                        <Donation name="Bukii" url="https://twitter.com/pensivecauselov">
                             twitter.com/pensivecauselov
                         </Donation>
                     </div>

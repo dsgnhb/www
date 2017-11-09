@@ -18,7 +18,7 @@ export default function Levels() {
                         Jedes mal, wenn ihr eine gerade Levelanzahl erreicht, bekommst du automatisch 100 und zweimal
                         dein aktuelles Level als Coins. Mit Coins kannst du sinnlose Commands wie !report nutzen sowie
                         dir z.B. für 50 Coins eine Überraschungskiste kaufen. Darin erwarten dich <b>*hust*</b> TOLLE 
-                        <b>*hust*</b> Überraschungen, wie z.B. Gutschein-Codes auf den Kauf deines nächsten Design!
+                        <b>*hust*</b> Überraschungen, wie z.B. Gutschein-Codes auf den Kauf deines nächsten Designs!
                     </MainTitle>
                     <LevelEntries />
                 </div>

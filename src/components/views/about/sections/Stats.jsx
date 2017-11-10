@@ -4,7 +4,7 @@ export default function Stats() {
     return (
         <section id="stats">
             <div className="container flex-list icons">
-                <Fact id="one" data="230+" name="Member">
+                <Fact id="one" data="250+" name="Member">
                     Das werden dann halt einfach auch noch jeden Tag mehr.
                 </Fact>
                 <Fact id="two" data="572" name="Nachrichten pro Tag">

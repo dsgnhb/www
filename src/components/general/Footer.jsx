@@ -88,7 +88,7 @@ export default function Footer() {
                     </div>
                     <ul className="legal">
                         <li>
-                            <Link to="/">2016-2017 &copy; designhub&trade;</Link>
+                            <Link to="/">2016-2017 &copy; designhub</Link>
                         </li>
                         <li>
                             <Link to="/imprint">Impressum</Link>

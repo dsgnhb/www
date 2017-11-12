@@ -10,7 +10,7 @@ export default function About() {
                 <div className="container">
                     <MainTitle
                         subtitle="Über uns"
-                        title="Wir sind designhub&trade;"
+                        title="Wir sind designhub"
                         link="/discord"
                         linktitle="Viel Spaß auf unserem Server!"
                     >

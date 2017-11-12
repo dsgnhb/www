@@ -7,7 +7,7 @@ export default function Header() {
             <div className="container">
                 <MainTitle
                     subtitle="Hey!"
-                    title="Wir sind Designhub&trade;"
+                    title="Wir sind Designhub"
                     link="/discord"
                     linktitle="Komm auf unseren Discord"
                 >

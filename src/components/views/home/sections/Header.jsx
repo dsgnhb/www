@@ -6,7 +6,7 @@ export default function Header() {
         <header>
             <div id="hero">
                 <div className="container flex-center">
-                    <MainTitle title="designhub&trade;">Der beste Discord der Welt!</MainTitle>
+                    <MainTitle title="designhub">Der beste Discord der Welt!</MainTitle>
                 </div>
                 <div className="mountains" />
                 <div className="planet circle" />

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route} from 'react-router-dom';
+import {Route, Switch} from 'react-router-dom';
 import Home from '../views/home/View';
 import About from '../views/about/View';
 import Branding from '../views/branding/View';
@@ -10,6 +10,7 @@ import Partner from '../views/Partner';
 import TopDesign from '../views/topdesign/View';
 import Imprint from '../views/Imprint';
 import PrivacyPolicy from '../views/PrivacyPolicy';
+import {NotFound} from '../views/Error';
 
 export default class Routes extends React.Component {
     componentDidUpdate() {
@@ -77,7 +78,7 @@ export default class Routes extends React.Component {
         ];
 
         return (
-            <div>
+            <Switch>
                 <Route path="/" component={Home} exact />
                 <Route path="/about" component={About} />
                 <Route path="/brand" component={Branding} />
@@ -98,7 +99,9 @@ export default class Routes extends React.Component {
                         }}
                     />
                 ))}
-            </div>
+
+                <Route component={NotFound} />
+            </Switch>
         );
     }
 }

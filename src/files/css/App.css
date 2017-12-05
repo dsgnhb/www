@@ -885,8 +885,8 @@ section#error .overlay {
     background: rgba(0, 0, 0, 0.5);
 }
 
-section#error .overlay > * {
-    color: var(--white);
+section#error .overlay * {
+    color: var(--white) !important;
 }
 
 /*

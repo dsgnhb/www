@@ -15,7 +15,7 @@ export default function Donations() {
                         unserem Discord an.
                     </MainTitle>
                     <Link to="/patreon" className="main">
-                        Patreon - {' '}
+                        Patreon -{' '}
                     </Link>
                     <Link to="/paypal" className="main">
                         PayPal

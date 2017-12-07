@@ -15,7 +15,7 @@ export default class App extends React.Component {
         this.history = createBrowserHistory();
 
         this.piwik = PiwikReactRouter({
-            url: 'analytics.florentinwalter.de/',
+            url: 'analytics.florentinwalter.de',
             siteId: 1
         });
     }

@@ -1,6 +1,7 @@
 {
     "name": "www",
     "version": "0.1.0",
+    "license": "MIT",
     "homepage": "https://dsgnhb.de/",
     "private": true,
     "author": "flo",

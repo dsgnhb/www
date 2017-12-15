@@ -12,7 +12,7 @@ export default class LevelEntries extends React.Component {
 
         const self = this;
 
-        fetch('https://api.dsgnhb.de/levels')
+        fetch('https://server.dsgnhb.de/levels')
             .then(response => {
                 self.setState({loaded: true});
                 return response.json();

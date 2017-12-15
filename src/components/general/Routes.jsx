@@ -13,8 +13,33 @@ import PrivacyPolicy from '../views/PrivacyPolicy';
 import {NotFound} from '../views/Error';
 
 export default class Routes extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.webTitles = new Map();
+        this.webTitles.set('/about', 'Über uns');
+        this.webTitles.set('/brand', 'Branding');
+        this.webTitles.set('/contact', 'Kontakt');
+        this.webTitles.set('/donate', 'Unterstütze uns');
+        this.webTitles.set('/levels', 'Leaderboard');
+        this.webTitles.set('/partner', 'Partner');
+        this.webTitles.set('/topdesign', 'TopDesign');
+        this.webTitles.set('/imprint', 'Impressum');
+        this.webTitles.set('/privacypolicy', 'Datenschutzerklärung');
+
+        this.setTitle = this.setTitle.bind(this);
+    }
+
     componentDidUpdate() {
         window.scrollTo(0, 0);
+
+        this.setTitle();
+    }
+
+    setTitle() {
+        let webTitle = this.webTitles.get(window.location.pathname);
+
+        document.title = `designhub.${webTitle === undefined ? '' : ' | ' + webTitle}`;
     }
 
     render() {
@@ -76,6 +101,8 @@ export default class Routes extends React.Component {
                 url: 'https://www.smashfm.de/?ref=designhub'
             }
         ];
+
+        this.setTitle();
 
         return (
             <Switch>

@@ -21,87 +21,41 @@ export default class Routes extends React.Component {
         this.webTitles.set('/brand', 'Branding');
         this.webTitles.set('/contact', 'Kontakt');
         this.webTitles.set('/donate', 'Unterstütze uns');
+        this.webTitles.set('/imprint', 'Impressum');
         this.webTitles.set('/levels', 'Leaderboard');
         this.webTitles.set('/partner', 'Partner');
-        this.webTitles.set('/topdesign', 'TopDesign');
-        this.webTitles.set('/imprint', 'Impressum');
         this.webTitles.set('/privacypolicy', 'Datenschutzerklärung');
+        this.webTitles.set('/topdesign', 'TopDesign');
 
+        this.redirects = new Map();
+        this.redirects.set('/discord', 'https://discordapp.com/invite/PGv5TR3');
+        this.redirects.set('/github', 'https://github.com/dsgnhb');
+        this.redirects.set('/mail', 'mailto:info@dsgnhb.de');
+        this.redirects.set('/music', 'http://46.228.192.55:8087');
+        this.redirects.set('/patreon', 'https://www.patreon.com/designhub');
+        this.redirects.set('/paypal', 'https://www.paypal.me/juttawalter/1');
+        this.redirects.set('/presskit', 'https://dl.dsgnhb.de');
+        this.redirects.set('/rc', 'https://www.dropbox.com/sh/ecq8lku300b63ir/AABxOnsQoEg1SP26klmHEBsva?dl=0');
+        this.redirects.set('/shorttech', 'http://shorttech.de/?ref=designhub');
+        this.redirects.set('/signaltransmitter', 'https://signaltransmitter.de/ref/234ra69r31584c44');
+        this.redirects.set('/smashfm', 'https://www.smashFM.de/?ref=designhub');
+        this.redirects.set('/twitter', 'https://twitter.com/dsgnhb');
+        this.redirects.set('/twitter-support', 'https://twitter.com/messages/compose?recipient_id=2654452573');
+        this.redirects.set('/yt', 'https://www.youtube.com/channel/UC5xEZufXUwoxdixe0QVDrtA');
+
+        this.checkRedirects = this.checkRedirects.bind(this);
         this.setTitle = this.setTitle.bind(this);
     }
 
     componentDidUpdate() {
-        window.scrollTo(0, 0);
-
+        this.checkRedirects();
         this.setTitle();
-    }
 
-    setTitle() {
-        let webTitle = this.webTitles.get(window.location.pathname);
-
-        document.title = `designhub.${webTitle === undefined ? '' : ' | ' + webTitle}`;
+        window.scrollTo(0, 0);
     }
 
     render() {
-        const redirects = [
-            {
-                name: 'discord',
-                url: 'https://discordapp.com/invite/PGv5TR3'
-            },
-            {
-                name: 'music',
-                url: 'http://46.228.192.55:8087'
-            },
-            {
-                name: 'rc',
-                url: 'https://www.dropbox.com/sh/ecq8lku300b63ir/AABxOnsQoEg1SP26klmHEBsva?dl=0'
-            },
-            {
-                name: 'signaltransmitter',
-                url: 'https://signaltransmitter.de/ref/234ra69r31584c44'
-            },
-            {
-                name: 'yt',
-                url: 'https://www.youtube.com/channel/UC5xEZufXUwoxdixe0QVDrtA'
-            },
-            {
-                name: 'github',
-                url: 'https://github.com/dsgnhb'
-            },
-            {
-                name: 'twitter',
-                url: 'https://twitter.com/dsgnhb'
-            },
-            {
-                name: 'twitter-support',
-                url: 'https://twitter.com/messages/compose?recipient_id=2654452573'
-            },
-            {
-                name: 'mail',
-                url: 'mailto:info@dsgnhb.de'
-            },
-            {
-                name: 'presskit',
-                url: 'https://dl.dsgnhb.de'
-            },
-            {
-                name: 'patreon',
-                url: 'https://www.patreon.com/designhub'
-            },
-            {
-                name: 'paypal',
-                url: 'https://www.paypal.me/juttawalter/1'
-            },
-            {
-                name: 'ShortTech',
-                url: 'http://shorttech.de/?ref=designhub'
-            },
-            {
-                name: 'smashFM',
-                url: 'https://www.smashfm.de/?ref=designhub'
-            }
-        ];
-
+        this.checkRedirects();
         this.setTitle();
 
         return (
@@ -116,19 +70,20 @@ export default class Routes extends React.Component {
                 <Route path="/topdesign" component={TopDesign} />
                 <Route path="/imprint" component={Imprint} />
                 <Route path="/privacypolicy" component={PrivacyPolicy} />
-
-                {redirects.map(item => (
-                    <Route
-                        key={item.name}
-                        path={'/' + item.name}
-                        render={() => {
-                            window.location = item.url;
-                        }}
-                    />
-                ))}
-
                 <Route component={NotFound} />
             </Switch>
         );
+    }
+
+    checkRedirects() {
+        if (this.redirects.get(window.location.pathname) !== undefined) {
+            window.location = this.redirects.get(window.location.pathname);
+        }
+    }
+
+    setTitle() {
+        let webTitle = this.webTitles.get(window.location.pathname);
+
+        document.title = `designhub.${webTitle === undefined ? '' : ' | ' + webTitle}`;
     }
 }

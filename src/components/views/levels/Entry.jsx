@@ -38,7 +38,7 @@ export default class LevelEntry extends React.Component {
         }
 
         return (
-            <div className={`item ${place}`}>
+            <div className={`item ${place}`} data-test-rankid={`${this.props.rank}`}>
                 <h3>
                     #{this.props.rank} {username}
                 </h3>

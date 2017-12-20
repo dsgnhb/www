@@ -13,12 +13,10 @@ export default class LevelEntries extends React.Component {
         const self = this;
 
         fetch('https://server.dsgnhb.de/levels')
-            .then(response => {
-                self.setState({loaded: true});
-                return response.json();
-            })
+            .then(response => response.json())
             .then(json => {
                 return self.setState({
+                    loaded: true,
                     entries: json.map(item => {
                         return item;
                     })

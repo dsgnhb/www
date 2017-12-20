@@ -13,15 +13,13 @@ export default class TopDesignEntries extends React.Component {
         const self = this;
 
         fetch('https://server.dsgnhb.de/topdesign/posts/currentmonth')
-            .then(response => {
-                self.setState({loaded: true});
-                return response.json();
-            })
+            .then(response => response.json())
             .then(json => {
                 if (json.map === undefined) {
                     return;
                 }
                 return self.setState({
+                    loaded: true,
                     entries: json.map(item => {
                         return item;
                     })

@@ -456,6 +456,9 @@ nav .bar button {
     letter-spacing: 0.01em;
     cursor: pointer;
 }
+nav .bar button:focus {
+    outline: none;
+}
 
 nav .bar button:hover,
 nav .bar button:active {

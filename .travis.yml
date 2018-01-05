@@ -19,3 +19,5 @@ deploy:
   local_dir: build/
   on:
     branch: master
+after_success:
+    "curl --ftp-create-dirs -T build/ -u $FTP_USER:$FTP_PASS ftp://$FTP_HOST"

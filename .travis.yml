@@ -12,7 +12,7 @@ script:
 notifications:
   webhooks: https://flooo.me/travis/designhub-dev.php
 before_install:
- - sudo apt-get install lftp
+ - sudo apt-get install -qq lftp
 deploy:
   provider: script
   script: sh deploy.sh

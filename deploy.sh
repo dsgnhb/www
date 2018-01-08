@@ -1,2 +1,2 @@
 sudo apt-get install -y lftp
-lftp -c "open -u $FTP_USER,$FTP_PASS $FTP_HOST; set ssl:verify-certificate no; mirror -R ~/build/ / "
+lftp -u $FTP_USER,$FTP_PASS $FTP_HOST \ -e "mirror -e -R -x  -p ./build/ / ; quit"

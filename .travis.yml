@@ -11,6 +11,8 @@ script:
   - npm test
 notifications:
   webhooks: https://flooo.me/travis/designhub-dev.php
+before_install:
+ - sudo apt-get install lftp
 deploy:
   provider: script
   script: sh deploy.sh

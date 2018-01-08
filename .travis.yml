@@ -12,11 +12,5 @@ script:
 notifications:
   webhooks: https://flooo.me/travis/designhub-dev.php
 deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  local_dir: build/
-  on:
-    branch: master
-after_success:
-    "lftp -c \"open -u $FTP_USER,$FTP_PASS $FTP_HOST; set ssl:verify-certificate no; mirror -R ~/build/ / \""
+  provider: script
+  script: deploy.sh

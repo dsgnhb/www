@@ -26,6 +26,7 @@ export default function Imprint() {
                         Telefon: +49 176 47397970<br />
                         E-Mail: <a href="mailto:info@dsgnhb.de">info@dsgnhb.de</a>
                     </p>
+                    <p>Geltende Domains: designhub.fun, dsgnhb.de, flooo.me, store.flooo.me</p>
                 </div>
             </section>
             <section id="imprint-liability">

@@ -1,0 +1,96 @@
+/*
+-----------------------
+COLORS
+-----------------------
+*/
+:root {
+    --black: #222222;
+    --darkgray: #444444;
+    --lightgray: #eeeeee;
+    --white: #ffffff;
+    --background-color: #222222;
+}
+h1,
+h2,
+h3,
+h4 {
+    color: var(--white);
+}
+p {
+    color: var(--lightgray);
+}
+p > b,
+div.text > b {
+    color: var(--lightgray);
+}
+a {
+    color: var(--white);
+}
+a:hover {
+    color: var(--lightgray);
+}
+div.text {
+    color: var(--lightgray);
+}
+section#team .flex-list h3.part {
+    color: var(--darkgray);
+}
+.logo.dark {
+    background-image: url(../img/logos/light.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+nav .bar button {
+    color: var(--white);
+}
+nav .bar button:hover,
+nav .bar button:active {
+    color: var(--lightgray);
+}
+div#hero {
+    background: #3a3a55;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#1d1d27), to(#3a3a55));
+    background-image: -webkit-linear-gradient(top, #1d1d27, #3a3a55);
+    background-image: -moz-linear-gradient(top, #1d1d27, #3a3a55);
+    background-image: linear-gradient(to bottom, #1d1d27, #3a3a55);
+}
+div#hero .planet {
+    background: #b1b1b1;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#b1b1b1), to(#666));
+    background: -webkit-linear-gradient(top, #b1b1b1, #666);
+    background: -moz-linear-gradient(top, #b1b1b1, #666);
+    background: linear-gradient(to bottom, #b1b1b1, #666);
+}
+div#hero .mountains {
+    background-position: bottom;
+    background-image: url(../img/mountains/dark.png);
+}
+section#features .item .icon.topdesign {
+    filter: grayscale(100%);
+    opacity: 0.5;
+    background-image: url(../img/icons/dark/winner.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+section#features .item .icon.levels {
+    filter: grayscale(100%);
+    opacity: 0.5;
+    background-image: url(../img/icons/dark/chest.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+section#features .item .icon.night {
+    filter: grayscale(100%);
+    opacity: 0.5;
+    background-image: url(../img/icons/dark/night.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section#join .icon {
+    filter: grayscale(100%);
+}

@@ -22,7 +22,7 @@ export default class App extends React.Component {
             end: 6
         };
         let hour = new Date().getHours();
-        if (this.nightmode.forced || (hour > this.nightmode.begin && hour < this.nightmode.end && this.nightmode.enabled)) {
+        if (this.nightmode.forced || ((hour > this.nightmode.begin || hour < this.nightmode.end) && this.nightmode.enabled)) {
             require('./files/css/night.css');
         }
         

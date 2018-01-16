@@ -8,12 +8,10 @@ import Routes from './components/general/Routes';
 import Footer from './components/general/Footer';
 import './files/css/App.css';
 
-
-
 export default class App extends React.Component {
     constructor(props) {
         super(props);
-        
+
         //TODO: make this adjustable
         this.nightmode = {
             enabled: true,
@@ -22,10 +20,13 @@ export default class App extends React.Component {
             end: 6
         };
         let hour = new Date().getHours();
-        if (this.nightmode.forced || ((hour > this.nightmode.begin || hour < this.nightmode.end) && this.nightmode.enabled)) {
+        if (
+            this.nightmode.forced ||
+            ((hour > this.nightmode.begin || hour < this.nightmode.end) && this.nightmode.enabled)
+        ) {
             require('./files/css/night.css');
         }
-        
+
         this.history = createBrowserHistory();
 
         this.piwik = PiwikReactRouter({

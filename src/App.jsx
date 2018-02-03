@@ -6,6 +6,7 @@ import Typekit from 'react-typekit';
 import Header from './components/general/Header';
 import Routes from './components/general/Routes';
 import Footer from './components/general/Footer';
+import NightMode from './components/general/NightMode.jsx';
 import './files/css/App.css';
 
 export default class App extends React.Component {
@@ -20,11 +21,12 @@ export default class App extends React.Component {
             end: 6
         };
         let hour = new Date().getHours();
+
         if (
             this.nightmode.forced ||
             ((hour > this.nightmode.begin || hour < this.nightmode.end) && this.nightmode.enabled)
         ) {
-            require('./files/css/night.css');
+            this.actual = true;
         }
 
         this.history = createBrowserHistory();
@@ -38,12 +40,12 @@ export default class App extends React.Component {
     render() {
         return (
             <Router history={this.piwik.connectToHistory(this.history)}>
-                <div>
+                <NightMode active={this.actual}>
                     <Typekit kitId="vtp0hqt" />
                     <Header />
                     <Routes />
                     <Footer />
-                </div>
+                </NightMode>
             </Router>
         );
     }

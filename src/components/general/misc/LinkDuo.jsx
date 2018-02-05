@@ -7,6 +7,7 @@ import isExternal from 'is-url-external';
  */
 export default class LinkDuo extends Component {
     render() {
+        // eslint-disable-next-line
         return isExternal(this.props.to) ? <a href={this.props.to} {...this.props} /> : <Link {...this.props} />;
     }
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import {MainTitle} from '../../general/misc/Titles';
 import TopDesignEntries from './Entries';
-import {Link} from 'react-router-dom';
+import LinkDuo from '../../general/misc/LinkDuo';
 
 export default function TopDesign() {
     return (
@@ -11,12 +11,13 @@ export default function TopDesign() {
                     <MainTitle
                         subtitle="Top Design"
                         title={getMonth()}
-                        link="/discord"
+                        link="https://discordapp.com/invite/PGv5TR3"
                         linktitle="Komm auf unseren Discord"
                     >
                         Stelle in unserem monatlichen Wettbewerb deine Design Skills unter Beweis und staube tolle
                         Preise ab! Wer tolle Preise und eine Vorstellung auf unserem
-                        <Link to="/twitter"> Twitter Account</Link> gewinnt, entscheidet die Community durch Votes.
+                        <LinkDuo to="https://twitter.com/dsgnhb"> Twitter Account</LinkDuo> gewinnt, entscheidet die
+                        Community durch Votes.
                         <br />
                         <br />
                         <h3>Teilnahme</h3>

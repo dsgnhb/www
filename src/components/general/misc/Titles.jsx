@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import LinkDuo from './LinkDuo';
 
 export function MainTitle(props) {
     let link = '';
@@ -35,8 +35,8 @@ export function SectionTitle(props) {
 
 export function MainLink(props) {
     return (
-        <Link to={props.href} className="main prefix">
+        <LinkDuo to={props.href} className="main prefix">
             {props.children}
-        </Link>
+        </LinkDuo>
     );
 }

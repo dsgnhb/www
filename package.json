@@ -19,13 +19,14 @@
     ],
     "dependencies": {
         "history": "^4.7.2",
-        "piwik-react-router": "^0.12.0",
+        "is-url-external": "^1.0.3",
+        "piwik-react-router": "^0.12.1",
         "prop-types": "^15.6.0",
         "react": "^16.0.0",
         "react-dom": "^16.0.0",
         "react-router-dom": "^4.2.2",
         "react-scripts": "1.1.0",
-        "react-typekit": "^1.1.0",
+        "react-typekit": "^1.1.2",
         "whatwg-fetch": "^2.0.3"
     },
     "devDependencies": {

@@ -1,6 +1,6 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import {MainTitle} from '../general/misc/Titles';
+import LinkDuo from '../general/misc/LinkDuo';
 
 export default function Contact() {
     return (
@@ -11,18 +11,18 @@ export default function Contact() {
                     Wir freuen uns über jede Nachricht und jedes neue, glückliche Mitglied auf unserem Server. Gerne
                     auch auf YouTube abonnieren (für 'ne Custom URL).
                 </MainTitle>
-                <Link to="/twitter-support" className="main">
+                <LinkDuo to="https://twitter.com/messages/compose?recipient_id=2654452573" className="main">
                     Twitter -{' '}
-                </Link>
-                <Link to="/yt" className="main">
+                </LinkDuo>
+                <LinkDuo to="https://www.youtube.com/channel/UC5xEZufXUwoxdixe0QVDrtA" className="main">
                     YouTube -{' '}
-                </Link>
-                <Link to="/discord" className="main">
+                </LinkDuo>
+                <LinkDuo to="https://discordapp.com/invite/PGv5TR3" className="main">
                     Discord -{' '}
-                </Link>
-                <Link to="/mail" className="main">
+                </LinkDuo>
+                <LinkDuo to="mailto:info@dsgnhb.de" className="main">
                     Mail
-                </Link>
+                </LinkDuo>
             </div>
         </section>
     );

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import LinkDuo from '../../general/misc/LinkDuo';
 import {MainTitle} from '../../general/misc/Titles';
 import LastDonations from './sections/LastDonations';
 
@@ -14,12 +14,15 @@ export default function Donations() {
                         Belohnungen. Außerdem erwähnen wir dich auf unserer Website und bieten dir 'nen extra Rang auf
                         unserem Discord an.
                     </MainTitle>
-                    <Link to="/patreon" className="main">
+                    <LinkDuo to="https://www.patreon.com/designhub" className="main">
                         Patreon -{' '}
-                    </Link>
-                    <Link to="/paypal" className="main">
+                    </LinkDuo>
+                    <LinkDuo
+                        to="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=H6JB49DXTDP3Q"
+                        className="main"
+                    >
                         PayPal
-                    </Link>
+                    </LinkDuo>
                     <LastDonations />
                 </div>
             </section>

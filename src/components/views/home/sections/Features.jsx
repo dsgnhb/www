@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import LinkDuo from '../../../general/misc/LinkDuo';
 
 export default function Features() {
     return (
@@ -13,7 +13,7 @@ export default function Features() {
                     Für jede deiner Nachrichten kriegst du XP. So kannst du im Leaderboard aufsteigen und einen Platz im
                     Ranking ergattern. (und cool sein)
                 </Category>
-                <Category id="night" name="Spam, @everyone und Memes" link="/discord">
+                <Category id="night" name="Spam, @everyone und Memes" link="https://discordapp.com/invite/PGv5TR3">
                     Spam Tag und Nacht - So musst du nie alleine sein. Auf unserem Discord ist immer was los!
                 </Category>
             </div>
@@ -24,13 +24,13 @@ export default function Features() {
 export function Category(props) {
     if (props.link) {
         return (
-            <Link to={props.link}>
+            <LinkDuo to={props.link}>
                 <div className="item">
                     <div className={`icon ${props.id}`} />
                     <h3>{props.name}</h3>
                     <p>{props.children}</p>
                 </div>
-            </Link>
+            </LinkDuo>
         );
     } else {
         return (

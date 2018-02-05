@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import LinkDuo from '../../../general/misc/LinkDuo';
 import {SectionTitle} from '../../../general/misc/Titles';
 
 export default function Logo() {
@@ -16,9 +16,9 @@ export default function Logo() {
                     <div className="logo dark" />
                     <div>
                         <h3>Master Logo</h3>
-                        <Link to="/presskit" className="main prefix">
+                        <LinkDuo to="https://dl.dsgnhb.de" className="main prefix">
                             Download Press Kit
-                        </Link>
+                        </LinkDuo>
                     </div>
                 </div>
             </div>

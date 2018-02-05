@@ -11,7 +11,7 @@ export default function About() {
                     <MainTitle
                         subtitle="Über uns"
                         title="Wir sind designhub"
-                        link="/discord"
+                        link="https://discordapp.com/invite/PGv5TR3"
                         linktitle="Viel Spaß auf unserem Server!"
                     >
                         Designhub bringt talentierte Designer und Developer zu einer großen Community zusammen. Komm

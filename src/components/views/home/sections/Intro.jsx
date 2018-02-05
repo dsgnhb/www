@@ -8,7 +8,7 @@ export default function Header() {
                 <MainTitle
                     subtitle="Hey!"
                     title="Wir sind Designhub"
-                    link="/discord"
+                    link="https://discordapp.com/invite/PGv5TR3"
                     linktitle="Komm auf unseren Discord"
                 >
                     Designhub bringt talentierte Designer und Developer zu einer großen Community zusammen. Komm jetzt

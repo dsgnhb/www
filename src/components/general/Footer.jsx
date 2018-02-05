@@ -1,6 +1,6 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 import {MainLink} from './misc/Titles';
+import LinkDuo from './misc/LinkDuo';
 
 export default function Footer() {
     const columns = [
@@ -59,19 +59,19 @@ export default function Footer() {
             links: [
                 {
                     name: 'Discord',
-                    href: '/discord'
+                    href: 'https://discordapp.com/invite/PGv5TR3'
                 },
                 {
                     name: 'Twitter',
-                    href: '/twitter'
+                    href: 'https://twitter.com/dsgnhb'
                 },
                 {
                     name: 'YouTube',
-                    href: '/yt'
+                    href: 'https://www.youtube.com/channel/UC5xEZufXUwoxdixe0QVDrtA'
                 },
                 {
                     name: 'GitHub',
-                    href: '/github'
+                    href: 'https://github.com/dsgnhb'
                 }
             ]
         }
@@ -88,13 +88,13 @@ export default function Footer() {
                     </div>
                     <ul className="legal">
                         <li>
-                            <Link to="/">2016-2017 &copy; designhub</Link>
+                            <LinkDuo to="/">2016-2017 &copy; designhub</LinkDuo>
                         </li>
                         <li>
-                            <Link to="/imprint">Impressum</Link>
+                            <LinkDuo to="/imprint">Impressum</LinkDuo>
                         </li>
                         <li>
-                            <Link to="/privacypolicy">Datenschutz</Link>
+                            <LinkDuo to="/privacypolicy">Datenschutz</LinkDuo>
                         </li>
                     </ul>
                 </div>
@@ -114,7 +114,7 @@ function Column(props) {
             <ul>
                 {props.links.map(item => (
                     <li key={props.links.indexOf(item)}>
-                        <Link to={item.href}>{item.name}</Link>
+                        <LinkDuo to={item.href}>{item.name}</LinkDuo>
                     </li>
                 ))}
             </ul>
@@ -127,7 +127,7 @@ function Join() {
         <section id="join" className="flex-center-center">
             <div className="icon" />
             <h3>Bereit, die Hölle zu entdecken?</h3>
-            <MainLink href="/discord">Komm auf unseren Discord</MainLink>
+            <MainLink href="https://discordapp.com/invite/PGv5TR3">Komm auf unseren Discord</MainLink>
         </section>
     );
 }

@@ -499,6 +499,7 @@ MAIN-HEADER
 -----------------------
 */
 div#hero {
+    z-index: -5;
     min-height: 500px;
     height: 80vh;
     width: 100%;
@@ -524,11 +525,12 @@ div#hero .text {
 }
 
 div#hero .planet {
+    z-index: 5;
     position: absolute;
-    bottom: 12vh;
+    bottom: 20vh;
     right: 10vw;
-    height: 10em;
-    width: 10em;
+    height: 12em;
+    width: 11em;
     background: #ecd95b;
     background-image: -webkit-gradient(linear, top right, top left, from(#ecd95b), to(#ef5f52));
     background: -webkit-linear-gradient(top, #ecd95b, #ef5f52);
@@ -537,6 +539,7 @@ div#hero .planet {
 }
 
 div#hero .mountains {
+    z-index: 10;
     position: absolute;
     background: url(../img/mountains/light.png) bottom repeat-x;
     width: 100%;
@@ -544,10 +547,10 @@ div#hero .mountains {
     transform: translateY(-100%);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     div#hero .planet {
-        width: 30vw;
-        height: 30vw;
+        width: 40vw;
+        height: 40vw;
     }
 }
 

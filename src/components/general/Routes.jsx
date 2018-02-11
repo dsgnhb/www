@@ -33,7 +33,10 @@ export default class Routes extends React.Component {
         this.redirects.set('/mail', 'mailto:info@dsgnhb.de');
         this.redirects.set('/music', 'http://46.228.192.55:8087');
         this.redirects.set('/patreon', 'https://www.patreon.com/designhub');
-        this.redirects.set('/paypal', 'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=H6JB49DXTDP3Q');
+        this.redirects.set(
+            '/paypal',
+            'https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=H6JB49DXTDP3Q'
+        );
         this.redirects.set('/presskit', 'https://dl.dsgnhb.de');
         this.redirects.set('/rc', 'https://www.dropbox.com/sh/ecq8lku300b63ir/AABxOnsQoEg1SP26klmHEBsva?dl=0');
         this.redirects.set('/shorttech', 'http://shorttech.de/?ref=designhub');

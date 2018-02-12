@@ -4,10 +4,10 @@ export default function Stats() {
     return (
         <section id="stats">
             <div className="container flex-list icons">
-                <Fact id="one" data="250+" name="Member">
+                <Fact id="one" data="300+" name="Member">
                     Das werden dann halt einfach auch noch jeden Tag mehr.
                 </Fact>
-                <Fact id="two" data="572" name="Nachrichten pro Tag">
+                <Fact id="two" data="70+" name="Nachrichten pro Tag">
                     Das's ganz schön viel Spam und bestimmt auch ein paar Gomme-Smileys.
                 </Fact>
                 <Fact id="three" data="1234" name="Irgndne Statistik">

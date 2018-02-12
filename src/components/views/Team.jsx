@@ -15,41 +15,35 @@ export default function Team() {
                         <TeamMember name="Flo" activity="alles">
                             Wir wollten das eigentlich professionell machen, dann kam Lukas.
                         </TeamMember>
-                        <TeamMember name="Lukas" activity="Bestimmer über alles (rein theoretisch)">
+                        <TeamMember name="Lukas" activity="Bestimmer über alles (rein theoretisch) und Musikbot-DJ">
                             ich verbrenne dein Dorf - auch wenn da Villager drinnen sind. das is mir jz egal.
                         </TeamMember>
                     </Role>
                     <Role name="Design">
-                        <TeamMember name="bubblespuggy" activity="Designer / App-Developer">
+                        <TeamMember name="Tim" activity="Designer / App-Developer">
                             Guckt vielleicht ein bisschen zu viel Netflix.
                         </TeamMember>
                         <TeamMember name="Brian" activity="Fotograf, Mediengestalter">
                             16, Herford, Deutschland
                         </TeamMember>
-                        <TeamMember name="RadeArtz" activity="Motion Designer">
-                            Inaktiv auf YouTube, trotzdem gerne bestellen.
-                        </TeamMember>
-                        <TeamMember name="Hendrik" activity="Illustrator/Artist">
-                            :gomme:
+                      <TeamMember name="Matthias" activity="Icon Designer und so">
+                            Meine Mama hat mich lieb.
                         </TeamMember>
                     </Role>
                     <Role name="Dev">
-                        <TeamMember name="Fin" activity="Developer">
-                            Kümmere mich hier um die ganzen Rechtschreibfehler... Ist ein 24/7 Job.
-                        </TeamMember>
-                        <TeamMember name="LukvonStrom" activity="Developer">
+                        <TeamMember name="LukvonStrom" activity="Backend-Developer">
                             Mache so Dinge im Interwebs. Es ist ein Standard, das muss so! Folgt mir auf Twitter.
                         </TeamMember>
-                        <TeamMember name="CreepPlays" activity="Developer">
+                        <TeamMember name="Alex" activity="Server-Wieder-Richtig-Macher">
                             $ su -hack && rm -rf / --no-preserve-root
+                        </TeamMember>
+                        <TeamMember name="Tobias" activity="Developer">
+                            Jo ich mach das - 3 Monate später: "undefinded"
                         </TeamMember>
                     </Role>
                     <Role name="Content">
-                        <TeamMember name="Tobi" activity="Professioneller Texteüberleger und Nichtfreiwillig-Arbeiter">
+                        <TeamMember name="Tobi" activity="Professioneller Texteüberleger und Nichtfreiwillig-Arbeiter und Meme-Designer und TopDesign-Verlierer">
                             Was denn hier los?!
-                        </TeamMember>
-                        <TeamMember name="Teax" activity="Developer, (Web)Designer">
-                            Meine Mama hat mich lieb.
                         </TeamMember>
                     </Role>
                 </div>

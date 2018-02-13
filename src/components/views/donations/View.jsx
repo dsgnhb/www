@@ -2,6 +2,7 @@ import React from 'react';
 import LinkDuo from '../../general/misc/LinkDuo';
 import { MainTitle } from '../../general/misc/Titles';
 import LastDonations from './sections/LastDonations';
+import Features from "./sections/Features"
 
 export default function Donations() {
     return (
@@ -23,34 +24,9 @@ export default function Donations() {
                     >
                         PayPal
                     </LinkDuo>
-                    <div className="content">
-                        <div className="flex-list member">
-                            <div className="item">
-                                <div className="icon">test</div>
-                                <h3>Zugang zum VIP Channel</h3>
-                                <p>Chille mit all den anderen wirklich coolen Personen in der VIP Lounge.</p>
-                            </div>
-                            <div className="item">
-                                <h3>Dein eigener Emoji</h3>
-                                <p>Spende mindestens 5€ und füge deinen eigenen Emoji dem Discord hinzu!</p>
-                            </div>
-                            <div className="item">
-                                <h3>designhub GFX-Pack</h3>
-                                <p>Wir gewähren dir exclusiven Zugriff auf das private designhub-Pack!.</p>
-                            </div>
-                            <div className="item">
-                                <h3>Donator Rolle</h3>
-                                <p>Zeige mit der @donator Rolle, dass du designhub unterstützt.</p>
-                            </div>
-                            <div className="item">
-                                <h3>trololololol</h3>
-                                <p>Nutze so oft /gommemode wie du willst ohne Coins zu verlieren :gomme:</p>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </section>
+            <Features />
             <LastDonations />
         </div>
     );

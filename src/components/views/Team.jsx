@@ -1,5 +1,6 @@
 import React from 'react';
-import {SectionTitle} from '../general/misc/Titles';
+import { SectionTitle } from '../general/misc/Titles';
+import LinkDuo from '../general/misc/LinkDuo';
 
 export default function Team() {
     return (
@@ -12,44 +13,38 @@ export default function Team() {
                 </SectionTitle>
                 <div className="content">
                     <Role name="Owner">
-                        <TeamMember name="Flo" activity="alles">
+                        <TeamMember name="Flo" activity="alles" link="https://flooo.me">
                             Wir wollten das eigentlich professionell machen, dann kam Lukas.
                         </TeamMember>
-                        <TeamMember name="Lukas" activity="Bestimmer über alles (rein theoretisch)">
+                        <TeamMember name="Lukas" activity="Bestimmer über alles (rein theoretisch) und Musikbot-DJ" link="https://lukaas.de">
                             ich verbrenne dein Dorf - auch wenn da Villager drinnen sind. das is mir jz egal.
                         </TeamMember>
                     </Role>
                     <Role name="Design">
-                        <TeamMember name="bubblespuggy" activity="Designer / App-Developer">
+                        <TeamMember name="Tim" activity="Designer / App-Developer">
                             Guckt vielleicht ein bisschen zu viel Netflix.
                         </TeamMember>
                         <TeamMember name="Brian" activity="Fotograf, Mediengestalter">
                             16, Herford, Deutschland
                         </TeamMember>
-                        <TeamMember name="RadeArtz" activity="Motion Designer">
-                            Inaktiv auf YouTube, trotzdem gerne bestellen.
-                        </TeamMember>
-                        <TeamMember name="Hendrik" activity="Illustrator/Artist">
-                            :gomme:
+                        <TeamMember name="Matthias" activity="Icon Designer und so">
+                            Meine Mama hat mich lieb.
                         </TeamMember>
                     </Role>
                     <Role name="Dev">
-                        <TeamMember name="Fin" activity="Developer">
-                            Kümmere mich hier um die ganzen Rechtschreibfehler... Ist ein 24/7 Job.
-                        </TeamMember>
-                        <TeamMember name="LukvonStrom" activity="Developer">
+                        <TeamMember name="LukvonStrom" activity="Backend-Developer">
                             Mache so Dinge im Interwebs. Es ist ein Standard, das muss so! Folgt mir auf Twitter.
                         </TeamMember>
-                        <TeamMember name="CreepPlays" activity="Developer">
+                        <TeamMember name="Alex" activity="Server-Wieder-Richtig-Macher">
                             $ su -hack && rm -rf / --no-preserve-root
+                        </TeamMember>
+                        <TeamMember name="Tobias" activity="Developer">
+                            Jo ich mach das - 3 Monate später: "undefinded"
                         </TeamMember>
                     </Role>
                     <Role name="Content">
-                        <TeamMember name="Tobi" activity="Professioneller Texteüberleger und Nichtfreiwillig-Arbeiter">
+                        <TeamMember name="Tobi" activity="Professioneller Texteüberleger und Nichtfreiwillig-Arbeiter und Meme-Designer und TopDesign-Verlierer">
                             Was denn hier los?!
-                        </TeamMember>
-                        <TeamMember name="Teax" activity="Developer, (Web)Designer">
-                            Meine Mama hat mich lieb.
                         </TeamMember>
                     </Role>
                 </div>
@@ -60,19 +55,31 @@ export default function Team() {
 
 function Role(props) {
     return (
-        <div className="flex-list member">
+        <div className="flex-list icons left">
             <h3 className="part">{props.name}</h3>
             {props.children}
         </div>
     );
 }
 
-function TeamMember(props) {
-    return (
-        <div className="item">
-            <h3>{props.name}</h3>
-            <h4>{props.activity}</h4>
-            <p>{props.children}</p>
-        </div>
-    );
+export function TeamMember(props) {
+    if (props.link) {
+        return (
+            <div className="item">
+                <div className={`icon ${props.id}`} />
+                <LinkDuo to={props.link}><h3>{props.name}</h3></LinkDuo>
+                <h4>{props.activity}</h4>
+                <p>{props.children}</p>
+            </div>
+        );
+    } else {
+        return (
+            <div className="item">
+                <div className={`icon ${props.id}`} />
+                <h3>{props.name}</h3>
+                <h4>{props.activity}</h4>
+                <p>{props.children}</p>
+            </div>
+        );
+    }
 }

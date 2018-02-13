@@ -21,6 +21,7 @@ export default function Features() {
     );
 }
 
+
 export function Category(props) {
     if (props.link) {
         return (

@@ -324,6 +324,9 @@ FLEX-LIST
         flex-basis: 0 !important;
     }
 }
+.flex-list.left {
+    justify-content: flex-start !important;
+  }
 
 .flex-list .item {
     flex: 1;
@@ -601,7 +604,7 @@ section#team .flex-list {
     margin-bottom: 2em;
 }
 
-section#team .flex-list .item {
+section#team .flex-list.icons .item {
     z-index: 5;
 }
 

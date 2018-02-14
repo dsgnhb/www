@@ -38,9 +38,6 @@ export default function Team() {
                         <TeamMember name="Alex" activity="Server-Wieder-Richtig-Macher">
                             $ su -hack && rm -rf / --no-preserve-root
                         </TeamMember>
-                        <TeamMember name="Tobias" activity="Developer">
-                            Jo ich mach das - 3 Monate später: "undefinded"
-                        </TeamMember>
                     </Role>
                     <Role name="Content">
                         <TeamMember name="Tobi" activity="Professioneller Texteüberleger und Nichtfreiwillig-Arbeiter und Meme-Designer und TopDesign-Verlierer">

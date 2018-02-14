@@ -1,8 +1,8 @@
 import React from 'react';
 import LinkDuo from '../../general/misc/LinkDuo';
-import { MainTitle } from '../../general/misc/Titles';
+import {MainTitle} from '../../general/misc/Titles';
 import LastDonations from './sections/LastDonations';
-import Features from "./sections/Features"
+import Features from './sections/Features';
 
 export default function Donations() {
     return (

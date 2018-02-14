@@ -1,5 +1,5 @@
 import React from 'react';
-import { SectionTitle } from '../general/misc/Titles';
+import {SectionTitle} from '../general/misc/Titles';
 import LinkDuo from '../general/misc/LinkDuo';
 
 export default function Team() {
@@ -16,7 +16,11 @@ export default function Team() {
                         <TeamMember name="Flo" activity="alles" link="https://flooo.me">
                             Wir wollten das eigentlich professionell machen, dann kam Lukas.
                         </TeamMember>
-                        <TeamMember name="Lukas" activity="Bestimmer über alles (rein theoretisch) und Musikbot-DJ" link="https://lukaas.de">
+                        <TeamMember
+                            name="Lukas"
+                            activity="Bestimmer über alles (rein theoretisch) und Musikbot-DJ"
+                            link="https://lukaas.de"
+                        >
                             ich verbrenne dein Dorf - auch wenn da Villager drinnen sind. das is mir jz egal.
                         </TeamMember>
                     </Role>
@@ -40,7 +44,10 @@ export default function Team() {
                         </TeamMember>
                     </Role>
                     <Role name="Content">
-                        <TeamMember name="Tobi" activity="Professioneller Texteüberleger und Nichtfreiwillig-Arbeiter und Meme-Designer und TopDesign-Verlierer">
+                        <TeamMember
+                            name="Tobi"
+                            activity="Professioneller Texteüberleger und Nichtfreiwillig-Arbeiter und Meme-Designer und TopDesign-Verlierer"
+                        >
                             Was denn hier los?!
                         </TeamMember>
                     </Role>
@@ -64,7 +71,9 @@ export function TeamMember(props) {
         return (
             <div className="item">
                 <div className={`icon ${props.id}`} />
-                <LinkDuo to={props.link}><h3>{props.name}</h3></LinkDuo>
+                <LinkDuo to={props.link}>
+                    <h3>{props.name}</h3>
+                </LinkDuo>
                 <h4>{props.activity}</h4>
                 <p>{props.children}</p>
             </div>

@@ -24,7 +24,6 @@ export default function Features() {
     );
 }
 
-
 export function Category(props) {
     return (
         <div className="item">
@@ -32,5 +31,5 @@ export function Category(props) {
             <h3>{props.name}</h3>
             <p>{props.children}</p>
         </div>
-    )
+    );
 }

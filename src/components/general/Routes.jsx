@@ -8,6 +8,7 @@ import Donations from '../views/donations/View';
 import Levels from '../views/levels/View';
 import Partner from '../views/Partner';
 import TopDesign from '../views/topdesign/View';
+import Apply from '../views/apply/View';
 import Imprint from '../views/Imprint';
 import PrivacyPolicy from '../views/PrivacyPolicy';
 import {NotFound} from '../views/Error';
@@ -26,6 +27,7 @@ export default class Routes extends React.Component {
         this.webTitles.set('/partner', 'Partner');
         this.webTitles.set('/privacypolicy', 'Datenschutzerklärung');
         this.webTitles.set('/topdesign', 'TopDesign');
+        this.webTitles.set('/apply', 'Bewerben');
 
         this.redirects = new Map();
         this.redirects.set('/discord', 'https://discordapp.com/invite/PGv5TR3');
@@ -71,6 +73,7 @@ export default class Routes extends React.Component {
                 <Route path="/levels" component={Levels} />
                 <Route path="/partner" component={Partner} />
                 <Route path="/topdesign" component={TopDesign} />
+                <Route path="/apply" component={Apply} />
                 <Route path="/imprint" component={Imprint} />
                 <Route path="/privacypolicy" component={PrivacyPolicy} />
                 <Route component={NotFound} />

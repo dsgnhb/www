@@ -17,8 +17,8 @@ export default class App extends React.Component {
         this.nightmode = {
             enabled: true,
             forced: false,
-            begin: 20,
-            end: 6
+            begin: 19,
+            end: 8
         };
         let hour = new Date().getHours();
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import {MainLink} from './misc/Titles';
+import { MainLink } from './misc/Titles';
 import LinkDuo from './misc/LinkDuo';
 
 export default function Footer() {
@@ -39,6 +39,10 @@ export default function Footer() {
                 {
                     name: 'Über uns',
                     href: '/about'
+                },
+                {
+                    name: 'Bewerben',
+                    href: '/apply'
                 },
                 {
                     name: 'Partner',

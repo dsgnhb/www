@@ -1,8 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export default class NightMode extends React.Component {
     static propTypes = {
-        active: false
+        active: PropTypes.bool
     };
     static defaultProps = {
         active: false

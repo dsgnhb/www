@@ -20,6 +20,7 @@ export default class App extends React.Component {
             begin: 19,
             end: 8
         };
+
         let hour = new Date().getHours();
 
         if (

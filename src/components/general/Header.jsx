@@ -61,6 +61,11 @@ export default class Header extends React.Component {
                                 </Link>
                             </li>
                             <li>
+                                <Link to="/apply" onClick={this.closeNav}>
+                                    Bewerben
+                                </Link>
+                            </li>
+                            <li>
                                 <Link to="/topdesign" onClick={this.closeNav}>
                                     Top Design
                                 </Link>

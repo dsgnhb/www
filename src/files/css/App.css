@@ -216,7 +216,7 @@ p,
     font-size: 1em;
     color: var(--darkgray);
     font-weight: 400;
-    line-height: 1.3em;
+    line-height: 1.5em;
     letter-spacing: 0.01em;
     margin: 10px 0;
 }
@@ -225,10 +225,11 @@ p b,
 .text b {
     font-size: 1em;
     color: var(--black);
-    font-weight: 600;
-    line-height: 1.3em;
+    font-weight: 700;
+    line-height: 1.5em;
     letter-spacing: 0.01em;
 }
+
 
 li {
     color: var(--darkgray);
@@ -245,7 +246,7 @@ section .content {
 a {
     font-size: 1em;
     color: var(--black);
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.4em;
     letter-spacing: 0.02em;
     text-decoration: none;
@@ -257,6 +258,9 @@ a:hover {
 
 body section:first-child {
     padding-top: 70px;
+}
+p.main {
+    font-weight: 600;
 }
 
 /*
@@ -278,7 +282,7 @@ CLASSES
     }
 }
 
-a.prefix::before {
+.prefix::before {
     content: '» ';
 }
 
@@ -298,6 +302,39 @@ a.prefix::before {
 
 .logo.dark {
     background-image: url(../img/logos/dark.png);
+}
+
+.gradient.text {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.gradient.blue {
+    background-image: -webkit-gradient(linear, left top, right top, from(#478cbe), to(#59e4da));
+    background-image: -webkit-linear-gradient(left, #478cbe, #59e4da);
+    background-image: -moz-linear-gradient(right, #478cbe, #59e4da);
+    background-image: linear-gradient(to right, #478cbe, #59e4da);
+}
+.gradient.orange {
+    background-color: #ef5f52;
+    background-image: -webkit-gradient(linear, left top, right top, from(#ecd95b), to(#ef5f52));
+    background-image: -webkit-linear-gradient(left, #ecd95b, #ef5f52);
+    background-image: -moz-linear-gradient(right, #ecd95b, #ef5f52);
+    background-image: linear-gradient(to right, #ecd95b, #ef5f52);
+}
+
+.gradient.green {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#bcf265), to(#75dfa1));
+    background-image: -webkit-linear-gradient(bottom, #bcf265, #75dfa1);
+    background-image: -moz-linear-gradient(bottom, #bcf265, #75dfa1);
+    background-image: linear-gradient(to top, #bcf265, #75dfa1);
+}
+.gradient.gray {
+    background-color: #c1c1c1;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#c1c1c1), to(#767676));
+    background-image: -webkit-linear-gradient(bottom, #c1c1c1, #767676);
+    background-image: -moz-linear-gradient(bottom, #c1c1c1, #767676);
+    background-image: linear-gradient(to top, #c1c1c1, #767676);
 }
 
 /*
@@ -535,7 +572,7 @@ div#hero .planet {
     position: absolute;
     bottom: 20vh;
     right: 10vw;
-    height: 12em;
+    height: 11em;
     width: 11em;
     background: #ecd95b;
     background-image: -webkit-gradient(linear, top right, top left, from(#ecd95b), to(#ef5f52));
@@ -641,7 +678,6 @@ section .flex-list .item h3.color {
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
-
 section#leaderboard .flex-list .item.color.one h3 {
     background-color: #ecd95b;
     background-image: -webkit-gradient(linear, left top, right top, from(#ecd95b), to(#ef5f52));
@@ -682,27 +718,6 @@ section#stats .flex-list .item h3.fact {
     }
 }
 
-section#stats .flex-list .item h3.color.one {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(#59e4da), to(#478cbe));
-    background-image: -webkit-linear-gradient(bottom, #59e4da, #478cbe);
-    background-image: -moz-linear-gradient(bottom, #59e4da, #478cbe);
-    background-image: linear-gradient(to top, #59e4da, #478cbe);
-}
-
-section#stats .flex-list .item h3.color.two {
-    background-color: #ef5f52;
-    background-image: -webkit-gradient(linear, left top, right top, from(#ecd95b), to(#ef5f52));
-    background-image: -webkit-linear-gradient(left, #ecd95b, #ef5f52);
-    background-image: -moz-linear-gradient(right, #ecd95b, #ef5f52);
-    background-image: linear-gradient(to right, #ecd95b, #ef5f52);
-}
-
-section#stats .flex-list .item h3.color.three {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(#bcf265), to(#75dfa1));
-    background-image: -webkit-linear-gradient(bottom, #bcf265, #75dfa1);
-    background-image: -moz-linear-gradient(bottom, #bcf265, #75dfa1);
-    background-image: linear-gradient(to top, #bcf265, #75dfa1);
-}
 
 /*
 -----------------------
@@ -742,29 +757,16 @@ section#topdesign .flex-list .item:hover .overlay {
 DONATIONS
 -----------------------
 */
-section#donations-intro .flex-list .item  > *{
-    z-index: 30;
+section#donations-features .item .icon.emoji {
+    background-image: url(../img/icons/donations/wumpus.png);
 }
-section#donations-intro .flex-list
-.icon {
-    color: var(--lightgray);
-    text-transform: uppercase;
-    font-size: 6em;
-    font-weight: 700;
-    position: absolute;
-    margin-top: -40px;
-    margin-left: -30px;
-    z-index: 0;
-
-}
-
-
-@media (max-width: 700px) {
-    section#donations-intro .flex-list h3.part {
-        font-size: 4em;
-        margin-top: -20px;
-        margin-left: -20px;
-    }
+section#donations-features .item .icon {
+    width: 100%;
+    height: 180px;
+    margin-bottom: 20px;
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
 }
 
 /*
@@ -863,28 +865,6 @@ section#gradients .flex-list.icons .item .example h4 {
     color: var(--white);
 }
 
-section#gradients .flex-list.icons .item .example.one {
-    background-color: #59e4da;
-    background-image: -webkit-gradient(linear, left bottom, left top, from(#59e4da), to(#478cbe));
-    background-image: -webkit-linear-gradient(bottom, #59e4da, #478cbe);
-    background-image: -moz-linear-gradient(bottom, #59e4da, #478cbe);
-    background-image: linear-gradient(to top, #59e4da, #478cbe);
-}
-
-section#gradients .flex-list.icons .item .example.two {
-    background: #ef5f52;
-    background: linear-gradient(135deg, #ecd95b 0%, #ee6052 100%);
-}
-
-section#gradients .flex-list.icons .item .example.three {
-    background-color: #bcf265;
-    background-image: linear-gradient(90deg, #bcf265 0%, #75dfa1 100%);
-}
-
-section#gradients .flex-list.icons .item .example.four {
-    background-color: #c1c1c1;
-    background-image: linear-gradient(135deg, #c1c1c1 0%, #767676 100%);
-}
 
 /*
 -----------------------
@@ -1153,7 +1133,13 @@ body.night {
 }
 .night button[type="submit"]:hover {
     background-color: var(--lightgray)
-
+}
+.night button[type="submit"]:disabled {
+    background-color: var(--darkgray);
+    color: var(--black);
+}
+.night button[type="submit"]:disabled:hover {
+    background-color: var(--darkgray);
 }
 
 /*
@@ -1201,7 +1187,7 @@ button[type="submit"] {
     text-transform: uppercase;
     background-color: var(--black);
     border: none;
-    color: -var(--lightgray);
+    color: var(--lightgray);
     padding: 15px 30px;
     text-align: center;
     text-decoration: none;
@@ -1213,4 +1199,11 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: var(--darkgray)
 
+}
+button[type="submit"]:disabled {
+    background-color: var(--lightgray);
+    color: var(--white);
+}
+button[type="submit"]:disabled:hover {
+    background-color: var(--lightgray);
 }

@@ -1,6 +1,5 @@
 import React from 'react';
-import LinkDuo from '../../general/misc/LinkDuo';
-import {MainTitle} from '../../general/misc/Titles';
+import { MainTitle } from '../../general/misc/Titles';
 import LastDonations from './sections/LastDonations';
 import Features from './sections/Features';
 
@@ -9,21 +8,16 @@ export default function Donations() {
         <div>
             <section id="donations-intro">
                 <div className="container">
-                    <MainTitle subtitle="Danke." title="Donations">
-                        <b>Werd’ doch ein Patreon!</b> Wenn du designhub magst und uns unterstützen möchtest, um das
-                        Projekt aktiv zuhalten, freuen wir uns über deine Hilfe! Als Dankeschön erhälst du coole
-                        Belohnungen. Außerdem erwähnen wir dich auf unserer Website und bieten dir 'nen extra Rang auf
-                        unserem Discord an.
-                    </MainTitle>
-                    <LinkDuo to="https://www.patreon.com/designhub" className="main">
-                        Patreon -{' '}
-                    </LinkDuo>
-                    <LinkDuo
-                        to="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=H6JB49DXTDP3Q"
-                        className="main"
+                    <MainTitle
+                        subtitle="Donations"
+                        title="Unterstütze uns!"
+                        link="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=H6JB49DXTDP3Q"
+                        linktitle="Los geht's!"
                     >
-                        PayPal
-                    </LinkDuo>
+                        Wenn du designhub magst und uns unterstützen möchtest, um das Projekt aktiv zuhalten, freuen wir
+                        uns über deine Hilfe! Als Dankeschön erhälst du coole Belohnungen. So erwähnen wir dich zum Beispiel
+                        auf unserer Website und bieten dir 'nen extra Rang auf unserem Discord an.
+                    </MainTitle>
                 </div>
             </section>
             <Features />

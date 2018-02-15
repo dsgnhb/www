@@ -7,9 +7,11 @@ export default function Job(props) {
         return (
             <section id="apply-form">
                 <div className="container">
-                    <SectionTitle subtitle={props.rank} title={props.skills}>
+                    <SectionTitle subtitle={props.rank} title={props.skills} link={props.link} linktitle={props.linktitle}>
                         {props.children}
                     </SectionTitle>
+                    <p className="main prefix">Wir freuen uns auf deine Bewerbung!</p>
+
                     <div className="content">
                         <Form />
                     </div>
@@ -26,7 +28,6 @@ export default function Job(props) {
         );
     }
 }
-
 
 export function Form(props) {
     return (

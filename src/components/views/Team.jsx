@@ -37,7 +37,7 @@ export default function Team() {
                     </Role>
                     <Role name="Dev">
                         <TeamMember name="LukvonStrom" activity="Backend-Developer">
-                            Mache so Dinge im Interwebs. Es ist ein Standard, das muss so! Folgt mir auf Twitter.
+                            17, Mache so Dinge im Interwebs und nebenbei ein bisschen Schule :^)
                         </TeamMember>
                         <TeamMember name="Alex" activity="Server-Wieder-Richtig-Macher">
                             $ su -hack && rm -rf / --no-preserve-root

@@ -757,29 +757,16 @@ section#topdesign .flex-list .item:hover .overlay {
 DONATIONS
 -----------------------
 */
-section#donations-intro .flex-list .item  > *{
-    z-index: 30;
+section#donations-features .item .icon.emoji {
+    background-image: url(../img/icons/donations/wumpus.png);
 }
-section#donations-intro .flex-list
-.icon {
-    color: var(--lightgray);
-    text-transform: uppercase;
-    font-size: 6em;
-    font-weight: 700;
-    position: absolute;
-    margin-top: -40px;
-    margin-left: -30px;
-    z-index: 0;
-
-}
-
-
-@media (max-width: 700px) {
-    section#donations-intro .flex-list h3.part {
-        font-size: 4em;
-        margin-top: -20px;
-        margin-left: -20px;
-    }
+section#donations-features .item .icon {
+    width: 100%;
+    height: 180px;
+    margin-bottom: 20px;
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
 }
 
 /*
@@ -1146,7 +1133,13 @@ body.night {
 }
 .night button[type="submit"]:hover {
     background-color: var(--lightgray)
-
+}
+.night button[type="submit"]:disabled {
+    background-color: var(--darkgray);
+    color: var(--black);
+}
+.night button[type="submit"]:disabled:hover {
+    background-color: var(--darkgray);
 }
 
 /*
@@ -1194,7 +1187,7 @@ button[type="submit"] {
     text-transform: uppercase;
     background-color: var(--black);
     border: none;
-    color: -var(--lightgray);
+    color: var(--lightgray);
     padding: 15px 30px;
     text-align: center;
     text-decoration: none;
@@ -1206,4 +1199,11 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: var(--darkgray)
 
+}
+button[type="submit"]:disabled {
+    background-color: var(--lightgray);
+    color: var(--white);
+}
+button[type="submit"]:disabled:hover {
+    background-color: var(--lightgray);
 }

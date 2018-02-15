@@ -1,5 +1,5 @@
 import React from 'react';
-import {SectionTitle} from '../../../general/misc/Titles';
+import { SectionTitle } from '../../../general/misc/Titles';
 
 export default function Gradients() {
     return (
@@ -11,10 +11,10 @@ export default function Gradients() {
                 </SectionTitle>
                 <div className="content">
                     <div className="flex-list icons">
-                        <Gradient id="one" from="#478CBE" to="#59E4DA" name="Blau-T&uuml;rkis" />
-                        <Gradient id="two" from="#ECD95B" to="#EF5F52" name="Gelb-Orange" />
-                        <Gradient id="three" from="#BCF265" to="#75DFA1" name="Gr&uuml;n-Blau" />
-                        <Gradient id="four" from="#C1C1C1" to="#767676" name="Grau-Grau" />
+                        <Gradient color="blue" from="#478CBE" to="#59E4DA" name="Blau-T&uuml;rkis" />
+                        <Gradient color="orange" from="#ECD95B" to="#EF5F52" name="Gelb-Orange" />
+                        <Gradient color="green" from="#BCF265" to="#75DFA1" name="Gr&uuml;n-Blau" />
+                        <Gradient color="gray" from="#C1C1C1" to="#767676" name="Grau-Grau" />
                     </div>
                 </div>
             </div>
@@ -25,7 +25,7 @@ export default function Gradients() {
 function Gradient(props) {
     return (
         <div className="item">
-            <div className={`example ${props.id} flex-center-center`}>
+            <div className={`example gradient ${props.color} flex-center-center`}>
                 <h4>
                     {props.from}
                     <br />

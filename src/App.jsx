@@ -1,7 +1,7 @@
 import React from 'react';
-import { Router } from 'react-router-dom';
+import {Router} from 'react-router-dom';
 import PiwikReactRouter from 'piwik-react-router';
-import { createBrowserHistory } from 'history';
+import {createBrowserHistory} from 'history';
 import Typekit from 'react-typekit';
 import Header from './components/general/Header';
 import Routes from './components/general/Routes';

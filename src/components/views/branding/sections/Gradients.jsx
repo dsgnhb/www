@@ -1,5 +1,5 @@
 import React from 'react';
-import { SectionTitle } from '../../../general/misc/Titles';
+import {SectionTitle} from '../../../general/misc/Titles';
 
 export default function Gradients() {
     return (

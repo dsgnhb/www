@@ -1,52 +1,53 @@
 {
-    "name": "www",
-    "version": "0.1.0",
-    "license": "MIT",
-    "homepage": "https://dsgnhb.de/",
-    "private": true,
-    "author": "flo",
-    "contributors": [
-        {
-            "name": "Luk von Strom",
-            "email": "lukvonstrom@web.de",
-            "url": "https://lukvonstrom.de"
-        },
-        {
-            "name": "Fin Reinhhard",
-            "email": "fin.reinhard@icloud.com",
-            "url": "http://Angu.li"
-        }
-    ],
-    "dependencies": {
-        "history": "^4.7.2",
-        "is-url-external": "^1.0.3",
-        "piwik-react-router": "^0.12.1",
-        "prop-types": "^15.6.0",
-        "react": "^16.0.0",
-        "react-dom": "^16.0.0",
-        "react-router-dom": "^4.2.2",
-        "react-scripts": "1.1.1",
-        "react-typekit": "^1.1.2",
-        "whatwg-fetch": "^2.0.3"
+  "name": "www",
+  "version": "0.1.0",
+  "license": "MIT",
+  "homepage": "https://dsgnhb.de/",
+  "private": true,
+  "author": "flo",
+  "contributors": [
+    {
+      "name": "Luk von Strom",
+      "email": "lukvonstrom@web.de",
+      "url": "https://lukvonstrom.de"
     },
-    "devDependencies": {
-        "gh-pages": "^1.0.0",
-        "prettier": "^1.7.4"
-    },
-    "scripts": {
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d build",
-        "start": "npm run prettier && react-scripts start",
-        "build": "npm run prettier && react-scripts build",
-        "test": "react-scripts test --env=jsdom",
-        "eject": "react-scripts eject",
-        "prettier": "prettier --write src/**/*.{js,json,jsx}"
-    },
-    "prettier": {
-        "tabWidth": 4,
-        "printWidth": 120,
-        "semi": true,
-        "singleQuote": true,
-        "bracketSpacing": false
+    {
+      "name": "Fin Reinhhard",
+      "email": "fin.reinhard@icloud.com",
+      "url": "http://Angu.li"
     }
+  ],
+  "dependencies": {
+    "history": "^4.7.2",
+    "is-url-external": "^1.0.3",
+    "piwik-react-router": "^0.12.1",
+    "prop-types": "^15.6.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-google-invisible-recaptcha": "^0.2.6",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.1",
+    "react-typekit": "^1.1.2",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.0.0",
+    "prettier": "^1.7.4"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "npm run prettier && react-scripts start",
+    "build": "npm run prettier && react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "prettier": "prettier --write src/**/*.{js,json,jsx}"
+  },
+  "prettier": {
+    "tabWidth": 4,
+    "printWidth": 120,
+    "semi": true,
+    "singleQuote": true,
+    "bracketSpacing": false
+  }
 }

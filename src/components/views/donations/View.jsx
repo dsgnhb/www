@@ -1,5 +1,5 @@
 import React from 'react';
-import { MainTitle } from '../../general/misc/Titles';
+import {MainTitle} from '../../general/misc/Titles';
 import LastDonations from './sections/LastDonations';
 import Features from './sections/Features';
 
@@ -15,8 +15,8 @@ export default function Donations() {
                         linktitle="Los geht's!"
                     >
                         Wenn du designhub magst und uns unterstützen möchtest, um das Projekt aktiv zuhalten, freuen wir
-                        uns über deine Hilfe! Als Dankeschön erhälst du coole Belohnungen. So erwähnen wir dich zum Beispiel
-                        auf unserer Website und bieten dir 'nen extra Rang auf unserem Discord an.
+                        uns über deine Hilfe! Als Dankeschön erhälst du coole Belohnungen. So erwähnen wir dich zum
+                        Beispiel auf unserer Website und bieten dir 'nen extra Rang auf unserem Discord an.
                     </MainTitle>
                 </div>
             </section>

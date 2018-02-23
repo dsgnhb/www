@@ -1,11 +1,18 @@
-import React from "react";
+import React from 'react';
 
 export default function Field(props) {
     let input;
     switch (props.type) {
         case 'small':
             input = (
-                <input type="text" name={props.name} id={`form-${props.id}`} placeholder={props.children} ref={props.r} required />
+                <input
+                    type="text"
+                    name={props.name}
+                    id={`form-${props.id}`}
+                    placeholder={props.children}
+                    ref={props.r}
+                    required
+                />
             );
             break;
         case 'number':
@@ -37,7 +44,14 @@ export default function Field(props) {
             break;
         default:
             input = (
-                <input type="text" name={props.name} id={`form-${props.id}`} placeholder={props.children} ref={props.r} required />
+                <input
+                    type="text"
+                    name={props.name}
+                    id={`form-${props.id}`}
+                    placeholder={props.children}
+                    ref={props.r}
+                    required
+                />
             );
             break;
     }
@@ -47,6 +61,4 @@ export default function Field(props) {
             {input}
         </div>
     );
-
-
 }

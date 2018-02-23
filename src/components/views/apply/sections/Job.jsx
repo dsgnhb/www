@@ -1,15 +1,19 @@
 import React from 'react';
 import {SectionTitle} from '../../../general/misc/Titles';
-import Form from "./Form";
+import Form from './Form';
 
 
 export default function Job(props) {
-
     if (props.active) {
         return (
             <section id="apply-form">
                 <div className="container">
-                    <SectionTitle subtitle={props.rank} title={props.skills} link={props.link} linktitle={props.linktitle}>
+                    <SectionTitle
+                        subtitle={props.rank}
+                        title={props.skills}
+                        link={props.link}
+                        linktitle={props.linktitle}
+                    >
                         {props.children}
                     </SectionTitle>
                     <p className="main prefix">Wir freuen uns auf deine Bewerbung!</p>

@@ -7,19 +7,41 @@ export default class Form extends React.Component {
     constructor(props) {
         super(props);
         this.handleSubmit = this.handleSubmit.bind(this);
-        this.capta = {value: ''};
         this.recapta = {value: null};
         this.handleSubmit = this.handleSubmit.bind(this);
         this.onResolved = this.onResolved.bind(this);
     }
 
     onResolved() {
-        this.recapta.value = this.recaptcha.getResponse();
+        let abc = this.recaptcha.getResponse();
+
+
+        let values = {
+            about: this['about'].value,
+            age: this['age'].value,
+            discord: this['discord'].value,
+            mail: this['mail'].value,
+            motivation: this['motivation'].value,
+            name: this['name'].value,
+            experiences: this['experiences'].value,
+            references: this['references'].value,
+            twitter: this['twitter'].value,
+            'g-recaptcha-response': abc,
+        };
+
+        console.log(values);
+        this.btn.setAttribute('disabled', 'disabled');
+
+        this.postData(values)
+            .then(data => {
+                console.log(data);
+                // WIP display Validation Errors
+            })
+            .catch(error => console.error(error));
     }
 
-    postData(url, data) {
-        // Default options are marked with *
-        return fetch(url, {
+    postData(data) {
+        return fetch('http://api.dsgnhb.de/apply', {
             body: JSON.stringify(data),
             cache: 'no-cache',
             credentials: 'same-origin',
@@ -29,42 +51,12 @@ export default class Form extends React.Component {
             method: 'POST',
             mode: 'cors',
             redirect: 'follow',
-            referrer: 'no-referrer',
-        })
-            .then(response => response.json()) // parses response to JSON
+            referrer: 'no-referrer'
+        }).then(response => response.json()); // parses response to JSON
     }
 
     handleSubmit(event) {
-        if ('' === this.capta.value) {
-            alert('Fail!');
-            this.recaptcha.reset();
-            return;
-        } else {
-            this.recaptcha.execute();
-        }
-
-        let values = {
-            'about': this['about'].value,
-            'age': this['age'].value,
-            'discord': this['discord'].value,
-            'mail': this['mail'].value,
-            'motivation': this['motivation'].value,
-            'name': this['name'].value,
-            'experiences': this['experiences'].value,
-            'references': this['references'].value,
-            'twitter': this['twitter'].value,
-            'g-recaptcha-response': this.recapta.value,
-        };
-
-        console.log(values);
-        this.btn.setAttribute('disabled', 'disabled');
-
-        this.postData('http://api.dsgnhb.de/apply', values)
-            .then(data => {
-                console.log(data)
-                // WIP display Validation Errors
-            })
-            .catch(error => console.error(error));
+        this.recaptcha.execute();
 
         event.preventDefault();
     }
@@ -96,15 +88,15 @@ export default class Form extends React.Component {
                     ref={btn => {
                         this.btn = btn;
                     }}
-                    type="submit">
+                    type="submit"
+                >
                     Senden
                 </button>
-                {
                 <Recaptcha
                     ref={ref => (this.recaptcha = ref)}
-                    sitekey="PLS INSERT ME :("
+                    sitekey="6LeuMkgUAAAAALG6ATYfXGKYa_I_XhTr7uKM5X8L"
                     onResolved={this.onResolved}
-                />}
+                />
             </form>
         );
     }

@@ -26,7 +26,7 @@ export default function Apply() {
                 unvergleichliche Community aufzubauen? - <b>Dann bewirb' dich doch als Developer.</b> Wir suchen
                 begeisterte Entwickler, die motiviert sind, sich weiter zu entwickeln und ihre kreative Ideen in unsere
                 Projekte einfließen zu lassen. Für die Arbeit an unserer Website, Discord-Bot und API setzten wir eine
-                Arbeit mit NodeJS-Frameworken wie "express" oder "sequelize" sowie den Umgang mit Frontend-Technologien
+                Arbeit mit NodeJS-Frameworks wie "express" oder "sequelize" sowie den Umgang mit Frontend-Technologien
                 (HTML5, CSS, React) voraus. Außerdem solltest du dich schonmal mit Travis CI beschäftigt haben.
             </Job>
         </div>

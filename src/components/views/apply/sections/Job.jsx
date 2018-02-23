@@ -2,7 +2,6 @@ import React from 'react';
 import {SectionTitle} from '../../../general/misc/Titles';
 import Form from './Form';
 
-
 export default function Job(props) {
     if (props.active) {
         return (

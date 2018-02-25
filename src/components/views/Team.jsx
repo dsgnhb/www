@@ -50,6 +50,12 @@ export default function Team() {
                         >
                             Was denn hier los?!
                         </TeamMember>
+                        <TeamMember
+                            name="Chris"
+                            activity="Digital Content Manager :gomme:"
+                        >
+                            do u kno da wae
+                        </TeamMember>
                     </Role>
                 </div>
             </div>

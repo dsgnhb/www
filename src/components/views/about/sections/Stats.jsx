@@ -10,8 +10,8 @@ export default function Stats() {
                 <Fact color="orange" data="70+" name="Nachrichten pro Tag">
                     Das's ganz schön viel Spam und bestimmt auch ein paar Gomme-Smileys.
                 </Fact>
-                <Fact color="green" data="1234" name="Irgndne Statistik">
-                    0000 0001 0011 0010 0110 0111 0101 0100 1100 1101
+                <Fact color="green" data="10" name="Teammitglieder">
+                    Alle 10 cool, also fast alle, bis auf Lukas halt.
                 </Fact>
             </div>
         </section>

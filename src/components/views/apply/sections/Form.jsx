@@ -2,46 +2,68 @@ import Field from './Field';
 import React from 'react';
 //false = no crash lol
 import Recaptcha from 'react-google-invisible-recaptcha';
+import SweetAlert from 'sweetalert2-react';
 
 export default class Form extends React.Component {
     constructor(props) {
         super(props);
         this.handleSubmit = this.handleSubmit.bind(this);
-        this.recapta = {value: null};
-        this.handleSubmit = this.handleSubmit.bind(this);
         this.onResolved = this.onResolved.bind(this);
+        this.handleInputChange = this.handleInputChange.bind(this);
+        this.state = {
+            error_enabled: false,
+            error_header: 'Hi, Bug',
+            error_message: 'yo bro, u not seein dis',
+            error_type: 'success',
+            about: 'hi i bims',
+            age: 15,
+            discord: 'Teddy#1234',
+            mail: 'teddy@lukaas.de',
+            motivation: 'sehr hoch, immer',
+            name: 'Lukas\' Teddybär',
+            experiences: 'krasse Erfahrungen',
+            references: 'Meine Referenzen sind krass.',
+            twitter: '@teddygommemode',
+        }
     }
 
     onResolved() {
-        let abc = this.recaptcha.getResponse();
+        this.btn.setAttribute('disabled', 'true');
+        this.setState({'g-recaptcha-response': this.recaptcha.getResponse()});
 
-
-        let values = {
-            about: this['about'].value,
-            age: this['age'].value,
-            discord: this['discord'].value,
-            mail: this['mail'].value,
-            motivation: this['motivation'].value,
-            name: this['name'].value,
-            experiences: this['experiences'].value,
-            references: this['references'].value,
-            twitter: this['twitter'].value,
-            'g-recaptcha-response': abc,
-        };
-
-        console.log(values);
-        this.btn.setAttribute('disabled', 'disabled');
-
-        this.postData(values)
+        this.postData()
             .then(data => {
-                console.log(data);
-                // WIP display Validation Errors
+                if (data.status === 'inserted') {
+                    this.btn.innerHTML = 'Gesendet';
+                    this.setState({error_enabled: true,
+                        error_header: 'Gesendet',
+                        error_message: 'Deine Bewerbung wurde erfolgreich versendet!',
+                        error_type: 'success'});
+                } else {
+                    this.setState({error_enabled: true,
+                        error_header: 'Error',
+                        error_message: data.error.details[0].message,
+                        error_type: 'error',});
+                    this.btn.removeAttribute('disabled');
+                }
             })
             .catch(error => console.error(error));
     }
 
-    postData(data) {
-        return fetch('http://api.dsgnhb.de/apply', {
+    postData() {
+        let data = {
+            about: this.state.about,
+            age: this.state.age,
+            discord: this.state.discord,
+            mail: this.state.mail,
+            motivation: this.state.motivation,
+            name: this.state.name,
+            experiences: this.state.experiences,
+            references: this.state.references,
+            twitter: this.state.twitter,
+            'g-recaptcha-response': this.state['g-recaptcha-response'],
+        };
+        return fetch('https://api.dsgnhb.de/apply', {
             body: JSON.stringify(data),
             cache: 'no-cache',
             credentials: 'same-origin',
@@ -52,7 +74,14 @@ export default class Form extends React.Component {
             mode: 'cors',
             redirect: 'follow',
             referrer: 'no-referrer'
-        }).then(response => response.json()); // parses response to JSON
+        }).then(response => response.json());
+    }
+
+    handleInputChange(event) {
+        let value = event.target.value;
+        let name = event.target.name;
+
+        this.setState({[name]: value});
     }
 
     handleSubmit(event) {
@@ -64,39 +93,28 @@ export default class Form extends React.Component {
     render() {
         return (
             <form onSubmit={this.handleSubmit}>
-                <Field type="small" name="name" label="Dein Vor- & Nachname" r={input => (this.name = input)}>
-                    Lukas' Teddybär
-                </Field>
-                <Field type="number" name="age" label="Dein Alter" r={input => (this.age = input)}>
-                    3
-                </Field>
-                <Field type="small" name="mail" label="E-Mail" r={input => (this.mail = input)}>
-                    teddy@lukaas.de
-                </Field>
-                <Field type="small" name="discord" label="Discord" r={input => (this.discord = input)}>
-                    teddy#0815
-                </Field>
-                <Field type="small" name="twitter" label="Twitter" r={input => (this.twitter = input)}>
-                    @teddygommemode
-                </Field>
-                <Field type="big" name="about-me" label="Über mich" r={input => (this.about = input)} />
-                <Field type="big" name="motivation" label="Motivation" r={input => (this.motivation = input)} />
-                <Field type="big" name="experience" label="Erfahrungen" r={input => (this.experiences = input)} />
-                <Field type="big" name="credentials" label="Referenzen" r={input => (this.references = input)} />
-
-                <button
-                    ref={btn => {
-                        this.btn = btn;
-                    }}
-                    type="submit"
-                >
-                    Senden
-                </button>
-                <Recaptcha
-                    ref={ref => (this.recaptcha = ref)}
-                    sitekey="6LeuMkgUAAAAALG6ATYfXGKYa_I_XhTr7uKM5X8L"
-                    onResolved={this.onResolved}
-                />
+                <Field type="small" name="name" label="Dein Vor- & Nachname" onChange={this.handleInputChange} value={this.state.name} />
+                <Field type="number" name="age" label="Dein Alter" onChange={this.handleInputChange} value={this.state.age} />
+                <Field type="small" name="mail" label="E-Mail" onChange={this.handleInputChange} value={this.state.mail} />
+                <Field type="small" name="discord" label="Discord" onChange={this.handleInputChange} value={this.state.discord} />
+                <Field type="small" name="twitter" label="Twitter" onChange={this.handleInputChange} value={this.state.twitter} />
+                <Field type="big" name="about" label="Über mich" onChange={this.handleInputChange} value={this.state.about} />
+                <Field type="big" name="motivation" label="Motivation" onChange={this.handleInputChange}  value={this.state.motivation}/>
+                <Field type="big" name="experiences" label="Erfahrungen" onChange={this.handleInputChange}  value={this.state.experiences}/>
+                <Field type="big" name="references" label="Referenzen" onChange={this.handleInputChange}  value={this.state.references}/>
+                <div>
+                    <button ref={btn => {this.btn = btn;}} type="submit">Senden</button>
+                    <SweetAlert
+                        show={this.state.error_enabled}
+                        title={this.state.error_header}
+                        text={this.state.error_message}
+                        type={this.state.error_type}
+                        onConfirm={() =>
+                            (this.setState(
+                                {error_enabled: false}
+                                ))} />
+                </div>
+                <Recaptcha ref={ref => (this.recaptcha = ref)} sitekey="6LeuMkgUAAAAALG6ATYfXGKYa_I_XhTr7uKM5X8L" onResolved={this.onResolved} />
             </form>
         );
     }

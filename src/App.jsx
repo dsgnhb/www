@@ -8,6 +8,7 @@ import Routes from './components/general/Routes';
 import Footer from './components/general/Footer';
 import NightMode from './components/general/NightMode.jsx';
 import './files/css/App.css';
+import './files/css/sweetalert2.css';
 
 export default class App extends React.Component {
     constructor(props) {

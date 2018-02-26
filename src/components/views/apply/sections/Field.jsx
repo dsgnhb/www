@@ -11,6 +11,9 @@ export default function Field(props) {
                     id={`form-${props.id}`}
                     placeholder={props.children}
                     ref={props.r}
+                    onChange={props.onChange}
+                    value={props.value}
+                    autoFocus={props.autofocus}
                     required
                 />
             );
@@ -21,10 +24,13 @@ export default function Field(props) {
                     type="number"
                     name={props.name}
                     id={`form-${props.id}`}
-                    min="14"
+                    min="13"
                     max="100"
                     placeholder={props.children}
                     ref={props.r}
+                    onChange={props.onChange}
+                    value={props.value}
+                    autoFocus={props.autofocus}
                     required
                 />
             );
@@ -38,6 +44,9 @@ export default function Field(props) {
                     rows="6"
                     placeholder={props.children}
                     ref={props.r}
+                    onChange={props.onChange}
+                    value={props.value}
+                    autoFocus={props.autofocus}
                     required
                 />
             );
@@ -50,6 +59,9 @@ export default function Field(props) {
                     id={`form-${props.id}`}
                     placeholder={props.children}
                     ref={props.r}
+                    onChange={props.onChange}
+                    value={props.value}
+                    autoFocus={props.autofocus}
                     required
                 />
             );

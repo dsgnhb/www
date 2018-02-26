@@ -757,12 +757,29 @@ section#topdesign .flex-list .item:hover .overlay {
 DONATIONS
 -----------------------
 */
+section#donations-features .item .icon.vip {
+    background-image: url(../img/icons/donations/crown.png);
+    max-width: 200px;
+}
 section#donations-features .item .icon.emoji {
     background-image: url(../img/icons/donations/wumpus.png);
 }
+section#donations-features .item .icon.gfx {
+    background-image: url(../img/icons/donations/paintbrush.png);
+}
+section#donations-features .item .icon.gomme {
+    background-image: url(../img/icons/donations/gomme.png);
+    max-width: 170px;
+}
+section#donations-features .item .icon.name {
+    background-image: url(../img/icons/donations/note.png);
+}
+section#donations-features .item .icon.donatorrole {
+    background-image: url(../img/icons/donations/party.png);
+}
 section#donations-features .item .icon {
     width: 100%;
-    height: 180px;
+    height: 160px;
     margin-bottom: 20px;
     background-size: contain;
     background-position: left;

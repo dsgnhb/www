@@ -13,7 +13,7 @@ export default function Features() {
                 <Feature id="gfx" name="designhub GFX-Pack">
                     Wir gewähren dir exklusiven Zugriff auf das private designhub-Pack.
                 </Feature>
-                <Feature id="gommemode" name="Trololololol!">
+                <Feature id="gomme" name="Trololololol!">
                     Nutze so oft /gommemode wie du willst ohne Coins zu verlieren :gomme:
                 </Feature>
                 <Feature id="name" name="Du, auf unserer Website">

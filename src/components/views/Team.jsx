@@ -32,22 +32,25 @@ export default function Team() {
                             16, Herford, Deutschland
                         </TeamMember>
                         <TeamMember name="Matthias" activity="Icon Designer und so">
+
                             Meine Mama hat mich lieb.
                         </TeamMember>
                     </Role>
                     <Role name="Dev">
-                        <TeamMember name="LukvonStrom" activity="Backend-Developer">
+                        <TeamMember name="LukvonStrom" activity="Backend-Developer" link="http://fruntke.tech">
                             17, Mache so Dinge im Interwebs und nebenbei ein bisschen Schule :^)
                         </TeamMember>
                         <TeamMember name="Alex" activity="Server-Wieder-Richtig-Macher">
                             $ su -hack && rm -rf / --no-preserve-root
                         </TeamMember>
+                        <TeamMember name="Tobias" activity="Developer">
+                            Jo ich mach das - 3 Monate später: "undefinded"
+                        </TeamMember>
                     </Role>
                     <Role name="Content">
                         <TeamMember
                             name="Tobi"
-                            activity="Professioneller Texteüberleger und Nichtfreiwillig-Arbeiter und Meme-Designer und TopDesign-Verlierer"
-                        >
+                            activity="Professioneller Texteüberleger und Nichtfreiwillig-Arbeiter und Meme-Designer und TopDesign-Verlierer">
                             Was denn hier los?!
                         </TeamMember>
                         <TeamMember name="Chris" activity="Digital Content Manager :gomme:">

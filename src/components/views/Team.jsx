@@ -32,7 +32,6 @@ export default function Team() {
                             16, Herford, Deutschland
                         </TeamMember>
                         <TeamMember name="Matthias" activity="Icon Designer und so">
-
                             Meine Mama hat mich lieb.
                         </TeamMember>
                     </Role>
@@ -50,7 +49,8 @@ export default function Team() {
                     <Role name="Content">
                         <TeamMember
                             name="Tobi"
-                            activity="Professioneller Texteüberleger und Nichtfreiwillig-Arbeiter und Meme-Designer und TopDesign-Verlierer">
+                            activity="Professioneller Texteüberleger und Nichtfreiwillig-Arbeiter und Meme-Designer und TopDesign-Verlierer"
+                        >
                             Was denn hier los?!
                         </TeamMember>
                         <TeamMember name="Chris" activity="Digital Content Manager :gomme:">

@@ -9,10 +9,8 @@ export default function Field(props) {
                     type="text"
                     name={props.name}
                     id={`form-${props.id}`}
-                    placeholder={props.children}
-                    ref={props.r}
+                    placeholder={props.value}
                     onChange={props.onChange}
-                    value={props.value}
                     autoFocus={props.autofocus}
                     required
                 />
@@ -26,10 +24,8 @@ export default function Field(props) {
                     id={`form-${props.id}`}
                     min="13"
                     max="100"
-                    placeholder={props.children}
-                    ref={props.r}
+                    placeholder={props.value}
                     onChange={props.onChange}
-                    value={props.value}
                     autoFocus={props.autofocus}
                     required
                 />
@@ -42,10 +38,8 @@ export default function Field(props) {
                     id={`form-${props.id}`}
                     cols="30"
                     rows="6"
-                    placeholder={props.children}
-                    ref={props.r}
+                    placeholder={props.value}
                     onChange={props.onChange}
-                    value={props.value}
                     autoFocus={props.autofocus}
                     required
                 />
@@ -57,10 +51,8 @@ export default function Field(props) {
                     type="text"
                     name={props.name}
                     id={`form-${props.id}`}
-                    placeholder={props.children}
-                    ref={props.r}
+                    placeholder={props.value}
                     onChange={props.onChange}
-                    value={props.value}
                     autoFocus={props.autofocus}
                     required
                 />

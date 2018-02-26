@@ -16,7 +16,10 @@ export default function Logo() {
                     <div className="logo dark" />
                     <div>
                         <h3>Master Logo</h3>
-                        <LinkDuo to="https://www.dropbox.com/sh/rmhmrnj6po7u47m/AABqkrqkWrM30CbRv1ezIDQ5a?dl=0" className="main prefix">
+                        <LinkDuo
+                            to="https://www.dropbox.com/sh/rmhmrnj6po7u47m/AABqkrqkWrM30CbRv1ezIDQ5a?dl=0"
+                            className="main prefix"
+                        >
                             Download Press Kit
                         </LinkDuo>
                     </div>

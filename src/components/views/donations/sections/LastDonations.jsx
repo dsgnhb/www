@@ -8,11 +8,14 @@ export default function LastDonations() {
                 <h2>Vielen Dank für Eure Unterstützung!</h2>
                 <div className="content">
                     <div className="flex-list member">
-                        <Donation name="Teax" url="https://www.gommehd.net/">
-                            GommeHD.net
+                        <Donation name="Teax" url="https://twitter.com/teaxofficial">
+                            twitter.com/teaxofficial
                         </Donation>
                         <Donation name="Bukii" url="https://twitter.com/pensivecauselov">
                             twitter.com/pensivecauselov
+                        </Donation>
+                        <Donation name="Kai" url="https://twitter.com/KaiSchallenberg">
+                            twitter.com/KaiSchallenberg
                         </Donation>
                     </div>
                 </div>

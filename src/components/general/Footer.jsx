@@ -41,6 +41,10 @@ export default function Footer() {
                     href: '/about'
                 },
                 {
+                    name: 'Bewerben',
+                    href: '/apply'
+                },
+                {
                     name: 'Partner',
                     href: '/partner'
                 },
@@ -88,7 +92,7 @@ export default function Footer() {
                     </div>
                     <ul className="legal">
                         <li>
-                            <LinkDuo to="/">2016-2017 &copy; designhub</LinkDuo>
+                            <LinkDuo to="/">2016-{new Date().getFullYear()} &copy; designhub</LinkDuo>
                         </li>
                         <li>
                             <LinkDuo to="/imprint">Impressum</LinkDuo>

@@ -8,6 +8,7 @@ import Routes from './components/general/Routes';
 import Footer from './components/general/Footer';
 import NightMode from './components/general/NightMode.jsx';
 import './files/css/App.css';
+import './files/css/sweetalert2.css';
 
 export default class App extends React.Component {
     constructor(props) {
@@ -17,9 +18,10 @@ export default class App extends React.Component {
         this.nightmode = {
             enabled: true,
             forced: false,
-            begin: 20,
-            end: 6
+            begin: 19,
+            end: 8
         };
+
         let hour = new Date().getHours();
 
         if (

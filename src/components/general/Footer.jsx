@@ -1,6 +1,7 @@
 import React from 'react';
 import {MainLink} from './misc/Titles';
 import LinkDuo from './misc/LinkDuo';
+import Version from './misc/Version';
 
 export default function Footer() {
     const columns = [
@@ -99,6 +100,11 @@ export default function Footer() {
                         </li>
                         <li>
                             <LinkDuo to="/privacypolicy">Datenschutz</LinkDuo>
+                        </li>
+                        <li>
+                            <LinkDuo to="https://github.com/dsgnhb/www/">
+                                Version: <Version />
+                            </LinkDuo>
                         </li>
                     </ul>
                 </div>

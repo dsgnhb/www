@@ -36,8 +36,6 @@
     "prettier": "^1.7.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "npm run prettier && react-scripts start",
     "build": "npm run prettier && react-scripts build",
     "test": "react-scripts test --env=jsdom",

@@ -29,11 +29,11 @@ export default class Form extends React.Component {
 
     onResolved() {
         this.btn.setAttribute('disabled', 'true');
-        this.setState({ 'g-recaptcha-response': this.recaptcha.getResponse() });
+        this.setState({'g-recaptcha-response': this.recaptcha.getResponse()});
 
         this.postData()
             .then(data => {
-                console.log(data)
+                console.log(data);
                 if (data.status === 'inserted') {
                     this.btn.innerHTML = 'Gesendet';
                     this.setState({
@@ -86,7 +86,7 @@ export default class Form extends React.Component {
         let value = event.target.value;
         let name = event.target.name;
 
-        this.setState({ [name]: value });
+        this.setState({[name]: value});
     }
 
     handleSubmit(event) {
@@ -175,7 +175,7 @@ export default class Form extends React.Component {
                         title={this.state.error_header}
                         text={this.state.error_message}
                         type={this.state.error_type}
-                        onConfirm={() => this.setState({ error_enabled: false })}
+                        onConfirm={() => this.setState({error_enabled: false})}
                     />
                 </div>
                 <Recaptcha

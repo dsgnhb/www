@@ -1,14 +1,18 @@
 {
   "name": "www",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "license": "MIT",
   "homepage": "https://dsgnhb.de/",
   "private": true,
-  "author": "flo",
+  "author": "designhub",
   "contributors": [
     {
-      "name": "Luk von Strom",
-      "email": "lukvonstrom@web.de",
+      "name": "flo",
+      "url": "http://flooo.me"
+    },
+    {
+      "name": "Lukas Fruntke (LukvonStrom)",
+      "email": "lukas@fruntke.tech",
       "url": "https://lukvonstrom.de"
     },
     {

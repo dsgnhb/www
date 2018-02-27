@@ -12,7 +12,7 @@ export default class TopDesignEntries extends React.Component {
 
         const self = this;
 
-        fetch('https://server.dsgnhb.de/topdesign/posts/currentmonth')
+        fetch('https://api.dsgnhb.de/topdesign/posts/currentmonth')
             .then(response => response.json())
             .then(json => {
                 if (json.map === undefined) {

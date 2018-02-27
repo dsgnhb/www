@@ -1,5 +1,6 @@
 import React from 'react';
 import TopDesignEntry from './Entry';
+import fetcher from "../../../fetcher";
 
 export default class TopDesignEntries extends React.Component {
     constructor(props) {
@@ -12,7 +13,7 @@ export default class TopDesignEntries extends React.Component {
 
         const self = this;
 
-        fetch('https://api.dsgnhb.de/topdesign/posts/currentmonth')
+        fetcher('topdesign/posts/currentmonth')
             .then(response => response.json())
             .then(json => {
                 if (json.map === undefined) {

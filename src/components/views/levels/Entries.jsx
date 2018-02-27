@@ -1,5 +1,6 @@
 import React from 'react';
 import LevelEntry from './Entry';
+import fetcher from "../../../fetcher";
 
 export default class LevelEntries extends React.Component {
     constructor(props) {
@@ -12,7 +13,7 @@ export default class LevelEntries extends React.Component {
 
         const self = this;
 
-        fetch('https://api.dsgnhb.de/levels')
+        fetcher('levels')
             .then(response => response.json())
             .then(json => {
                 return self.setState({

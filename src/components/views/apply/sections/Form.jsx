@@ -3,6 +3,7 @@ import React from 'react';
 //false = no crash lol
 import Recaptcha from 'react-google-invisible-recaptcha';
 import SweetAlert from 'sweetalert2-react';
+import fetcher from "../../../../fetcher";
 
 export default class Form extends React.Component {
     constructor(props) {
@@ -68,7 +69,7 @@ export default class Form extends React.Component {
             twitter: this.state.twitter,
             'g-recaptcha-response': this.state['g-recaptcha-response']
         };
-        return fetch('https://api.dsgnhb.de/apply', {
+        return fetcher('apply', {
             body: JSON.stringify(data),
             cache: 'no-cache',
             credentials: 'same-origin',

@@ -22,7 +22,7 @@ export default class Apply extends Component {
                 </section>
 
                 <Job active={true} rank="Dev" skills="React und NodeJS ">
-                    Du beherschst JavaScript wie deine Muttersprache, träumst in Klassen und auch MySQL jagt dir keine
+                    Du beherrschst JavaScript wie deine Muttersprache, träumst in Klassen und auch MySQL jagt dir keine
                     Angst ein? Dann liebst du auch TypeScript und vertraust auf Travis CI? Du willst mithelfen, eine
                     unvergleichliche Community aufzubauen? - <b>Dann bewirb' dich doch als Developer.</b> Wir suchen
                     begeisterte Entwickler, die motiviert sind, sich weiter zu entwickeln und ihre kreative Ideen in

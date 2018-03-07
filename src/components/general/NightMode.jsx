@@ -1,7 +1,7 @@
-import React from 'react';
+import {Component} from 'react';
 import PropTypes from 'prop-types';
 
-export default class NightMode extends React.Component {
+export default class NightMode extends Component {
     static propTypes = {
         active: PropTypes.bool
     };

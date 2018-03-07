@@ -86,6 +86,7 @@ export default class Footer extends Component {
         ];
     }
 
+    /*eslint-disable */
     render() {
         return (
             <div>
@@ -100,11 +101,15 @@ export default class Footer extends Component {
                             <li>
                                 <LinkDuo to="/">2016-{new Date().getFullYear()} &copy; designhub</LinkDuo>
                             </li>
+
                             <li>
                                 <LinkDuo to="/imprint">Impressum</LinkDuo>
                             </li>
                             <li>
                                 <LinkDuo to="/privacypolicy">Datenschutz</LinkDuo>
+                            </li>
+                            <li>
+                                <span onClick = {this.props.handler}>🌛</span>
                             </li>
                             <li>
                                 <LinkDuo to="https://github.com/dsgnhb/www/">
@@ -117,4 +122,5 @@ export default class Footer extends Component {
             </div>
         );
     }
+    /*eslint-enable */
 }

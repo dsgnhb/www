@@ -14,22 +14,13 @@ export default class App extends Component {
     constructor(props) {
         super(props);
 
-        //TODO: make this adjustable
-        this.nightmode = {
-            enabled: true,
-            forced: false,
-            begin: 19,
-            end: 8
+        this.state = {
+            nightmode: {
+                enabled: false,
+                begin: 19,
+                end: 8
+            }
         };
-
-        let hour = new Date().getHours();
-
-        if (
-            this.nightmode.forced ||
-            ((hour > this.nightmode.begin || hour < this.nightmode.end) && this.nightmode.enabled)
-        ) {
-            this.actual = true;
-        }
 
         this.history = createBrowserHistory();
 
@@ -37,16 +28,29 @@ export default class App extends Component {
             url: 'analytics.florentinwalter.de',
             siteId: 1
         });
+        this.nm_switcher = this.nm_switcher.bind(this)
+    }
+
+    componentDidMount() {
+        let hour = new Date().getHours();
+        if ((hour > this.state.nightmode.begin || hour < this.state.nightmode.end) && this.state.nightmode.enabled) {
+            this.setState({nightmode: {enabled: true}});
+        }
+    }
+
+    nm_switcher(e){
+        e.preventDefault();
+        this.setState({nightmode: {enabled: (!this.state.nightmode.enabled)}});
     }
 
     render() {
         return (
             <Router history={this.piwik.connectToHistory(this.history)}>
-                <NightMode active={this.actual}>
+                <NightMode active={this.state.nightmode.enabled}>
                     <Typekit kitId="vtp0hqt" />
                     <Header />
                     <Routes />
-                    <Footer />
+                    <Footer handler={this.nm_switcher} />
                 </NightMode>
             </Router>
         );

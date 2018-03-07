@@ -28,7 +28,7 @@ export default class App extends Component {
             url: 'analytics.florentinwalter.de',
             siteId: 1
         });
-        this.nm_switcher = this.nm_switcher.bind(this)
+        this.nm_switcher = this.nm_switcher.bind(this);
     }
 
     componentDidMount() {
@@ -38,9 +38,13 @@ export default class App extends Component {
         }
     }
 
-    nm_switcher(e){
+    nm_switcher(e) {
         e.preventDefault();
-        this.setState({nightmode: {enabled: (!this.state.nightmode.enabled)}});
+        let scrollx = window.pageXOffset;
+        let scrolly = window.pageYOffset;
+        this.setState({nightmode: {enabled: !this.state.nightmode.enabled}}, () => {
+            window.scrollTo(scrollx, scrolly);
+        });
     }
 
     render() {

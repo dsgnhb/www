@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
 import React, {Component} from 'react';
 import LinkDuo from '../misc/LinkDuo';
 import Version from '../misc/Version';
@@ -7,11 +7,11 @@ import Join from './Join';
 
 export default class Footer extends Component {
     static propTypes = {
-    enabled: PropTypes.bool.isRequired,
-    handler: PropTypes.func.isRequired
-  };
+        enabled: PropTypes.bool.isRequired,
+        handler: PropTypes.func.isRequired
+    };
 
-  constructor(props) {
+    constructor(props) {
         super(props);
         this.columns = [
             {
@@ -115,7 +115,10 @@ export default class Footer extends Component {
                                 <LinkDuo to="/privacypolicy">Datenschutz</LinkDuo>
                             </li>
                             <li>
-                                <span style={{cursor: 'pointer'}} onClick={this.props.handler}> {!this.props.enabled ? '🌛': '🌞'}</span>
+                                <span style={{cursor: 'pointer'}} onClick={this.props.handler}>
+                                    {' '}
+                                    {!this.props.enabled ? '🌛' : '🌞'}
+                                </span>
                             </li>
                             <li>
                                 <LinkDuo to="https://github.com/dsgnhb/www/">

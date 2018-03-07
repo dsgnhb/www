@@ -50,7 +50,7 @@ export default class App extends Component {
                     <Typekit kitId="vtp0hqt" />
                     <Header />
                     <Routes />
-                    <Footer handler={this.nm_switcher} />
+                    <Footer handler={this.nm_switcher} enabled={this.state.nightmode.enabled} />
                 </NightMode>
             </Router>
         );

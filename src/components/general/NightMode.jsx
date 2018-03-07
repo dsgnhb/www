@@ -5,6 +5,7 @@ export default class NightMode extends React.Component {
     static propTypes = {
         active: PropTypes.bool
     };
+
     static defaultProps = {
         active: false
     };

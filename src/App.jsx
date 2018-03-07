@@ -1,16 +1,16 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {Router} from 'react-router-dom';
 import PiwikReactRouter from 'piwik-react-router';
 import {createBrowserHistory} from 'history';
 import Typekit from 'react-typekit';
 import Header from './components/general/Header';
-import Routes from './components/general/Routes';
-import Footer from './components/general/Footer';
+import Routes from './components/general/routes/Routes';
+import Footer from './components/general/footer/Footer';
 import NightMode from './components/general/NightMode.jsx';
 import './files/css/App.css';
 import './files/css/sweetalert2.css';
 
-export default class App extends React.Component {
+export default class App extends Component {
     constructor(props) {
         super(props);
 

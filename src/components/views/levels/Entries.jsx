@@ -1,8 +1,8 @@
-import React from 'react';
+import React, {Component} from 'react';
 import LevelEntry from './Entry';
-import fetcher from "../../../fetcher";
+import fetcher from '../../../fetcher';
 
-export default class LevelEntries extends React.Component {
+export default class LevelEntries extends Component {
     constructor(props) {
         super(props);
 

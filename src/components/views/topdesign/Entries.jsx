@@ -1,8 +1,8 @@
-import React from 'react';
+import React, {Component} from 'react';
 import TopDesignEntry from './Entry';
-import fetcher from "../../../fetcher";
+import fetcher from '../../../fetcher';
 
-export default class TopDesignEntries extends React.Component {
+export default class TopDesignEntries extends Component {
     constructor(props) {
         super(props);
 

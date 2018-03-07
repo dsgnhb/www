@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>designhub.</title>
     <script type="text/javascript">
-        var segmentCount = 0;
-        var l = window.location;
+        let segmentCount = 0;
+        let l = window.location;
         l.replace(
             l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
             l.pathname.split('/').slice(0, 1 + segmentCount).join('/') + '/?p=/' +

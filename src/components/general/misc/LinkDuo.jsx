@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import React, {Component} from 'react';
+import {Link} from 'react-router-dom';
 import isExternal from 'is-url-external';
 
 /**
@@ -11,7 +11,7 @@ export default class LinkDuo extends Component {
             // eslint-disable-next-line
             <a target="_blank" href={this.props.to} {...this.props} />
         ) : (
-                <Link {...this.props} />
-            );
+            <Link {...this.props} />
+        );
     }
 }

@@ -1,6 +1,16 @@
-import React from 'react';
+import PropTypes from 'prop-types';
+import React, {Component} from 'react';
 
-export default class LevelEntry extends React.Component {
+export default class LevelEntry extends Component {
+    static propTypes = {
+        avatar: PropTypes.any,
+        chests: PropTypes.any,
+        coins: PropTypes.any,
+        rank: PropTypes.number,
+        username: PropTypes.string,
+        xp: PropTypes.any
+    };
+
     constructor(props) {
         super(props);
         this.state = {

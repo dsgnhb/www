@@ -36,6 +36,7 @@
     "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {
+    "@types/react": "^16.0.40",
     "gh-pages": "^1.0.0",
     "prettier": "^1.7.4"
   },

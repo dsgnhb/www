@@ -1,11 +1,11 @@
 import Field from './Field';
-import React from 'react';
+import React, {Component} from 'react';
 //false = no crash lol
 import Recaptcha from 'react-google-invisible-recaptcha';
 import SweetAlert from 'sweetalert2-react';
-import fetcher from "../../../../fetcher";
+import fetcher from '../../../../fetcher';
 
-export default class Form extends React.Component {
+export default class Form extends Component {
     constructor(props) {
         super(props);
         this.handleSubmit = this.handleSubmit.bind(this);

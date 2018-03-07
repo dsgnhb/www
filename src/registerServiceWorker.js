@@ -92,6 +92,7 @@ function checkValidServiceWorker(swUrl) {
         });
 }
 
+// noinspection JSUnusedGlobalSymbols
 export function unregister() {
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker.ready.then(registration => {

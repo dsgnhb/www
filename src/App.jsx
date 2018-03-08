@@ -16,7 +16,7 @@ export default class App extends Component {
 
         this.state = {
             nightmode: {
-                enabled: false,
+                enabled: (localStorage.getItem('nightmode.enabled') === 'true'),
                 begin: 19,
                 end: 8
             }
@@ -34,7 +34,7 @@ export default class App extends Component {
     componentDidMount() {
         let hour = new Date().getHours();
         if ((hour > this.state.nightmode.begin || hour < this.state.nightmode.end) && this.state.nightmode.enabled) {
-            this.setState({nightmode: {enabled: true}});
+            this.persistSwitch(true, null);
         }
     }
 
@@ -42,9 +42,18 @@ export default class App extends Component {
         e.preventDefault();
         let scrollx = window.pageXOffset;
         let scrolly = window.pageYOffset;
-        this.setState({nightmode: {enabled: !this.state.nightmode.enabled}}, () => {
-            window.scrollTo(scrollx, scrolly);
-        });
+        this.persistSwitch(!this.state.nightmode.enabled, () => window.scrollTo(scrollx, scrolly))
+    }
+
+    persistSwitch(status, cb){
+
+            this.setState({nightmode: {enabled: status}}, () => {
+                localStorage.setItem('nightmode.enabled', this.state.nightmode.enabled);
+                if(cb && typeof cb === "function") {
+                    cb();
+                }
+            })
+
     }
 
     render() {
@@ -54,7 +63,7 @@ export default class App extends Component {
                     <Typekit kitId="vtp0hqt" />
                     <Header />
                     <Routes />
-                    <Footer handler={this.nm_switcher} enabled={this.state.nightmode.enabled} />
+                    <Footer handler={this.nm_switcher} enabled={(this.state.nightmode.enabled === 'true')} />
                 </NightMode>
             </Router>
         );

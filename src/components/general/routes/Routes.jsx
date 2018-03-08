@@ -12,15 +12,15 @@ import Apply from '../../views/apply/Apply';
 import Imprint from '../../views/Imprint';
 import PrivacyPolicy from '../../views/PrivacyPolicy';
 import NotFound from '../../views/NotFound';
-import serveRedirect from './redirects';
-import serveTitle from './webTitles';
+import provideRedirect from '../providers/redirectProvider';
+import provideTitle from '../providers/titleProvider';
 
 export default class Routes extends Component {
     constructor(props) {
         super(props);
 
-        this.webTitles = serveTitle();
-        this.redirects = serveRedirect();
+        this.webTitles = provideTitle();
+        this.redirects = provideRedirect();
 
         this.checkRedirects = this.checkRedirects.bind(this);
         this.setTitle = this.setTitle.bind(this);

@@ -1,4 +1,4 @@
-export default function serveTitle() {
+export default function provideTitle() {
     let webTitle = new Map();
     webTitle.set('/about', 'Über uns');
     webTitle.set('/brand', 'Branding');

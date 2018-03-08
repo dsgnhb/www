@@ -1,4 +1,4 @@
-export default function serveRedirect() {
+export default function provideRedirect() {
     let redirect = new Map();
     redirect.set('/discord', 'https://discordapp.com/invite/PGv5TR3');
     redirect.set('/github', 'https://github.com/dsgnhb');

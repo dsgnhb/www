@@ -1,19 +1,19 @@
 export default class localStorageMock {
-     static store = {};
+    static store = {};
 
-     static getItem(key) {
+    static getItem(key) {
         return this.store[key];
     }
 
-     static setItem(key, value) {
+    static setItem(key, value) {
         this.store[key] = value.toString();
     }
 
-     static clear() {
+    static clear() {
         this.store = {};
     }
 
-     static removeItem(key) {
+    static removeItem(key) {
         delete this.store[key];
     }
 }

@@ -16,7 +16,6 @@ export default class App extends Component {
 
         this.state = {
             nightmode: {
-                enabled: (localStorage.getItem('nightmode.enabled') === 'true'),
                 begin: 19,
                 end: 8
             }
@@ -33,27 +32,38 @@ export default class App extends Component {
 
     componentDidMount() {
         let hour = new Date().getHours();
-        if ((hour > this.state.nightmode.begin || hour < this.state.nightmode.end) && this.state.nightmode.enabled) {
-            this.persistSwitch(true, null);
+        let currentStatus = this.getLocalStorage();
+        if (hour > this.state.nightmode.begin || hour < this.state.nightmode.end || currentStatus) {
+            this.changeTheme(true);
         }
     }
 
-    nm_switcher(e) {
+    async nm_switcher(e) {
         e.preventDefault();
-        let scrollx = window.pageXOffset;
-        let scrolly = window.pageYOffset;
-        this.persistSwitch(!this.state.nightmode.enabled, () => window.scrollTo(scrollx, scrolly))
+        let currentStatus = await this.getLocalStorage();
+        await this.changeLocalStorage(!currentStatus);
+        await this.changeTheme(!currentStatus);
+        window.scrollTo(window.pageXOffset, window.pageYOffset);
+    }
+    getLocalStorage() {
+        return new Promise((resolve, reject) => {
+            const status = localStorage.getItem('nightmode.enabled') === 'true';
+            resolve(status);
+        });
     }
 
-    persistSwitch(status, cb){
-
+    changeTheme(status) {
+        return new Promise((resolve, reject) => {
             this.setState({nightmode: {enabled: status}}, () => {
-                localStorage.setItem('nightmode.enabled', this.state.nightmode.enabled);
-                if(cb && typeof cb === "function") {
-                    cb();
-                }
-            })
-
+                resolve(true);
+            });
+        });
+    }
+    changeLocalStorage(status) {
+        return new Promise(async (resolve, reject) => {
+            await localStorage.setItem('nightmode.enabled', status);
+            resolve(true);
+        });
     }
 
     render() {
@@ -63,7 +73,7 @@ export default class App extends Component {
                     <Typekit kitId="vtp0hqt" />
                     <Header />
                     <Routes />
-                    <Footer handler={this.nm_switcher} enabled={(this.state.nightmode.enabled === 'true')} />
+                    <Footer handler={this.nm_switcher} enabled={this.state.nightmode.enabled === 'true'} />
                 </NightMode>
             </Router>
         );

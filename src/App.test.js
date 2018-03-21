@@ -1,10 +1,9 @@
 import ReactDOM from 'react-dom';
 import App from './App';
 import React from 'react';
-import localStorageMock from "./localStorageMock";
+import localStorageMock from './localStorageMock';
 
-
-Object.defineProperty(window, 'localStorage', { value: localStorageMock });
+Object.defineProperty(window, 'localStorage', {value: localStorageMock});
 
 it('renders without crashing', () => {
     const div = document.createElement('div');

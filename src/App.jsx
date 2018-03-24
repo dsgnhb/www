@@ -47,7 +47,7 @@ export default class App extends Component {
     }
     getLocalStorage() {
         return new Promise((resolve, reject) => {
-            const status = localStorage.getItem('nightmode.enabled') === 'true';
+            const status = localStorage.getItem('nightmode.enabled') === 'false';
             resolve(status);
         });
     }

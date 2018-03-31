@@ -12,7 +12,7 @@ export default class Donation extends Component {
                         <MainTitle
                             subtitle="Donations"
                             title="Unterstütze uns!"
-                            link="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=H6JB49DXTDP3Q"
+                            link="https://www.paypal.me/juttawalter/1"
                             linktitle="Los geht's!"
                         >
                             Wenn du designhub magst und uns unterstützen möchtest, um das Projekt aktiv zuhalten, freuen

@@ -1,59 +1,59 @@
 {
-  "name": "www",
-  "version": "1.1.3",
-  "license": "MIT",
-  "homepage": "https://dsgnhb.de/",
-  "private": true,
-  "author": "designhub",
-  "contributors": [
-    {
-      "name": "flo",
-      "url": "http://flooo.me"
+    "name": "www",
+    "version": "1.1.4",
+    "license": "MIT",
+    "homepage": "https://dsgnhb.de/",
+    "private": true,
+    "author": "designhub",
+    "contributors": [
+        {
+            "name": "flo",
+            "url": "http://flooo.me"
+        },
+        {
+            "name": "Lukas Fruntke (LukvonStrom)",
+            "email": "lukas@fruntke.tech",
+            "url": "https://lukvonstrom.de"
+        },
+        {
+            "name": "Fin Reinhhard",
+            "email": "fin.reinhard@icloud.com",
+            "url": "http://Angu.li"
+        }
+    ],
+    "dependencies": {
+        "history": "^4.7.2",
+        "is-url-external": "^1.0.3",
+        "piwik-react-router": "^0.12.1",
+        "prop-types": "^15.6.0",
+        "react": "^16.0.0",
+        "react-dom": "^16.0.0",
+        "react-google-invisible-recaptcha": "^0.2.6",
+        "react-helmet": "^5.2.0",
+        "react-router-dom": "^4.2.2",
+        "react-scripts": "1.1.1",
+        "react-typekit": "^1.1.2",
+        "sweetalert2-react": "^0.7.2",
+        "whatwg-fetch": "^2.0.3"
     },
-    {
-      "name": "Lukas Fruntke (LukvonStrom)",
-      "email": "lukas@fruntke.tech",
-      "url": "https://lukvonstrom.de"
+    "devDependencies": {
+        "@types/react": "^16.0.40",
+        "gh-pages": "^1.0.0",
+        "prettier": "^1.7.4"
     },
-    {
-      "name": "Fin Reinhhard",
-      "email": "fin.reinhard@icloud.com",
-      "url": "http://Angu.li"
+    "scripts": {
+        "start": "npm run prettier && react-scripts start",
+        "build": "npm run prettier && react-scripts build",
+        "test": "react-scripts test --env=jsdom",
+        "test:debug": "react-scripts --inspect-brk test --runInBand --env=jsdom",
+        "eject": "react-scripts eject",
+        "prettier": "prettier --write src/**/*.{js,json,jsx}"
+    },
+    "prettier": {
+        "tabWidth": 4,
+        "printWidth": 120,
+        "semi": true,
+        "singleQuote": true,
+        "bracketSpacing": false
     }
-  ],
-  "dependencies": {
-    "history": "^4.7.2",
-    "is-url-external": "^1.0.3",
-    "piwik-react-router": "^0.12.1",
-    "prop-types": "^15.6.0",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "react-google-invisible-recaptcha": "^0.2.6",
-    "react-helmet": "^5.2.0",
-    "react-router-dom": "^4.2.2",
-    "react-scripts": "1.1.1",
-    "react-typekit": "^1.1.2",
-    "sweetalert2-react": "^0.7.2",
-    "whatwg-fetch": "^2.0.3"
-  },
-  "devDependencies": {
-    "@types/react": "^16.0.40",
-    "gh-pages": "^1.0.0",
-    "prettier": "^1.7.4"
-  },
-  "scripts": {
-    "start": "npm run prettier && react-scripts start",
-    "build": "npm run prettier && react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "test:debug": "react-scripts --inspect-brk test --runInBand --env=jsdom",
-    "eject": "react-scripts eject",
-    "prettier": "prettier --write src/**/*.{js,json,jsx}"
-  },
-  "prettier": {
-    "tabWidth": 4,
-    "printWidth": 120,
-    "semi": true,
-    "singleQuote": true,
-    "bracketSpacing": false
-  }
 }

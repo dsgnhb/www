@@ -4,6 +4,7 @@ import Home from '../../views/home/Home';
 import About from '../../views/about/About';
 import Branding from '../../views/branding/Branding';
 import Contact from '../../views/Contact';
+import Meme from '../../views/Meme';
 import Donations from '../../views/donations/Donations';
 import Levels from '../../views/levels/Levels';
 import Partner from '../../views/Partner';
@@ -43,6 +44,7 @@ export default class Routes extends Component {
                 <Route path="/about" component={About} />
                 <Route path="/brand" component={Branding} />
                 <Route path="/contact" component={Contact} />
+                <Route path="/dab" component={Meme} />
                 <Route path="/donate" component={Donations} />
                 <Route path="/levels" component={Levels} />
                 <Route path="/partner" component={Partner} />

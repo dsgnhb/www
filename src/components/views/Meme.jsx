@@ -11,6 +11,7 @@ export default class Meme extends Component {
                     frameborder="0"
                     width="100%"
                     height="1000px"
+                    title="Video"
                 />
             </div>
         );

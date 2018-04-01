@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import TopDesignEntry from './Entry';
-import fetcher from '../../../fetcher';
+import fetcher from '../../general/providers/fetcher';
 
 export default class TopDesignEntries extends Component {
     constructor(props) {

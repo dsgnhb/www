@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
 import MainTitle from '../general/misc/titles/MainTitle';
+import SEO from '../general/misc/SEO';
 
 export default class Imprint extends Component {
     render() {
         return (
             <div>
+                <SEO title="Impressum" headline="Impressum" description="" path="/imprint" />
                 <section id="imprint-intro">
                     <div className="container">
                         <MainTitle

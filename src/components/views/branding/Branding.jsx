@@ -6,11 +6,18 @@ import Colors from './sections/Colors';
 import Gradients from './sections/Gradients';
 import Fonts from './sections/Fonts';
 import Speech from './sections/Speech';
+import SEO from '../../general/misc/SEO';
 
 export default class Branding extends Component {
     render() {
         return (
             <div>
+                <SEO
+                    title="Branding"
+                    headline="Unser Branding"
+                    description="Unser Branding ist nicht nur einfach hingeklatscht und ein Zufallsprodukt. – Dahinter steckt tatsächlich eine Botschaft und ein einzigartiges Konzept!"
+                    path="/brand"
+                />
                 <section id="branding-intro">
                     <div className="container">
                         <MainTitle subtitle="Branding" title="Design Sachen">

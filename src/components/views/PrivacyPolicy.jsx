@@ -1,10 +1,17 @@
 import React, {Component} from 'react';
 import MainTitle from '../general/misc/titles/MainTitle';
+import SEO from '../general/misc/SEO';
 
 export default class PrivacyPolicy extends Component {
     render() {
         return (
             <div>
+                <SEO
+                    title="Datenschutz"
+                    headline="Datenschutz"
+                    description="Was wir mit deinen Daten so alles machen"
+                    path="/privacypolicy"
+                />
                 <section id="privacypolicy-intro">
                     <div className="container">
                         <MainTitle subtitle="Datenschutz" title="Was wir mit deinen Daten so alles machen" />

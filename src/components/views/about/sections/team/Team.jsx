@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import SectionTitle from '../general/misc/titles/SectionTitle';
+import SectionTitle from '../../../../general/misc/titles/SectionTitle';
 import Role from './Role';
 import TeamMember from './TeamMember';
 

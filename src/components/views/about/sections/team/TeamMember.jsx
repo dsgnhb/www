@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React, {Component} from 'react';
-import LinkDuo from '../general/misc/LinkDuo';
+import LinkDuo from '../../../../general/misc/LinkDuo';
 
 export default class TeamMember extends Component {
     static propTypes = {

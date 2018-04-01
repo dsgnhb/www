@@ -1,11 +1,18 @@
 import React, {Component} from 'react';
 import MainTitle from '../../general/misc/titles/MainTitle';
 import LevelEntries from './Entries';
+import SEO from '../../general/misc/SEO';
 
 export default class Levels extends Component {
     render() {
         return (
             <div>
+                <SEO
+                    title="Leaderboard"
+                    headline="Levels"
+                    description="Pro Nachricht auf unserem Discord erhälst du eine zufällige Menge XP zwischen 15 und 20. - Das heißt, je aktiver du bist, desto besser wirst du im Ranking platziert!"
+                    path="/levels"
+                />
                 <section id="leaderboard">
                     <div className="container">
                         <MainTitle title="Leaderboard" subtitle="Levels">

@@ -2,11 +2,18 @@ import React, {Component} from 'react';
 import MainTitle from '../../general/misc/titles/MainTitle';
 import TopDesignEntries from './Entries';
 import LinkDuo from '../../general/misc/LinkDuo';
+import SEO from '../../general/misc/SEO';
 
 export default class TopDesign extends Component {
     render() {
         return (
             <div>
+                <SEO
+                    title="Top Design"
+                    headline="Top Design des Monats"
+                    description="Stelle in unserem monatlichen Wettbewerb deine Design Skills unter Beweis und staube tolle Preise ab!"
+                    path="/topdesign"
+                />
                 <section id="topdesign">
                     <div className="container">
                         <MainTitle

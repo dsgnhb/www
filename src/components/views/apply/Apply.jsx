@@ -1,11 +1,18 @@
 import React, {Component} from 'react';
 import MainTitle from '../../general/misc/titles/MainTitle';
 import Job from './sections/Job';
+import SEO from '../../general/misc/SEO';
 
 export default class Apply extends Component {
     render() {
         return (
             <div>
+                <SEO
+                    title="Bewerben"
+                    headline="Werd' ein Teil von designhub"
+                    description="Jetzt kurz bewerben und sofort mit dabei sein!"
+                    path="/apply"
+                />
                 <section id="apply">
                     <div className="container">
                         <MainTitle

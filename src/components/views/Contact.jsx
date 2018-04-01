@@ -1,11 +1,18 @@
 import React, {Component} from 'react';
 import MainTitle from '../general/misc/titles/MainTitle';
 import LinkDuo from '../general/misc/LinkDuo';
+import SEO from '../general/misc/SEO';
 
 export default class Contact extends Component {
     render() {
         return (
             <section id="contact">
+                <SEO
+                    title="Contact"
+                    headline="Kontakt"
+                    description="Du hast noch Fragen? Erreiche uns schnell direkt über Discord oder 'zwitscher' uns was via Twitter!"
+                    path="/contact"
+                />
                 <div className="container">
                     <MainTitle subtitle="Kontakt" title="Schreib mir doch mal ;) äh oke">
                         Du hast noch Fragen? Erreiche uns schnell direkt über Discord oder 'zwitscher' uns was via

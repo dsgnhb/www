@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React, {Component} from 'react';
-import SectionTitle from '../general/misc/titles/SectionTitle';
+import SectionTitle from '../../general/misc/titles/SectionTitle';
 
 export default class PartnerInfo extends Component {
     static propTypes = {

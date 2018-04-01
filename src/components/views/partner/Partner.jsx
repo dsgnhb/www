@@ -1,12 +1,19 @@
 import React, {Component} from 'react';
-import LinkDuo from '../general/misc/LinkDuo';
-import MainTitle from '../general/misc/titles/MainTitle';
+import LinkDuo from '../../general/misc/LinkDuo';
+import MainTitle from '../../general/misc/titles/MainTitle';
 import PartnerInfo from './PartnerInfo';
+import SEO from '../../general/misc/SEO';
 
 export default class Partner extends Component {
     render() {
         return (
             <div>
+                <SEO
+                    title="Partner"
+                    headline="Unsere Partner"
+                    description="Dank unserer Partner, die uns stets unterstützen, können wir das Projekt aktiv halten. Hier findest du alle Informationen rund um sämtliche aktuelle Partnerschaften."
+                    path="/partner"
+                />
                 <section id="partner">
                     <div className="container">
                         <MainTitle

@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 //false = no crash lol
 import Recaptcha from 'react-google-invisible-recaptcha';
 import SweetAlert from 'sweetalert2-react';
-import fetcher from '../../../../fetcher';
+import fetcher from '../../../general/providers/fetcher';
 
 export default class Form extends Component {
     constructor(props) {

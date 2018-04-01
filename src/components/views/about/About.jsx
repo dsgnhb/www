@@ -1,12 +1,19 @@
 import React, {Component} from 'react';
 import MainTitle from '../../general/misc/titles/MainTitle';
-import Stats from './sections/Stats';
-import Team from '../Team';
+import Stats from './sections/stats/Stats';
+import Team from './sections/team/Team';
+import SEO from '../../general/misc/SEO';
 
 export default class About extends Component {
     render() {
         return (
             <div>
+                <SEO
+                    title="Über uns"
+                    headline="Wir sind designhub"
+                    description="Komm jetzt auf unseren Discord, um deine kreative Arbeit zu präsentieren und Neues zu entdecken!"
+                    path="/about"
+                />
                 <section id="stats-intro">
                     <div className="container">
                         <MainTitle

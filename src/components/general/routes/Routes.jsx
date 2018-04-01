@@ -7,37 +7,31 @@ import Contact from '../../views/Contact';
 import Meme from '../../views/Meme';
 import Donations from '../../views/donations/Donations';
 import Levels from '../../views/levels/Levels';
-import Partner from '../../views/Partner';
-import TopDesign from '../../views/topdesign/View';
+import Partner from '../../views/partner/Partner';
+import TopDesign from '../../views/topdesign/TopDesign';
 import Apply from '../../views/apply/Apply';
 import Imprint from '../../views/Imprint';
 import PrivacyPolicy from '../../views/PrivacyPolicy';
-import NotFound from '../../views/NotFound';
+import NotFound from '../../views/error/errors/NotFound';
 import provideRedirect from '../providers/redirectProvider';
-import provideTitle from '../providers/titleProvider';
 
 export default class Routes extends Component {
     constructor(props) {
         super(props);
 
-        this.webTitles = provideTitle();
         this.redirects = provideRedirect();
 
         this.checkRedirects = this.checkRedirects.bind(this);
-        this.setTitle = this.setTitle.bind(this);
     }
 
     componentDidUpdate() {
         this.checkRedirects();
-        this.setTitle();
 
         window.scrollTo(0, 0);
     }
 
     render() {
         this.checkRedirects();
-        this.setTitle();
-
         return (
             <Switch>
                 <Route path="/" component={Home} exact />
@@ -61,11 +55,5 @@ export default class Routes extends Component {
         if (this.redirects.get(window.location.pathname) !== undefined) {
             window.location = this.redirects.get(window.location.pathname);
         }
-    }
-
-    setTitle() {
-        let webTitle = this.webTitles.get(window.location.pathname);
-
-        document.title = `designhub.${webTitle === undefined ? '' : ' | ' + webTitle}`;
     }
 }

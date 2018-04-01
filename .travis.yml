@@ -10,7 +10,7 @@ script:
   - npm run build
   - npm test
 notifications:
-  webhooks: https://flooo.me/travis/designhub-dev.php
+  webhooks: https://dev.webspace.rocks/travis-discord/
 before_install:
  - sudo apt-get install -qq lftp sshpass
 deploy:

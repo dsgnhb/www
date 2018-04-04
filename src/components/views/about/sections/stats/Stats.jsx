@@ -13,7 +13,7 @@ export default class Stats extends Component {
                         Das's ganz schön viel Spam und bestimmt auch ein paar Gomme-Smileys.
                     </Fact>
                     <Fact color="green" data="10" name="Teammitglieder">
-                        Alle 10 cool, also fast alle, bis auf Lukas halt.
+                        Alle 10 cool, also fast alle, bis auf Flo halt.
                     </Fact>
                 </div>
             </section>

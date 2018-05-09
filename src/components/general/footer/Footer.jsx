@@ -34,7 +34,7 @@ export default class Footer extends Component {
                             </li>
 
                             <li>
-                                <LinkDuo to="/imprint">Impressum</LinkDuo>
+                                <LinkDuo to="/legaldisclosure">Impressum</LinkDuo>
                             </li>
                             <li>
                                 <LinkDuo to="/privacypolicy">Datenschutz</LinkDuo>

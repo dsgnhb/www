@@ -56,7 +56,7 @@ export default class App extends Component {
 
     changeTheme(status) {
         return new Promise((resolve, reject) => {
-            this.setState({nightmode: {enabled: status}}, () => {
+            this.setState({nightmode: {enabled: false}}, () => {
                 resolve(true);
             });
         });

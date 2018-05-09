@@ -10,7 +10,7 @@ import Levels from '../../views/levels/Levels';
 import Partner from '../../views/partner/Partner';
 import TopDesign from '../../views/topdesign/TopDesign';
 import Apply from '../../views/apply/Apply';
-import Imprint from '../../views/Imprint';
+import LegalDisclosure from '../../views/LegalDisclosure';
 import PrivacyPolicy from '../../views/PrivacyPolicy';
 import NotFound from '../../views/error/errors/NotFound';
 import provideRedirect from '../providers/redirectProvider';
@@ -44,7 +44,7 @@ export default class Routes extends Component {
                 <Route path="/partner" component={Partner} />
                 <Route path="/topdesign" component={TopDesign} />
                 <Route path="/apply" component={Apply} />
-                <Route path="/imprint" component={Imprint} />
+                <Route path="/legaldisclosure" component={LegalDisclosure} />
                 <Route path="/privacypolicy" component={PrivacyPolicy} />
                 <Route component={NotFound} />
             </Switch>

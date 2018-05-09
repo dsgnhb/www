@@ -230,7 +230,6 @@ p b,
     letter-spacing: 0.01em;
 }
 
-
 li {
     color: var(--darkgray);
 }
@@ -268,7 +267,8 @@ p.main {
 CLASSES
 -----------------------
 */
-::selection,  ::-moz-selection {
+::selection,
+::-moz-selection {
     background: var(--lightgray); /* Gecko Browsers */
 }
 .container {
@@ -366,7 +366,7 @@ FLEX-LIST
 }
 .flex-list.left {
     justify-content: flex-start !important;
-  }
+}
 
 .flex-list .item {
     flex: 1;
@@ -718,7 +718,6 @@ section#stats .flex-list .item h3.fact {
     }
 }
 
-
 /*
 -----------------------
 TOP DESIGN
@@ -882,7 +881,6 @@ section#gradients .flex-list.icons .item .example h4 {
     color: var(--white);
 }
 
-
 /*
 -----------------------
 FONTS
@@ -1031,10 +1029,11 @@ body.night {
     background: var(--black);
 }
 
-.night ::selection, .night  ::-moz-selection {
+.night ::selection,
+.night ::-moz-selection {
     background: var(--darkgray); /* Gecko Browsers */
 }
-     
+
 .night h1,
 .night h2,
 .night h3,
@@ -1129,33 +1128,36 @@ body.night {
     color: var(--white);
 }
 
-.night input, .night textarea {
+.night input,
+.night textarea {
     border: 3px solid var(--darkgray);
     color: var(--lightgray);
-    background-color: var(--black)
+    background-color: var(--black);
 }
-.night input:valid, .night textarea:valid {
+.night input:valid,
+.night textarea:valid {
     border: 3px solid var(--lightgray);
 }
-.night input:focus, .night textarea:focus {
-    border: 3px solid #478CBE;
+.night input:focus,
+.night textarea:focus {
+    border: 3px solid #478cbe;
 }
 
 .night label {
     color: var(--white);
 }
-.night button[type="submit"] {
+.night button[type='submit'] {
     background-color: var(--white);
     color: var(--darkgray);
 }
-.night button[type="submit"]:hover {
-    background-color: var(--lightgray)
+.night button[type='submit']:hover {
+    background-color: var(--lightgray);
 }
-.night button[type="submit"]:disabled {
+.night button[type='submit']:disabled {
     background-color: var(--darkgray);
     color: var(--black);
 }
-.night button[type="submit"]:disabled:hover {
+.night button[type='submit']:disabled:hover {
     background-color: var(--darkgray);
 }
 
@@ -1164,7 +1166,8 @@ body.night {
 FORMS
 -----------------------
 */
-input, textarea {
+input,
+textarea {
     font-family: 'proxima-nova', sans-serif;
     font-weight: 400;
     width: 100%;
@@ -1177,26 +1180,28 @@ input, textarea {
     font-size: 0.8em;
     outline: none;
     box-shadow: none;
-    background-color: var(--background-color)
+    background-color: var(--background-color);
 }
 textarea {
     resize: none;
 }
-input:valid, textarea:valid {
+input:valid,
+textarea:valid {
     border: 3px solid var(--darkgray);
 }
- input:focus, textarea:focus {
-    border: 3px solid #478CBE;
-    transition: .3s  ease-in-out all;
+input:focus,
+textarea:focus {
+    border: 3px solid #478cbe;
+    transition: 0.3s ease-in-out all;
 }
 
 label {
     color: var(--black);
     font-weight: 600;
     margin-top: 15px;
-    display:inline-block;
+    display: inline-block;
 }
-button[type="submit"] {
+button[type='submit'] {
     border-radius: 3px;
     margin-top: 15px;
     font-family: 'proxima-nova', sans-serif;
@@ -1211,16 +1216,18 @@ button[type="submit"] {
     display: inline-block;
     font-size: 0.8em;
     cursor: pointer;
-    transition: .4s ease-in-out all;
+    transition: 0.4s ease-in-out all;
 }
-button[type="submit"]:hover {
-    background-color: var(--darkgray)
-
+button[type='submit']:hover {
+    background-color: var(--darkgray);
 }
-button[type="submit"]:disabled {
+button[type='submit']:disabled {
     background-color: var(--lightgray);
     color: var(--white);
 }
-button[type="submit"]:disabled:hover {
+button[type='submit']:disabled:hover {
     background-color: var(--lightgray);
+}
+section#privacypolicy ul {
+    list-style: none;
 }

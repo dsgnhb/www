@@ -29,10 +29,6 @@ export default class Imprint extends Component {
                             Telefon: +49 176 47397970<br />
                             E-Mail: <a href="mailto:info@dsgnhb.de">info@dsgnhb.de</a>
                         </p>
-<<<<<<< HEAD:src/components/views/LegalDisclosure.jsx
-=======
-                        <p>Geltende Domains: designhub.fun, dsgnhb.de, flooo.me, florentin.design</p>
->>>>>>> 4d40d78c8ea8fa3518781466f0811685c2ec5798:src/components/views/Imprint.jsx
                     </div>
                 </section>
                 <section id="imprint-liability">

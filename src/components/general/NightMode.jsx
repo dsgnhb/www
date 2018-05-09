@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 export default class NightMode extends Component {
     static propTypes = {
-        active: PropTypes.bool
+        active: PropTypes.any
     };
 
     static defaultProps = {

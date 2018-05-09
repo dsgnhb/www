@@ -8,7 +8,7 @@ import provide from '../providers/columnProvider';
 
 export default class Footer extends Component {
     static propTypes = {
-        enabled: PropTypes.bool.isRequired,
+        enabled: PropTypes.any.isRequired,
         handler: PropTypes.func.isRequired
     };
 

@@ -28,8 +28,6 @@ export default class App extends Component {
             siteId: 1
         });
         this.nm_switcher = this.nm_switcher.bind(this);
-
-        Raven.config('https://1701a9fb09db491fb845dc0e2a763e69@sentry.io/1078222').install(); // eslint-disable-line no-undef
     }
 
     componentDidMount() {

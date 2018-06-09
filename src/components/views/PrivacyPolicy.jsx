@@ -282,7 +282,18 @@ export default class PrivacyPolicy extends Component {
                             ab, werden die personenbezogenen Daten routinemäßig und entsprechend den gesetzlichen
                             Vorschriften gesperrt oder gelöscht.
                         </p>
-                        <h3>7. Rechte der betroffenen Person</h3>
+                        <h3>7. Typekit-Schriftarten von Adobe</h3>
+                        <p>
+                            Wir setzen auf Grundlage unserer berechtigten Interessen (d.h. Interesse an der Analyse,
+                            Optimierung und wirtschaftlichem Betrieb unseres Onlineangebotes im Sinne des Art. 6 Abs. 1
+                            lit. f. DSGVO) externe "Typekit"-Schriftarten des Anbieters Adobe Systems Software Ireland
+                            Limited, 4-6 Riverwalk, Citywest Business Campus, Dublin 24, Republic of Ireland ein. Adobe
+                            ist unter dem Privacy-Shield-Abkommen zertifiziert und bietet hierdurch eine Garantie, das
+                            europäische Datenschutzrecht einzuhalten
+                            (https://www.privacyshield.gov/participant?id=a2zt0000000TNo9AAG&status=Active).
+                        </p>
+
+                        <h3>8. Rechte der betroffenen Person</h3>
 
                         <ul>
                             <li>
@@ -584,7 +595,7 @@ export default class PrivacyPolicy extends Component {
                                 Mitarbeiter des für die Verarbeitung Verantwortlichen wenden.
                             </li>
                         </ul>
-                        <h3>8. Rechtsgrundlage der Verarbeitung</h3>
+                        <h3>9. Rechtsgrundlage der Verarbeitung</h3>
                         <p>
                             Art. 6 I lit. a DS-GVO dient uns als Rechtsgrundlage für Verarbeitungsvorgänge, bei denen
                             wir eine Einwilligung für einen bestimmten Verarbeitungszweck einholen. Ist die Verarbeitung
@@ -619,7 +630,7 @@ export default class PrivacyPolicy extends Component {
                             (Erwägungsgrund 47 Satz 2 DS-GVO).
                         </p>
                         <h3>
-                            9. Berechtigte Interessen an der Verarbeitung, die von dem Verantwortlichen oder einem
+                            10. Berechtigte Interessen an der Verarbeitung, die von dem Verantwortlichen oder einem
                             Dritten verfolgt werden
                         </h3>
                         <p>
@@ -627,7 +638,7 @@ export default class PrivacyPolicy extends Component {
                             berechtigtes Interesse die Durchführung unserer Geschäftstätigkeit zugunsten des
                             Wohlergehens all unserer Mitarbeiter und unserer Anteilseigner.
                         </p>
-                        <h3>10. Dauer, für die die personenbezogenen Daten gespeichert werden</h3>
+                        <h3>11. Dauer, für die die personenbezogenen Daten gespeichert werden</h3>
                         <p>
                             Das Kriterium für die Dauer der Speicherung von personenbezogenen Daten ist die jeweilige
                             gesetzliche Aufbewahrungsfrist. Nach Ablauf der Frist werden die entsprechenden Daten
@@ -635,7 +646,7 @@ export default class PrivacyPolicy extends Component {
                             erforderlich sind.
                         </p>
                         <h3>
-                            11. Gesetzliche oder vertragliche Vorschriften zur Bereitstellung der personenbezogenen
+                            12. Gesetzliche oder vertragliche Vorschriften zur Bereitstellung der personenbezogenen
                             Daten; Erforderlichkeit für den Vertragsabschluss; Verpflichtung der betroffenen Person, die
                             personenbezogenen Daten bereitzustellen; mögliche Folgen der Nichtbereitstellung
                         </h3>
@@ -655,7 +666,7 @@ export default class PrivacyPolicy extends Component {
                             Verpflichtung besteht, die personenbezogenen Daten bereitzustellen, und welche Folgen die
                             Nichtbereitstellung der personenbezogenen Daten hätte.
                         </p>
-                        <h3>12. Bestehen einer automatisierten Entscheidungsfindung</h3>
+                        <h3>13. Bestehen einer automatisierten Entscheidungsfindung</h3>
                         <p>Wir verzichten auf eine automatische Entscheidungsfindung oder ein Profiling.</p>
                         <p>
                             Diese Muster Datenschutzerklärung (abgeändert) wurde durch den{' '}

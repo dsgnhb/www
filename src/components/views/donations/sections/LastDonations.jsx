@@ -22,6 +22,9 @@ export default class LastDonations extends Component {
                             <Donation name="tobimori" url="https://tobimori.de">
                                 tobimori.de
                             </Donation>
+                            <Donation name="Lennart" url="https://lenaaart.de">
+                                lenaaart.de
+                            </Donation>
                         </div>
                     </div>
                 </div>

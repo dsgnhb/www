@@ -19,7 +19,7 @@ export default class Donation extends Component {
                         <MainTitle
                             subtitle="Donations"
                             title="Unterstütze uns!"
-                            link="https://www.paypal.me/juttawalter/1"
+                            link="https://paypal.me/pools/c/88ct2dGLu7"
                             linktitle="Los geht's!"
                         >
                             Wenn du designhub magst und uns unterstützen möchtest, um das Projekt aktiv zuhalten, freuen

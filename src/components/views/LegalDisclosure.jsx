@@ -27,7 +27,7 @@ export default class Imprint extends Component {
                         <h3>Kontakt:</h3>
                         <p>
                             Telefon: +49 176 47397970<br />
-                            E-Mail: <a href="mailto:info@dsgnhb.de">info@dsgnhb.de</a>
+                            E-Mail: <a href="mailto:info@designhub.fun">info@designhub.fun</a>
                         </p>
                     </div>
                 </section>

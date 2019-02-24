@@ -28,7 +28,7 @@ export default class Contact extends Component {
                     <LinkDuo to="https://discordapp.com/invite/PGv5TR3" className="main">
                         Discord -{' '}
                     </LinkDuo>
-                    <LinkDuo to="mailto:info@dsgnhb.de" className="main">
+                    <LinkDuo to="mailto:info@designhub.fun" className="main">
                         Mail
                     </LinkDuo>
                 </div>

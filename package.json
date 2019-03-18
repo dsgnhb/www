@@ -30,7 +30,7 @@
         "react-dom": "^16.0.0",
         "react-google-invisible-recaptcha": "^0.2.6",
         "react-helmet": "^5.2.0",
-        "react-router-dom": "^4.2.2",
+        "react-router-dom": "^5.0.0",
         "react-scripts": "1.1.5",
         "react-typekit": "^1.1.2",
         "sweetalert2-react": "^0.7.2",

@@ -1,20 +1,16 @@
 language: node_js
 node_js:
-  - 8
-  - 10
+    - 8
+    - 10
 env:
-  - CI=true  
+    - CI=true
 cache:
-  directories:
-    - node_modules
+    directories:
+        - node_modules
 script:
-  - npm run build
-  - npm test
+    - npm run build
+    - npm test
 notifications:
-  webhooks: https://dev.webspace.rocks/travis-discord/
+    webhooks: https://dev.webspace.rocks/travis-discord/
 before_install:
- - sudo apt-get install -qq lftp sshpass
-deploy:
-  provider: script
-  script: sh deploy.sh
-  skip_cleanup: true
+    - sudo apt-get install -qq lftp sshpass

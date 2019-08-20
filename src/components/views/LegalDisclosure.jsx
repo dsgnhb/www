@@ -20,13 +20,16 @@ export default class Imprint extends Component {
                     <div className="container">
                         <h3>Angaben gemäß § 5 TMG:</h3>
                         <p>
-                            Florentin Walter<br />
-                            Breslauerstraße 12<br />
+                            Florentin Walter
+                            <br />
+                            Breslauerstraße 12
+                            <br />
                             63927 Bürgstadt
                         </p>
                         <h3>Kontakt:</h3>
                         <p>
-                            Telefon: +49 176 47397970<br />
+                            Telefon: +49 176 47397970
+                            <br />
                             E-Mail: <a href="mailto:info@designhub.fun">info@designhub.fun</a>
                         </p>
                     </div>

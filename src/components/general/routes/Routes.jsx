@@ -13,25 +13,12 @@ import Apply from '../../views/apply/Apply';
 import LegalDisclosure from '../../views/LegalDisclosure';
 import PrivacyPolicy from '../../views/PrivacyPolicy';
 import NotFound from '../../views/error/errors/NotFound';
-import provideRedirect from '../providers/redirectProvider';
-
 export default class Routes extends Component {
-    constructor(props) {
-        super(props);
-
-        this.redirects = provideRedirect();
-
-        this.checkRedirects = this.checkRedirects.bind(this);
-    }
-
     componentDidUpdate() {
-        this.checkRedirects();
-
         window.scrollTo(0, 0);
     }
 
     render() {
-        this.checkRedirects();
         return (
             <Switch>
                 <Route path="/" component={Home} exact />
@@ -49,11 +36,5 @@ export default class Routes extends Component {
                 <Route component={NotFound} />
             </Switch>
         );
-    }
-
-    checkRedirects() {
-        if (this.redirects.get(window.location.pathname) !== undefined) {
-            window.location = this.redirects.get(window.location.pathname);
-        }
     }
 }

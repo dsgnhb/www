@@ -26,7 +26,9 @@ export default class Footer extends Component {
                 <footer>
                     <div className="container">
                         <div className="flex-list">
-                            {this.columns.map(item => <Column key={this.columns.indexOf(item)} {...item} />)}
+                            {this.columns.map(item => (
+                                <Column key={this.columns.indexOf(item)} {...item} />
+                            ))}
                         </div>
                         <ul className="legal">
                             <li>

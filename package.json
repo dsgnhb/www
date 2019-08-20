@@ -2,18 +2,18 @@
     "name": "www",
     "version": "1.1.4",
     "license": "MIT",
-    "homepage": "https://dsgnhb.de/",
+    "homepage": "https://designhub.fun/",
     "private": true,
     "author": "designhub",
     "contributors": [
         {
-            "name": "flo",
-            "url": "http://flooo.me"
+            "name": "Florentin",
+            "url": "https://florentin.design"
         },
         {
             "name": "Lukas Fruntke (LukvonStrom)",
             "email": "lukas@fruntke.tech",
-            "url": "https://lukvonstrom.de"
+            "url": "https://fruntke.tech"
         },
         {
             "name": "Fin Reinhhard",
@@ -22,24 +22,23 @@
         }
     ],
     "dependencies": {
-        "history": "^4.7.2",
+        "history": "^4.9.0",
         "is-url-external": "^1.0.3",
         "piwik-react-router": "^0.12.1",
-        "prop-types": "^15.6.0",
-        "react": "^16.0.0",
-        "react-dom": "^16.0.0",
-        "react-google-invisible-recaptcha": "^0.2.6",
-        "react-helmet": "^5.2.0",
-        "react-router-dom": "^5.0.0",
-        "react-scripts": "1.1.5",
-        "react-typekit": "^1.1.2",
-        "sweetalert2-react": "^0.7.2",
-        "whatwg-fetch": "^2.0.3"
+        "prop-types": "^15.7.2",
+        "react": "^16.9.0",
+        "react-dom": "^16.9.0",
+        "react-google-invisible-recaptcha": "^0.2.11",
+        "react-helmet": "^5.2.1",
+        "react-router-dom": "^5.0.1",
+        "react-scripts": "3.1.1",
+        "react-typekit": "^1.1.4",
+        "sweetalert2-react": "^0.8.3",
+        "whatwg-fetch": "^3.0.0"
     },
     "devDependencies": {
-        "@types/react": "^16.0.40",
-        "gh-pages": "^2.0.0",
-        "prettier": "^1.7.4"
+        "@types/react": "^16.9.2",
+        "prettier": "^1.18.2"
     },
     "scripts": {
         "start": "npm run prettier && react-scripts start",

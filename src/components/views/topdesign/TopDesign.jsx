@@ -31,7 +31,8 @@ export default class TopDesign extends Component {
                             <h3>Teilnahme</h3>
                             Erwähne in deinem, auf unserem Discord geteilten Design, einfach <b>#topdesign</b>, um an
                             Top Design teilzunehmen. So wird deine Einsendung automatisch auf unserer Website angezeigt
-                            und kann von allen angesehen und bewertet werden.<br />
+                            und kann von allen angesehen und bewertet werden.
+                            <br />
                             <br />
                             <h3>Anschauen. Verlieben. Voten.</h3>
                             Um für deinen Favoriten zu voten, schreibe lediglich <b>!vote #id</b> in den Discord-Chat.

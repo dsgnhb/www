@@ -180,12 +180,18 @@ export default class PrivacyPolicy extends Component {
                             datenschutzrechtlichem Charakter ist die:
                         </p>
                         <p>
-                            Florentin Walter<br />
-                            Breslauerstraße 12<br />
-                            63927 Bürgstadt<br />
-                            Deutschland<br />
-                            Tel.: 09371 660074<br />
-                            E-Mail: info@designhub.fun<br />
+                            Florentin Walter
+                            <br />
+                            Breslauerstraße 12
+                            <br />
+                            63927 Bürgstadt
+                            <br />
+                            Deutschland
+                            <br />
+                            Tel.: 09371 660074
+                            <br />
+                            E-Mail: info@designhub.fun
+                            <br />
                             Website: designhub.fun
                         </p>
                         <h3>3. Cookies</h3>

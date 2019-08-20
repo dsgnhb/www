@@ -26,9 +26,10 @@ export default class Partner extends Component {
                             findest du alle Informationen rund um sämtliche aktuelle Partnerschaften. Solltest du das
                             Interesse haben, ebenfalls eine Zusammenarbeit mit uns in Erwägung zu ziehen, schreib' uns
                             ne Mail unter{' '}
-                            <LinkDuo to="mailto:info@dsgnhb.de" className="main">
-                                info@dsgnhb.de
-                            </LinkDuo>.
+                            <LinkDuo to="mailto:info@designhub.fun" className="main">
+                                info@designhub.fun
+                            </LinkDuo>
+                            .
                         </MainTitle>
                     </div>
                 </section>

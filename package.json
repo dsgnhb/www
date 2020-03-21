@@ -38,7 +38,7 @@
     },
     "devDependencies": {
         "@types/react": "^16.9.2",
-        "prettier": "^1.18.2"
+        "prettier": "^2.0.0"
     },
     "scripts": {
         "start": "npm run prettier && react-scripts start",

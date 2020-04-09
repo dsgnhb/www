@@ -29,7 +29,7 @@
         "react": "^16.9.0",
         "react-dom": "^16.9.0",
         "react-google-invisible-recaptcha": "^0.2.11",
-        "react-helmet": "^5.2.1",
+        "react-helmet": "^6.0.0",
         "react-router-dom": "^5.0.1",
         "react-scripts": "3.1.2",
         "react-typekit": "^1.1.4",
